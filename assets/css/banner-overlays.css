@@ -889,3 +889,184 @@
     resize: vertical !important;
     min-height: 110px !important;
 }
+
+
+/* ===================================
+   SD SERVICES ACCORDION
+   =================================== */
+.sd-services { background: #f5f8fc; }
+
+.sd-service-block {
+    background: #ffffff;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    overflow: hidden;
+    border: 1px solid #e8edf3;
+}
+
+.sd-service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 28px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    user-select: none;
+}
+
+.sd-service-header:hover { background: #f0f7ff; }
+.sd-service-header.active { background: #e8f4fd; }
+
+.sd-service-header__left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.sd-service-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #008fd5, #0055a0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sd-service-icon i {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.sd-service-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d2124;
+    margin: 0 0 4px;
+}
+
+.sd-tagline {
+    font-size: 13px;
+    color: #008fd5;
+    font-style: italic;
+}
+
+.sd-toggle-icon i {
+    font-size: 18px;
+    color: #008fd5;
+    transition: transform 0.35s ease;
+}
+
+.sd-service-header.active .sd-toggle-icon i {
+    transform: rotate(180deg);
+}
+
+/* ── Body ── */
+.sd-service-body {
+    padding: 10px 28px 28px;
+    border-top: 1px solid #e8edf3;
+}
+
+/* ── Sub cards ── */
+.sd-sub-card {
+    background: #f8fafc;
+    border: 1px solid #e2eaf3;
+    border-radius: 12px;
+    padding: 22px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.sd-sub-card:hover {
+    box-shadow: 0 6px 24px rgba(0,143,213,0.12);
+    border-color: #008fd5;
+}
+
+.sd-sub-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1d2124;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sd-sub-card h4 i {
+    color: #008fd5;
+    font-size: 15px;
+}
+
+.sd-sub-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+    flex: 1;
+}
+
+.sd-sub-card ul li {
+    font-size: 13px;
+    color: #555;
+    padding: 4px 0 4px 18px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.sd-sub-card ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #008fd5;
+    font-size: 11px;
+    top: 5px;
+}
+
+.sd-enquire-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #008fd5, #0055a0);
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.sd-enquire-btn:hover {
+    background: linear-gradient(135deg, #ffd700, #ffaa00);
+    color: #1d2124 !important;
+    transform: translateY(-2px);
+}
+
+/* ── Trained orgs ── */
+.sd-trained-org {
+    background: #ffffff;
+    border: 1px solid #dde5ef;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sd-trained-org i { color: #008fd5; }
+
+.mt-20 { margin-top: 20px !important; }
+
+@media (max-width: 767px) {
+    .sd-service-header { padding: 16px 18px; }
+    .sd-service-body { padding: 10px 18px 20px; }
+    .sd-service-header h3 { font-size: 16px; }
+    .sd-service-icon { width: 44px; height: 44px; }
+    .sd-service-icon i { font-size: 18px; }
+}
