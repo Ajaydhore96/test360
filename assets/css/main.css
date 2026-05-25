@@ -12865,16 +12865,56 @@ Main Header Five
 }
 
 /* Divyam360 custom service and logo adjustments */
+.main-menu .logo-box {
+  padding: 8px 0;
+}
+
 .main-menu .logo-box img {
-  max-height: 72px;
+  max-height: 46px;
   width: auto !important;
   object-fit: contain;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  display: block;
+}
+
+.main-menu .logo-box a {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-nav__content .logo-box img {
-  max-height: 64px;
+  max-height: 56px;
   width: auto !important;
   object-fit: contain;
+  display: block;
+}
+
+/* Footer logo */
+.footer-widget__about img {
+  max-height: 60px;
+  width: auto !important;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+  .main-menu .logo-box img {
+    max-height: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-menu .logo-box img {
+    max-height: 44px;
+  }
 }
 
 .service-details__tagline {
