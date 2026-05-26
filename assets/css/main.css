@@ -1106,9 +1106,9 @@ h6 {
 .page-wrapper {
   position: relative;
   margin: 0 auto;
+  overflow: visible;
   width: 100%;
   min-width: 300px;
-  overflow: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -6182,12 +6182,15 @@ h6 {
 }
 
 .service-sidebar {
-  position: relative;
+  position: sticky;
+  top: 20px;
   z-index: 0;
 }
 
 @media (max-width: 991px) {
   .service-sidebar {
+    position: relative;
+    top: auto;
     padding-bottom: 70px;
   }
 }
@@ -6200,17 +6203,7 @@ h6 {
 
 .service-sidebar:before {
   content: "";
-  display: block;
-  position: absolute;
-  top: -10px;
-  bottom: -550px;
-  z-index: -1;
-  width: 5000px;
-  right: auto;
-  left: 0;
-  background-color: #eff2f6;
-  margin-top: -90px;
-  margin-bottom: -90px;
+  display: none;
 }
 
 @media (max-width: 991px) {
@@ -6421,7 +6414,7 @@ h6 {
 
 .service-details {
   background-color: #fff;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -12862,6 +12855,57 @@ Main Header Five
 
 .mobile-nav__container .main-header__five-bottom-right {
   display: none;
+}
+
+/* Life insurance page — two independent columns, sticky sidebar */
+.li-layout {
+  display: flex;
+  gap: 30px;
+}
+
+.li-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.li-sidebar {
+  width: 360px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
+@media (max-width: 991px) {
+  .li-layout {
+    flex-direction: column;
+  }
+  .li-sidebar {
+    width: 100%;
+    position: relative;
+    top: auto;
+  }
+}
+
+/* Life insurance page — CSS Grid layout for sticky sidebar */
+.service-details .li-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .service-details .li-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Service details row — align-items start required for sticky sidebar */
+.service-details .row {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 /* Divyam360 custom service and logo adjustments */
