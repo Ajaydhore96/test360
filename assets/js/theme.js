@@ -361,9 +361,9 @@
         $(e.target).prev().find("i:last-child").toggleClass("fa-plus fa-minus");
     });
 
-    // window load event
-
-    $(window).on("load", function () {
+    // window load event — init swipers when page is fully loaded
+    // Handles both deferred script execution and normal load order
+    function initSwipers() {
         if ($(".preloader").length) {
             setTimeout(function() {
                 $(".preloader").fadeOut(400);
@@ -376,7 +376,14 @@
             const swiperOptions = JSON.parse(swiperelm.dataset.swiperOptions);
             let thmSwiperSlider = new Swiper(swiperelm, swiperOptions);
         });
-    });
+    }
+
+    // If window already loaded (deferred script), run immediately; otherwise wait
+    if (document.readyState === "complete") {
+        initSwipers();
+    } else {
+        $(window).on("load", initSwipers);
+    }
 
     // window load event
 

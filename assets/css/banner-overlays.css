@@ -1091,3 +1091,70 @@
     .sd-service-icon { width: 44px; height: 44px; }
     .sd-service-icon i { font-size: 18px; }
 }
+
+
+/* =====================================================
+   Partners Infinite Scroll Ticker
+   ===================================================== */
+.partners-ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    /* Fade edges for a polished look */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    padding: 20px 0;
+}
+
+.partners-ticker {
+    display: flex;
+    width: max-content;
+    animation: partners-scroll 30s linear infinite;
+    will-change: transform;
+}
+
+/* Pause on hover */
+.partners-ticker-wrap:hover .partners-ticker {
+    animation-play-state: paused;
+}
+
+.partners-ticker__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    flex-shrink: 0;
+}
+
+.partners-ticker__item img {
+    max-width: 140px;
+    height: 70px;
+    object-fit: contain;
+    filter: grayscale(40%);
+    opacity: 0.8;
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.partners-ticker__item img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+@keyframes partners-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .partners-ticker {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .partners-ticker-wrap {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+}
