@@ -269,7 +269,6 @@
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    animation: shake 2s infinite;
     cursor: pointer;
     position: relative;
     overflow: visible;
@@ -291,7 +290,7 @@
 
 .call-btn {
     background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
-    animation: shake 1s infinite, ring-pulse 2s infinite;
+    animation: btn-vibrate 5s ease infinite, btn-pulse 5s ease infinite;
 }
 
 .call-btn:hover {
@@ -304,7 +303,7 @@
     display: block;
     position: relative;
     z-index: 2;
-    animation: ring-rotate 1.5s ease-in-out infinite;
+    animation: icon-ring 5s ease infinite;
 }
 
 .quote-btn {
@@ -357,6 +356,24 @@
     }
 }
 
+/* Intermittent vibrate: shakes for ~0.5s then stays still for 4.5s of the 5s cycle */
+@keyframes btn-vibrate {
+    0%   { transform: translate(0, 0); }
+    2%   { transform: translate(-1.5px, 1px); }
+    4%   { transform: translate(1.5px, -1px); }
+    6%   { transform: translate(-1.5px, -1px); }
+    8%   { transform: translate(1px, 1.5px); }
+    10%  { transform: translate(0, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Intermittent pulse: expands once then stays still for rest of 5s cycle */
+@keyframes btn-pulse {
+    0%   { box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 0 0 rgba(21,101,192,0.8); }
+    8%   { box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 0 12px rgba(21,101,192,0); }
+    100% { box-shadow: 0 4px 12px rgba(0,0,0,0.3), 0 0 0 0 rgba(21,101,192,0); }
+}
+
 /* Ringing phone icon animation */
 @keyframes ring-rotate {
     0%, 100% {
@@ -373,17 +390,16 @@
     }
 }
 
-/* Pulse effect for call button */
-@keyframes ring-pulse {
-    0% {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(21, 101, 192, 0.7);
-    }
-    50% {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 10px rgba(21, 101, 192, 0);
-    }
-    100% {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(12, 33, 57, 0);
-    }
+/* Intermittent ring: rotates for ~0.6s then stays still for rest of 5s cycle */
+@keyframes icon-ring {
+    0%   { transform: rotate(0deg); }
+    2%   { transform: rotate(-18deg); }
+    4%   { transform: rotate(18deg); }
+    6%   { transform: rotate(-14deg); }
+    8%   { transform: rotate(14deg); }
+    10%  { transform: rotate(-8deg); }
+    12%  { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
 }
 
 /* QUOTE MODAL */
