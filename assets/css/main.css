@@ -2626,11 +2626,19 @@ h6 {
 .main-slider {
   overflow: hidden;
   position: relative;
+  width: 100%;
+}
+
+.main-slider .swiper-container,
+.main-slider .swiper-wrapper,
+.main-slider .swiper-slide {
+  width: 100% !important;
 }
 
 .main-slider .swiper-slide {
   position: relative;
   background-color: var(--thm-black);
+  min-height: 100vh;
 }
 
 .main-slider .swiper-slide .image-layer {
@@ -2651,8 +2659,10 @@ h6 {
 }
 
 .main-slider .swiper-slide .container {
-  padding-top: 150px;
-  padding-bottom: 274px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 991px) {
@@ -16502,4 +16512,13 @@ Cta Two
   .main-header__five-bottom-btn {
     display: block;
   }
+}
+
+/* ============================================================
+   HORIZONTAL OVERFLOW FIX
+   overflow-x: clip on html prevents horizontal scrollbar
+   WITHOUT breaking position:sticky (unlike overflow:hidden)
+   ============================================================ */
+html {
+  overflow-x: clip;
 }
