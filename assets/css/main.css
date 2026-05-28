@@ -1125,7 +1125,7 @@ h6 {
   appearance: none;
   border: none;
   outline: none !important;
-  background-color: var(--thm-base);
+  background-color: var(--thm-primary);
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -1135,14 +1135,14 @@ h6 {
   padding: 15px 30px;
   -webkit-transition: 500ms;
   transition: 500ms;
-  background-color: var(--thm-base);
+  background-color: var(--thm-primary);
   color: #fff;
 }
 
 .thm-btn:hover {
-  color: var(--thm-black);
+  color: var(--thm-primary);
   background-color: #fff;
-  border: 2px solid var(--thm-base);
+  border: 2px solid var(--thm-primary);
 }
 
 .block-text {
