@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://divyam360.com/sitemap.xml
