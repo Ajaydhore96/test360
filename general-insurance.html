@@ -38,8 +38,10 @@
     <!-- Inline critical CSS: preloader + above-fold layout -->
     <style>
       *,*::before,*::after{box-sizing:border-box}
-      body{margin:0;font-family:'Rubik',sans-serif;background:#fff;color:#555c63}
-      img{max-width:100%;height:auto}
+      @font-face{font-family:'Rubik';font-style:normal;font-weight:400;font-display:optional;src:local('Rubik'),local('Rubik-Regular')}
+      @font-face{font-family:'Rajdhani';font-style:normal;font-weight:400;font-display:optional;src:local('Rajdhani'),local('Rajdhani-Regular')}
+      body{margin:0;font-family:'Rubik',Arial,sans-serif;background:#fff;color:#555c63}
+      img{max-width:100%}
       .preloader{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
       .preloader__image{width:120px;height:auto}
       .preloader__text{margin-top:12px;font-size:14px;color:#004aa1;font-weight:500}
@@ -49,7 +51,7 @@
       .page-header__bg{position:absolute;top:0;left:0;right:0;bottom:0;background-repeat:no-repeat;background-size:cover;background-position:center}
       .page-header .container{position:relative;z-index:10;padding-top:90px;padding-bottom:95px}
       .logo-box{display:flex;align-items:center;justify-content:space-between}
-      .logo-box img{display:block}
+      .logo-box img{display:block;width:220px;height:54px}
       .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:1200px}
       .floating-contact-buttons{position:fixed;bottom:20px;right:20px;z-index:9998;display:flex;flex-direction:column;gap:10px}
     </style>
