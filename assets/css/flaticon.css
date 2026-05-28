@@ -9,6 +9,7 @@
 	    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype");
 	    font-weight: normal;
 	    font-style: normal;
+	    font-display: swap;
 	}
 	
 	[class^="flaticon-"]:before,

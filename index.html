@@ -32,26 +32,40 @@
     <meta name="twitter:title" content="Tax Consultancy &amp; Insurance Services in Pune | Divyam360" />
     <meta name="twitter:description" content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010." />
 
-    <!-- fonts -->
+    <!-- Preload LCP image (hero slider background) -->
+    <link rel="preload" as="image" href="assets/images/main-slider/main-slider-1-1.webp" fetchpriority="high">
+    <!-- Preload logo to avoid layout shift -->
+    <link rel="preload" as="image" href="newlogo.webp">
+
+    <!-- fonts: preconnect + async load to avoid render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap"></noscript>
 
+    <!-- Critical CSS: load synchronously -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/pylon-icons.css">
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="assets/css/nouislider.min.css">
-    <link rel="stylesheet" href="assets/css/nouislider.pips.css">
     <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css">
-
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/banner-overlays.css">
+
+    <!-- Non-critical CSS: deferred via print media trick -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/animate.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/odometer.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/magnific-popup.css"></noscript>
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/bootstrap-select.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/nouislider.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/nouislider.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/nouislider.pips.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/nouislider.pips.css"></noscript>
 </head>
 
 <body>
@@ -134,7 +148,7 @@
             <nav class="main-menu">
                 <div class="container">
                     <div class="logo-box">
-                        <a href="index.html" aria-label="logo image"><img src="newlogo.webp" alt="Divyam360 Tax and Insurance Services Pune" width="220"></a>
+                        <a href="index.html" aria-label="logo image"><img src="newlogo.webp" alt="Divyam360 Tax and Insurance Services Pune" width="220" height="54"></a>
                         <span class="fa fa-bars mobile-nav__toggler"></span>
                     </div><!-- /.logo-box -->
                     <ul class="main-menu__list">
@@ -560,19 +574,19 @@
                             <div class="service-one__image">
                                 <a href="life-insurance.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-1.webp" alt="Life Insurance in Pune">
+                                        <img src="assets/images/services/services-1-1.webp" alt="Life Insurance in Pune" width="276" height="185">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
                             <div class="service-one__content">
-                                <a href="life-insurance.html">
+                                <a href="life-insurance.html" aria-label="Life Insurance">
                                     <div class="service-icon">
                                         <i class="fas fa-shield-alt"></i>
                                     </div>
                                 </a>
                                 <h3><a href="life-insurance.html">Life Insurance</a></h3>
                                 <p>Protect your family with term plans, savings plans and retirement-focused coverage from trusted insurers.</p>
-                                <a href="life-insurance.html" class="pylon-icon-right-arrow service-one__link"></a>
+                                <a href="life-insurance.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about Life Insurance"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -582,19 +596,19 @@
                             <div class="service-one__image">
                                 <a href="general-insurance.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-2.webp" alt="General Insurance in Pune">
+                                        <img src="assets/images/services/services-1-2.webp" alt="General Insurance in Pune" width="276" height="185">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
                             <div class="service-one__content">
-                                <a href="general-insurance.html">
+                                <a href="general-insurance.html" aria-label="General Insurance">
                                     <div class="service-icon">
                                         <i class="fas fa-umbrella"></i>
                                     </div>
                                 </a>
                                 <h3><a href="general-insurance.html">General Insurance</a></h3>
                                 <p>Comprehensive motor, health, property and business insurance with end-to-end claim support.</p>
-                                <a href="general-insurance.html" class="pylon-icon-right-arrow service-one__link"></a>
+                                <a href="general-insurance.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about General Insurance"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -604,19 +618,19 @@
                             <div class="service-one__image">
                                 <a href="mutual-funds-sip.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-3.webp" alt="Mutual Funds and SIP">
+                                        <img src="assets/images/services/services-1-3.webp" alt="Mutual Funds and SIP" width="276" height="185">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
                             <div class="service-one__content">
-                                <a href="mutual-funds-sip.html">
+                                <a href="mutual-funds-sip.html" aria-label="Mutual Funds &amp; SIP">
                                     <div class="service-icon">
                                         <i class="fas fa-piggy-bank"></i>
                                     </div>
                                 </a>
                                 <h3><a href="mutual-funds-sip.html">Mutual Funds &amp; SIP</a></h3>
                                 <p>Goal-based SIP and mutual fund advice to build wealth for education, retirement and major life goals.</p>
-                                <a href="mutual-funds-sip.html" class="pylon-icon-right-arrow service-one__link"></a>
+                                <a href="mutual-funds-sip.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about Mutual Funds &amp; SIP"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -626,19 +640,19 @@
                             <div class="service-one__image">
                                 <a href="equity-share-market.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-1.webp" alt="Equity and Share Market Advisory">
+                                        <img src="assets/images/services/services-1-1.webp" alt="Equity and Share Market Advisory" width="276" height="185">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
                             <div class="service-one__content">
-                                <a href="equity-share-market.html">
+                                <a href="equity-share-market.html" aria-label="Equity &amp; Share Market">
                                     <div class="service-icon">
                                         <i class="fas fa-chart-line"></i>
                                     </div>
                                 </a>
                                 <h3><a href="equity-share-market.html">Equity &amp; Share Market</a></h3>
                                 <p>Structured equity investing support, portfolio review and risk-based planning for long-term growth.</p>
-                                <a href="equity-share-market.html" class="pylon-icon-right-arrow service-one__link"></a>
+                                <a href="equity-share-market.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about Equity &amp; Share Market"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -704,7 +718,7 @@
                                 <h2>Your Trusted Partner for Tax & Insurance Solutions</h2>
                             </div><!-- /.block-title -->
                             <div class="trusted-company__image">
-                                <img src="assets/images/resources/trust-1-1.webp" alt="" height="148" width="171">
+                                <img src="assets/images/resources/trust-1-1.webp" alt="Divyam360 Trusted Tax and Insurance Services" height="148" width="171" loading="lazy">
                                 <p>Divyam360 is a trusted name in tax consultancy and insurance services. Our certified professionals deliver personalized solutions with timely service, ensuring complete peace of mind for all your financial needs.</p>
                             </div><!-- /.trusted-company__image -->
                             <div class="row">
@@ -950,7 +964,7 @@
                     <div class="col-lg-6">
                         <div class="why-choose__image">
                             <p><i class="pylon-icon-investment"></i>Years of Tax & Insurance Expertise</p>
-                            <img src="assets/images/resources/why-choose-1-1.png" alt="">
+                            <img src="assets/images/resources/why-choose-1-1.png" alt="Why Choose Divyam360" width="540" height="480" loading="lazy">
                         </div><!-- /.why-choose__image -->
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
@@ -1009,7 +1023,7 @@
         </section><!-- /.why-choose -->
 
         <section class="funfact-one">
-            <div class="funfact-one__bg" style="background-image: url(assets/images/backgrounds/trust-1-1.webp);">
+            <div class="funfact-one__bg" style="background-image: url(assets/images/backgrounds/funfact-bg-1-1.webp);">
             </div><!-- /.funfact-one__bg -->
             <div class="container">
                 <div class="row">
@@ -1052,7 +1066,7 @@
                         <div class="blog-card">
                             <div class="blog-card__image">
                                 <span>20 Sep, 2023</span>
-                                <img src="assets/images/blog/blog-1-1.png" alt="Top 10 Tax Saving Tips for FY 2025-26 - Divyam360">
+                                <img src="assets/images/blog/blog-1-1.png" alt="Top 10 Tax Saving Tips for FY 2025-26 - Divyam360" width="370" height="247" loading="lazy">
                             </div><!-- /.blog-card__image -->
                             <div class="blog-card__content">
                                 <div class="blog-card__meta">
@@ -1076,7 +1090,7 @@
                         <div class="blog-card">
                             <div class="blog-card__image">
                                 <span>20 Sep, 2023</span>
-                                <img src="assets/images/blog/blog-1-2.png" alt="GST Filing Deadlines and Compliance Guide 2025 - Divyam360">
+                                <img src="assets/images/blog/blog-1-2.png" alt="GST Filing Deadlines and Compliance Guide 2025 - Divyam360" width="370" height="247" loading="lazy">
                             </div><!-- /.blog-card__image -->
                             <div class="blog-card__content">
                                 <div class="blog-card__meta">
@@ -1100,7 +1114,7 @@
                         <div class="blog-card">
                             <div class="blog-card__image">
                                 <span>20 Sep, 2023</span>
-                                <img src="assets/images/blog/blog-1-3.png" alt="Choosing the Right Health Insurance Plan in Pune - Divyam360">
+                                <img src="assets/images/blog/blog-1-3.png" alt="Choosing the Right Health Insurance Plan in Pune - Divyam360" width="370" height="247" loading="lazy">
                             </div><!-- /.blog-card__image -->
                             <div class="blog-card__content">
                                 <div class="blog-card__meta">
@@ -1158,34 +1172,34 @@
             }}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-10.webp" alt="LIC - Life Insurance Corporation of India">
+                            <img src="assets/images/resources/brand-1-10.webp" alt="LIC - Life Insurance Corporation of India" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-2.webp" alt="HDFC Life Insurance">
+                            <img src="assets/images/resources/brand-1-2.webp" alt="HDFC Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-3.webp" alt="ICICI Prudential Life Insurance">
+                            <img src="assets/images/resources/brand-1-3.webp" alt="ICICI Prudential Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-4.webp" alt="SBI Life Insurance">
+                            <img src="assets/images/resources/brand-1-4.webp" alt="SBI Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-5.webp" alt="Bajaj Allianz Insurance">
+                            <img src="assets/images/resources/brand-1-5.webp" alt="Bajaj Allianz Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-6.webp" alt="Max Life Insurance">
+                            <img src="assets/images/resources/brand-1-6.webp" alt="Max Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-7.webp" alt="Tata AIA Life Insurance">
+                            <img src="assets/images/resources/brand-1-7.webp" alt="Tata AIA Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-8.webp" alt="Kotak Life Insurance">
+                            <img src="assets/images/resources/brand-1-8.webp" alt="Kotak Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-9.webp" alt="Aditya Birla Sun Life Insurance">
+                            <img src="assets/images/resources/brand-1-9.webp" alt="Aditya Birla Sun Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
-                            <img src="assets/images/resources/brand-1-1.webp" alt="Reliance Nippon Life Insurance">
+                            <img src="assets/images/resources/brand-1-1.webp" alt="Reliance Nippon Life Insurance" width="160" height="60">
                         </div><!-- /.swiper-slide -->
                     </div><!-- /.swiper-wrapper -->
                 </div><!-- /.thm-swiper__slider -->
@@ -1212,7 +1226,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget footer-widget__about">
                             <a href="index.html">
-                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155">
+                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38">
                             </a>
                             <p>Divyam360 Tax &amp; Insurance Services is your trusted advisor in Pune for insurance protection, tax compliance, and investment planning with personalized guidance.</p>
                             <div class="footer-widget__about-phone">
@@ -1276,7 +1290,7 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" /></a>
+                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38" /></a>
 
             </div>
             <!-- /.logo-box -->

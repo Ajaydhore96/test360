@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -30,27 +30,34 @@
     <meta name="twitter:description" content="Get the best life insurance in Pune with Divyam360. We offer term insurance, ULIP plans, retirement plans, child plans and critical illness cover. Expert guidance, hassle-free process. Call now." />
     <meta name="twitter:image" content="https://divyam360.com/newlogo.webp" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"><noscript><link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"></noscript>
+    <!-- fonts: preconnect + async load to avoid render-blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap"></noscript>
 
+    <!-- Critical CSS: load synchronously -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/pylon-icons.css">
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="assets/css/nouislider.min.css">
-    <link rel="stylesheet" href="assets/css/nouislider.pips.css">
-
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/banner-overlays.css">
+
+    <!-- Non-critical CSS: deferred via print media trick -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/animate.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/odometer.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/magnific-popup.css"></noscript>
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/bootstrap-select.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/nouislider.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/nouislider.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/nouislider.pips.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/nouislider.pips.css"></noscript>
 </head>
 
 <body>
@@ -130,7 +137,7 @@
             <nav class="main-menu">
                 <div class="container">
                     <div class="logo-box">
-                        <a href="index.html" aria-label="logo image"><img src="newlogo.webp" alt="Divyam360 Tax and Insurance Services Pune" width="220"></a>
+                        <a href="index.html" aria-label="logo image"><img src="newlogo.webp" alt="Divyam360 Tax and Insurance Services Pune" width="220" height="54"></a>
                         <span class="fa fa-bars mobile-nav__toggler"></span>
                     </div><!-- /.logo-box -->
                     <ul class="main-menu__list">
@@ -455,7 +462,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget footer-widget__about">
                             <a href="index.html">
-                                                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155">
+                                                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38">
 
                             </a>
                            <p>Divyam360 Tax &amp; Insurance Services is your trusted advisor in Pune for insurance protection, tax compliance, and investment planning with personalized guidance.</p>
@@ -522,7 +529,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" /></a>
+                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38" /></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
