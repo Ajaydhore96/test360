@@ -242,6 +242,7 @@
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li class="search-btn search-toggler">
                             <a href="#"><span class="sr-only">Search</span><i class="pylon-icon-magnifying-glass"></i></a>
@@ -1461,8 +1462,318 @@
     }
     </script>
 
+    <script>
+    (function() {
+        'use strict';
+        function parseCSV(text) {
+            var rows = []; var row = []; var field = ''; var inQuote = false;
+            for (var i = 0; i < text.length; i++) {
+                var ch = text[i]; var nextCh = text[i+1];
+                if (ch === '"') {
+                    if (inQuote && nextCh === '"') { field += '"'; i++; } else { inQuote = !inQuote; }
+                } else if (ch === ',' && !inQuote) {
+                    row.push(field.trim()); field = '';
+                } else if ((ch === '\n' || (ch === '\r' && nextCh === '\n')) && !inQuote) {
+                    if (ch === '\r') i++; 
+                    row.push(field.trim());
+                    if (row.join('').trim() !== '') rows.push(row);
+                    row = []; field = '';
+                } else {
+                    if (ch !== '\r' || inQuote) field += ch;
+                }
+            }
+            if (field !== '' || row.length > 0) {
+                row.push(field.trim());
+                if (row.join('').trim() !== '') rows.push(row);
+            }
+            if (rows.length < 2) return [];
+            var headers = rows[0]; var data = [];
+            for (var r = 1; r < rows.length; r++) {
+                var cols = rows[r]; var obj = {};
+                for (var c = 0; c < headers.length; c++) {
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="assets/js/jquery-3.5.1.min.js" defer></script>
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/swiper.min.js" defer></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js" defer></script>
+    <script src="assets/js/jquery.magnific-popup.min.js" defer></script>
+    <script src="assets/js/jquery.validate.min.js" defer></script>
+    <script src="assets/js/bootstrap-select.min.js" defer></script>
+    <script src="assets/js/wow.js" defer></script>
+    <script src="assets/js/odometer.min.js" defer></script>
+    <script src="assets/js/jquery.appear.min.js" defer></script>
+    <script src="assets/js/wNumb.min.js" defer></script>
+    <script src="assets/js/nouislider.min.js" defer></script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script>document.addEventListener('DOMContentLoaded',function(){emailjs.init('Zkp0GhT7LYGdGm5VK');});</script>
+
+    <!-- template js -->
+    <script src="assets/js/theme.js" defer></script>
+
+    <!-- Lazy background image loader -->
+    <script>
+    (function(){
+        function loadBg(el){
+            var bg = el.getAttribute('data-bg');
+            if(bg){ el.style.backgroundImage = 'url('+bg+')'; el.removeAttribute('data-bg'); }
+        }
+        if('IntersectionObserver' in window){
+            var io = new IntersectionObserver(function(entries){
+                entries.forEach(function(e){ if(e.isIntersecting){ loadBg(e.target); io.unobserve(e.target); } });
+            },{rootMargin:'200px'});
+            document.querySelectorAll('[data-bg]').forEach(function(el){ io.observe(el); });
+        } else {
+            document.querySelectorAll('[data-bg]').forEach(loadBg);
+        }
+    })();
+    </script>
+    
+    <!-- Quote Modal Script -->
+    <script>
+        // Get modal elements
+        const quoteModal = document.getElementById('quoteModal');
+        const openBtn = document.getElementById('openQuoteModal');
+        const closeBtn = document.getElementById('closeModal');
+        const quoteForm = document.getElementById('quoteForm');
+        
+        // Check if user is visiting for the first time
+        window.addEventListener('load', function() {
+            const hasVisited = localStorage.getItem('hasVisitedBefore');
+            if (!hasVisited) {
+                // Show modal after 2 seconds for first-time visitors
+                setTimeout(function() {
+                    quoteModal.classList.add('active');
+                }, 2000);
+                // Mark as visited
+                localStorage.setItem('hasVisitedBefore', 'true');
+            }
+        });
+        
+        // Open modal
+        openBtn.addEventListener('click', function() {
+            quoteModal.classList.add('active');
+        });
+        
+        // Close modal
+        closeBtn.addEventListener('click', function() {
+            quoteModal.classList.remove('active');
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target === quoteModal) {
+                quoteModal.classList.remove('active');
+            }
+        });
+        
+        // Handle form submission
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name  = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const phone = document.getElementById('userPhone').value;
+            const submitBtn = quoteForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            emailjs.send('service_f1vq7cc', 'template_k33aogb', {
+                from_name: name, from_email: email, phone: phone, form_source: 'Get a Quote Modal'
+            }).then(function() {
+                const wa = `Hello, I would like to get a quote.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Contact:* ${phone}`;
+                window.open(`https://wa.me/919665565559?text=${wa}`, '_blank');
+                quoteModal.classList.remove('active'); quoteForm.reset();
+                submitBtn.textContent = originalText; submitBtn.disabled = false;
+            }, function() {
+                const wa = `Hello, I would like to get a quote.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Contact:* ${phone}`;
+                window.open(`https://wa.me/919665565559?text=${wa}`, '_blank');
+                quoteModal.classList.remove('active'); quoteForm.reset();
+                submitBtn.textContent = originalText; submitBtn.disabled = false;
+            });
+        });
+    </script>
+    
+    <!-- LocalBusiness JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Divyam360 Tax & Insurance Services",
+      "url": "https://divyam360.com",
+      "logo": "https://divyam360.com/newlogo.webp",
+      "image": "https://divyam360.com/newlogo.webp",
+      "description": "Divyam360 provides expert tax consultancy, income tax filing, GST registration, life insurance, health insurance, mutual funds and investment planning in Pune, Maharashtra.",
+      "telephone": "+919665565559",
+      "email": "divyam360official@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sawai Veg Apartment, Sinhgad Road",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "postalCode": "411030",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 18.4611,
+        "longitude": 73.8477
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61589966625710",
+        "https://www.instagram.com/divyam360tax_insurance/"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Pune"
+      },
+      "priceRange": "??",
+      "hasMap": "https://www.google.com/maps?q=Sinhgad+Road+Pune"
+    }
+    </script>
+
+    <script>
+    (function() {
+        'use strict';
+        function parseCSV(text) {
+            var rows = []; var row = []; var field = ''; var inQuote = false;
+            for (var i = 0; i < text.length; i++) {
+                var ch = text[i]; var nextCh = text[i+1];
+                if (ch === '"') {
+                    if (inQuote && nextCh === '"') { field += '"'; i++; } else { inQuote = !inQuote; }
+                } else if (ch === ',' && !inQuote) {
+                    row.push(field.trim()); field = '';
+                } else if ((ch === '\n' || (ch === '\r' && nextCh === '\n')) && !inQuote) {
+                    if (ch === '\r') i++; 
+                    row.push(field.trim());
+                    if (row.join('').trim() !== '') rows.push(row);
+                    row = []; field = '';
+                } else {
+                    if (ch !== '\r' || inQuote) field += ch;
+                }
+            }
+            if (field !== '' || row.length > 0) {
+                row.push(field.trim());
+                if (row.join('').trim() !== '') rows.push(row);
+            }
+            if (rows.length < 2) return [];
+            var headers = rows[0]; var data = [];
+            for (var r = 1; r < rows.length; r++) {
+                var cols = rows[r]; var obj = {};
+                for (var c = 0; c < headers.length; c++) {
+                    obj[headers[c]] = cols[c] || '';
+                }
+                data.push(obj);
+            }
+            return data;
+        }
+
+        function categoryIcon(cat) {
+            var map = {
+                'development': 'fa-code', 'design': 'fa-paint-brush', 'ai': 'fa-robot', 'product': 'fa-box-open',
+                'mobile': 'fa-mobile-alt', 'tax': 'fa-file-invoice-dollar', 'insurance': 'fa-shield-alt', 
+                'gst': 'fa-receipt', 'finance': 'fa-chart-line', 'investment': 'fa-piggy-bank'
+            };
+            var key = (cat || '').toLowerCase();
+            for (var k in map) { if (key.indexOf(k) !== -1) return map[k]; }
+            return 'fa-newspaper';
+        }
+
+        function buildCard(item) {
+            var title    = item['Title'] || 'Untitled';
+            var date     = item['Date'] || '';
+            var category = item['Category'] || 'General';
+            var summary  = item['Description / Summary'] || '';
+            var imgSrc   = item['Image URL'] || 'assets/images/blog/blog-1-1.png';
+            
+            // Create dynamic link to blog-details page
+            var link = 'blog-details.html?title=' + encodeURIComponent(title);
+            
+            var icon     = categoryIcon(category);
+
+            return [
+                '<div class="col-lg-4 col-md-6 col-blog-item wow fadeInUp" data-wow-duration="1200ms" data-category="' + category.toLowerCase() + '">',
+                '  <div class="blog-card">',
+                '    <div class="blog-card__image">',
+                '      <span>' + date + '</span>',
+                '      <img src="' + imgSrc + '" alt="' + title + ' - Divyam360" loading="lazy" style="height:250px; object-fit:cover;">',
+                '    </div>',
+                '    <div class="blog-card__content">',
+                '      <div class="blog-card__meta">',
+                '        <a href="#"><i class="far fa-user"></i>Admin</a>',
+                '        <a href="' + link + '"><i class="fas ' + icon + '"></i>' + category + '</a>',
+                '      </div>',
+                '      <h3><a href="' + link + '">' + title + '</a></h3>',
+                '      <p class="blog-card__excerpt">' + summary.substring(0, 100) + '...</p>',
+                '      <div class="blog-card__bottom">',
+                '        <div class="blog-card-bottom-readmore">',
+                '          <a href="' + link + '" class="readmore-card-link"><i class="pylon-icon-right-arrow"></i>Read More</a>',
+                '        </div>',
+                '        <span class="blog_comment"><a href="#"><i class="far fa-comments"></i>0 Comments</a></span>',
+                '      </div>',
+                '    </div>',
+                '  </div>',
+                '</div>'
+            ].join('');
+        }
+
+        async function loadHomeBlog() {
+            var container = document.getElementById('blogContainer');
+            var loading   = document.getElementById('blogLoading');
+            if(!container) return;
+            try {
+                var sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_J1f_o_88nx0mWF4ccY0YnLngSS7zJ4C472u5gwJsOrnnb4UmzBp4yBg6xjamxANa47IjYaE77zJb/pub?output=csv';
+                var cacheBuster = '&v=' + new Date().getTime();
+                var response = await fetch(sheetUrl + cacheBuster);
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                var text = await response.text();
+                var data = parseCSV(text);
+
+                if (!data.length) throw new Error('No data in CSV');
+
+                if (loading) loading.remove();
+
+                // Only show the latest 3 posts on the home page
+                var latestPosts = data.slice(0, 3);
+                var html = latestPosts.map(buildCard).join('');
+                container.insertAdjacentHTML('beforeend', html);
+
+            } catch (err) {
+                console.error('Blog load failed:', err);
+                if (loading) loading.remove();
+                container.insertAdjacentHTML('beforeend',
+                    '<div class="col-12 text-center" style="padding:40px;color:#c00;"><p>Could not load latest insights.</p></div>'
+                );
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadHomeBlog);
+    })();
+    </script>
 </body>
 
 </html>
-
-

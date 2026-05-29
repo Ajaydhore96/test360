@@ -42,6 +42,7 @@
       .logo-box{display:flex;align-items:center;justify-content:space-between}
       .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:1200px}
       .floating-contact-buttons{position:fixed;bottom:20px;right:20px;z-index:9998;display:flex;flex-direction:column;gap:10px}
+      .quote-modal { display: none; }
       /* Blog page extras */
       @keyframes blogSpin{to{transform:rotate(360deg)}}
       .blog-filter-bar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:40px}
@@ -82,16 +83,24 @@
     <noscript><link rel="stylesheet" href="assets/css/swiper.min.css"></noscript>
     <link rel="stylesheet" href="assets/css/pylon-icons.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/pylon-icons.css"></noscript>
+    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/flaticon.css"></noscript>
     <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
     <link rel="stylesheet" href="assets/css/banner-overlays.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/banner-overlays.css"></noscript>
     <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/animate.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/odometer.min.css"></noscript>
     <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/magnific-popup.css"></noscript>
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/bootstrap-select.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/nouislider.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/nouislider.min.css"></noscript>
+    <link rel="stylesheet" href="assets/css/nouislider.pips.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/nouislider.pips.css"></noscript>
 </head>
 
 <body>
@@ -133,7 +142,7 @@
                 <button type="submit" class="submit-btn">Submit Enquiry</button>
             </form>
         </div>
-    </div>
+    </div><!-- /.quote-modal -->
 
     <div class="preloader">
         <img class="preloader__image" src="assets/images/loader.png" alt="Loading Divyam360">
@@ -145,19 +154,20 @@
                 <div class="container">
                     <div class="topbar__left">
                         <div class="topbar__social">
-                            <a href="https://www.facebook.com/profile.php?id=61589966625710" class="fab fa-facebook-square" aria-label="Divyam360 on Facebook"></a>
+                           <a href="https://www.facebook.com/profile.php?id=61589966625710" class="fab fa-facebook-square" aria-label="Divyam360 on Facebook"></a>
+                           
                             <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram" aria-label="Divyam360 on Instagram"></a>
-                        </div>
+                        </div><!-- /.topbar__social -->
                         <a href="#">Login</a>
                         <a href="faq.html">FAQs</a>
-                    </div>
+                    </div><!-- /.topbar__left -->
                     <div class="topbar__right">
                         <a href="mailto:divyam360official@gmail.com"><i class="pylon-icon-email1"></i>divyam360official@gmail.com</a>
                         <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a>
-                    </div>
-                </div>
-            </div>
-
+                    </div><!-- /.topbar__right -->
+                </div><!-- /.container -->
+            </div><!-- /.topbar -->
+            
             <!-- Marquee Banner -->
             <div class="marquee-banner">
                 <div class="marquee-content">
@@ -168,44 +178,57 @@
                     <span><i class="fas fa-file-invoice-dollar"></i> Income Tax &amp; GST Support</span>
                     <span><i class="fas fa-map-marker-alt"></i> Serving Pune, Maharashtra</span>
                 </div>
-            </div>
-
+            </div><!-- /.marquee-banner -->
+            
             <nav class="main-menu" aria-label="Main navigation">
                 <div class="container">
                     <div class="logo-box">
                         <a href="index.html" aria-label="logo image"><img src="newlogo.webp" alt="Divyam360 Tax and Insurance Services Pune" width="220" height="54"></a>
                         <span class="fa fa-bars mobile-nav__toggler"></span>
-                    </div>
+                    </div><!-- /.logo-box -->
                     <ul class="main-menu__list">
-                        <li class="dropdown"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="index.html">Home</a>
+                            
+                        </li>
                         <li class="dropdown">
                             <a href="about.html">About Us</a>
-                            <ul></ul>
+                            <ul>
+                            </ul>
                         </li>
                         <li class="dropdown"><a href="services.html">Services</a>
                             <ul>
+                                <li><a href="services.html">All Services</a></li>
                                 <li class="dropdown"><a href="life-insurance.html">Life Insurance</a>
                                     <ul>
                                         <li><a href="life-insurance.html">Term Insurance</a></li>
                                         <li><a href="life-insurance.html">Retirement Planning / Pension Creation</a></li>
                                         <li><a href="life-insurance.html">Child Education and Marriage</a></li>
                                         <li><a href="life-insurance.html">Critical Illness Coverage</a></li>
-                                        <li><a href="life-insurance.html">UlIP Plans</a></li>
-                                        <li><a href="life-insurance.html">Endowment Plans</a></li>
-                                        <li><a href="life-insurance.html">Whole Life Insurance</a></li>
+                                         <li><a href="life-insurance.html">UlIP Plans </a></li>
+                                          <li><a href="life-insurance.html">Endowment Plans</a></li>
+                                           <li><a href="life-insurance.html">Whole Life Insurance</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="general-insurance.html">General Insurance</a>
                                     <ul>
-                                        <li><a href="general-insurance.html">Health Insurance</a></li>
+                                       <li><a href="general-insurance.html">Health Insurance</a></li>
                                         <li><a href="general-insurance.html">Motor Insurance</a></li>
                                         <li><a href="general-insurance.html">Travel Insurance</a></li>
-                                        <li><a href="general-insurance.html">Home Insurance</a></li>
+                                        <li><a href="general-insurance.html">HomeInsurance</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="mutual-funds-sip.html">Mutual Funds &amp; SIP</a></li>
                                 <li><a href="equity-share-market.html">Equity &amp; Share Market</a></li>
-                                <li><a href="speciality-business-insurance.html">Speciality &amp; Business Insurance</a></li>
+                                <li class="dropdown"><a href="speciality-business-insurance.html">Speciality &amp; Business Insurance</a>
+                                    <ul>
+                                        <li><a href="speciality-business-insurance.html">Marine Insurance</a></li>
+                                        <li><a href="speciality-business-insurance.html">Fire Insurance</a></li>
+                                        <li><a href="speciality-business-insurance.html">Liability Insurance</a></li>
+                                        <li><a href="speciality-business-insurance.html">Commercial Insurance</a></li>
+                                        <li><a href="speciality-business-insurance.html">Cyber Insurance</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="#">Resources</a>
@@ -218,23 +241,27 @@
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li class="search-btn search-toggler">
                             <a href="#"><span class="sr-only">Search</span><i class="pylon-icon-magnifying-glass"></i></a>
                         </li>
                     </ul>
+                    <!-- /.main-menu__list -->
+
                     <div class="main-header__info">
                         <div class="main-header__info-phone">
                             <i class="pylon-icon-tech-support"></i>
                             <div class="main-header__info-phone-content">
                                 <span>Call Anytime</span>
                                 <h3><a href="tel:+919665565559">+91 9665565559</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </div><!-- /.main-header__info-phone-content -->
+                        </div><!-- /.main-header__info-phone -->
+                    </div><!-- /.main-header__info -->
+                </div><!-- /.container -->
             </nav>
-        </header>
+            <!-- /.main-menu -->
+        </header><!-- /.main-header -->
 
         <div class="stricky-header stricked-menu main-menu" aria-hidden="true">
             <div class="sticky-header__content"></div>
@@ -282,23 +309,24 @@
         </section>
         <!-- ====================== END BLOG SECTION ======================== -->
 
-        <!-- Footer -->
-        <footer class="site-footer">
+        <footer class="site-footer" role="contentinfo" aria-label="Site footer">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-between">
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget footer-widget__about">
-                            <a href="index.html"><img src="ftlogo.webp" alt="Divyam360 Tax and Insurance Pune" width="155" height="38"></a>
+                            <a href="index.html">
+                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38">
+                            </a>
                             <p>Divyam360 Tax &amp; Insurance Services is your trusted advisor in Pune for insurance protection, tax compliance, and investment planning with personalized guidance.</p>
                             <div class="footer-widget__about-phone">
                                 <i class="pylon-icon-tech-support"></i>
                                 <div class="footer-widget__about-phone-content">
                                     <span>Call Anytime</span>
                                     <h3><a href="tel:+919665565559">+91 9665565559</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </div><!-- /.footer-widget__about-phone-content -->
+                            </div><!-- /.footer-widget__about-phone -->
+                        </div><!-- /.footer-widget footer-widget__about -->
+                    </div><!-- /.col-lg-3 -->
                     <div class="col-lg-2 col-sm-6">
                         <div class="footer-widget footer-widget__link">
                             <h3 class="footer-widget__title">Explore</h3>
@@ -306,70 +334,95 @@
                                 <li><a href="about.html"><i class="fa fa-arrow-right"></i>About</a></li>
                                 <li><a href="services.html"><i class="fa fa-arrow-right"></i>Our Services</a></li>
                                 <li><a href="testimonials.html"><i class="fa fa-arrow-right"></i>Testimonials</a></li>
-                                <li><a href="blog.html"><i class="fa fa-arrow-right"></i>Insights</a></li>
                                 <li><a href="contact.html"><i class="fa fa-arrow-right"></i>Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                                <li><a href="services.html"><i class="fa fa-arrow-right"></i>Service Categories</a></li>
+                            </ul><!-- /.list-unstyled -->
+                        </div><!-- /.footer-widget -->
+                    </div><!-- /.col-lg-2 -->
                     <div class="col-lg-4 col-sm-6">
                         <div class="footer-widget footer-widget__contact">
                             <h3>Contact</h3>
                             <ul class="list-unstyled footer-widget__contact-list">
-                                <li><a href="mailto:divyam360official@gmail.com"><i class="pylon-icon-email1"></i>divyam360official@gmail.com</a></li>
-                                <li><a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a></li>
-                                <li><a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune – 411030, Maharashtra, India</a></li>
+                                <li>
+                                    <a href="mailto:divyam360official@gmail.com"><i
+                                            class="pylon-icon-email1"></i>divyam360official@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune – 411030, Maharashtra, India</a>
+                                </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
+                        </div><!-- /.footer-widget footer-widget__contact -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </footer><!-- /.site-footer -->
         <div class="bottom-footer">
             <div class="container">
-                <p>&copy; Copyright by Divyam360.com | Designed and Developed by <a href="https://ajayportfolio-nu.vercel.app/" target="_blank" style="color:#ffa500;text-decoration:none;">TechAjay</a></p>
+                <p>&copy; Copyright by Divyam360.com | Designed and Developed by <a href="https://ajayportfolio-nu.vercel.app/" target="_blank" style="color: #ffa500; text-decoration: none;">Techajay</a></p>
                 <div class="bottom-footer__social">
                     <a href="https://www.facebook.com/profile.php?id=61589966625710" class="fab fa-facebook-f" aria-label="Divyam360 on Facebook"></a>
+                    
                     <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram" aria-label="Divyam360 on Instagram"></a>
-                </div>
-            </div>
-        </div>
+                </div><!-- /.bottom-footer__social -->
+            </div><!-- /.container -->
+        </div><!-- /.bottom-footer -->
 
     </div><!-- /.page-wrapper -->
 
-    <!-- Mobile Nav -->
+
     <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"></span>
             <div class="logo-box">
-                <a href="index.html"><img src="ftlogo.webp" alt="Divyam360" width="155" height="38"></a>
+                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38" /></a>
             </div>
+            <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
             <ul class="mobile-nav__contact list-unstyled">
-                <li><i class="pylon-icon-email1"></i><a href="mailto:divyam360official@gmail.com">divyam360official@gmail.com</a></li>
-                <li><i class="pylon-icon-telephone"></i><a href="tel:+919665565559">+91 9665565559</a></li>
-            </ul>
+                <li>
+                    <i class="pylon-icon-email1"></i>
+                    <a href="mailto:divyam360official@gmail.com">divyam360official@gmail.com</a>
+                </li>
+                <li>
+                    <i class="pylon-icon-telephone"></i>
+                    <a href="tel:+919665565559">+919665565559</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
                 <div class="mobile-nav__social">
+                    <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" aria-label="pinterest"><i class="fab fa-pinterest-p"></i></a>
                     <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
         </div>
+        <!-- /.mobile-nav__content -->
     </div>
+    <!-- /.mobile-nav__wrapper -->
 
-    <!-- Search Popup -->
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
         <div class="search-popup__content">
             <form action="#">
-                <label for="search" class="sr-only">search here</label>
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
                 <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn"><i class="fa fa-search"></i></button>
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="fa fa-search"></i>
+                </button>
             </form>
         </div>
+        <!-- /.search-popup__content -->
     </div>
+    <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
@@ -384,6 +437,8 @@
     <script src="assets/js/wow.js" defer></script>
     <script src="assets/js/odometer.min.js" defer></script>
     <script src="assets/js/jquery.appear.min.js" defer></script>
+    <script src="assets/js/wNumb.min.js" defer></script>
+    <script src="assets/js/nouislider.min.js" defer></script>
     <script src="assets/js/theme.js" defer></script>
 
     <!-- EmailJS -->
@@ -395,46 +450,52 @@
     (function () {
         'use strict';
 
-        /* ---- Robust CSV parser: handles quoted fields with commas inside ---- */
         function parseCSV(text) {
-            var lines = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
-            if (!lines.length) return [];
-
-            function splitLine(line) {
-                var result = [];
-                var field = '';
-                var inQuote = false;
-                for (var i = 0; i < line.length; i++) {
-                    var ch = line[i];
-                    if (ch === '"') {
-                        if (inQuote && line[i + 1] === '"') {
-                            field += '"'; i++; // escaped quote
-                        } else {
-                            inQuote = !inQuote;
-                        }
-                    } else if (ch === ',' && !inQuote) {
-                        result.push(field.trim()); field = '';
-                    } else {
-                        field += ch;
-                    }
-                }
-                result.push(field.trim());
-                return result;
-            }
-
-            var headers = splitLine(lines[0]);
             var rows = [];
-            for (var r = 1; r < lines.length; r++) {
-                var line = lines[r];
-                if (!line.trim()) continue;
-                var cols = splitLine(line);
+            var row = [];
+            var field = '';
+            var inQuote = false;
+            
+            for (var i = 0; i < text.length; i++) {
+                var ch = text[i];
+                var nextCh = text[i+1];
+                
+                if (ch === '"') {
+                    if (inQuote && nextCh === '"') {
+                        field += '"'; i++;
+                    } else {
+                        inQuote = !inQuote;
+                    }
+                } else if (ch === ',' && !inQuote) {
+                    row.push(field.trim());
+                    field = '';
+                } else if ((ch === '\n' || (ch === '\r' && nextCh === '\n')) && !inQuote) {
+                    if (ch === '\r') i++; 
+                    row.push(field.trim());
+                    if (row.join('').trim() !== '') rows.push(row);
+                    row = []; field = '';
+                } else {
+                    if (ch !== '\r' || inQuote) field += ch;
+                }
+            }
+            
+            if (field !== '' || row.length > 0) {
+                row.push(field.trim());
+                if (row.join('').trim() !== '') rows.push(row);
+            }
+            
+            if (rows.length < 2) return [];
+            var headers = rows[0];
+            var data = [];
+            for (var r = 1; r < rows.length; r++) {
+                var cols = rows[r];
                 var obj = {};
                 for (var c = 0; c < headers.length; c++) {
-                    obj[headers[c].trim()] = (cols[c] || '').trim();
+                    obj[headers[c]] = cols[c] || '';
                 }
-                rows.push(obj);
+                data.push(obj);
             }
-            return rows;
+            return data;
         }
 
         /* ---- Category icon mapping ---- */
@@ -460,7 +521,10 @@
             var category = item['Category'] || 'General';
             var summary  = item['Description / Summary'] || '';
             var imgSrc   = item['Image URL'] || 'assets/images/blog/blog-1-1.png';
-            var link     = item['Article Link'] || '#';
+            
+            // Create dynamic link to blog-details page
+            var link = 'blog-details.html?title=' + encodeURIComponent(title);
+            
             var icon     = categoryIcon(category);
 
             return [
@@ -603,5 +667,77 @@
         });
     </script>
 
+    <!-- Quote Modal Script -->
+    <script>
+        // Get modal elements
+        const quoteModal = document.getElementById('quoteModal');
+        const openBtn = document.getElementById('openQuoteModal');
+        const closeBtn = document.getElementById('closeModal');
+        const quoteForm = document.getElementById('quoteForm');
+        
+        // Check if user is visiting for the first time
+        window.addEventListener('load', function() {
+            const hasVisited = localStorage.getItem('hasVisitedBefore');
+            if (!hasVisited) {
+                // Show modal after 2 seconds for first-time visitors
+                setTimeout(function() {
+                    quoteModal.classList.add('active');
+                }, 2000);
+                // Mark as visited
+                localStorage.setItem('hasVisitedBefore', 'true');
+            }
+        });
+        
+        // Open modal
+        if(openBtn) {
+            openBtn.addEventListener('click', function() {
+                quoteModal.classList.add('active');
+            });
+        }
+        
+        // Close modal
+        if(closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                quoteModal.classList.remove('active');
+            });
+        }
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target === quoteModal) {
+                quoteModal.classList.remove('active');
+            }
+        });
+        
+        // Handle form submission
+        if(quoteForm) {
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name  = document.getElementById('userName').value;
+                const email = document.getElementById('userEmail').value;
+                const phone = document.getElementById('userPhone').value;
+                const submitBtn = quoteForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                if(typeof emailjs !== 'undefined') {
+                    emailjs.send('service_f1vq7cc', 'template_k33aogb', {
+                        from_name: name, from_email: email, phone: phone, form_source: 'Get a Quote Modal'
+                    }).then(function() {
+                        const wa = `Hello, I would like to get a quote.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Contact:* ${phone}`;
+                        window.open(`https://wa.me/919665565559?text=${wa}`, '_blank');
+                        quoteModal.classList.remove('active'); quoteForm.reset();
+                        submitBtn.textContent = originalText; submitBtn.disabled = false;
+                    }, function() {
+                        const wa = `Hello, I would like to get a quote.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Contact:* ${phone}`;
+                        window.open(`https://wa.me/919665565559?text=${wa}`, '_blank');
+                        quoteModal.classList.remove('active'); quoteForm.reset();
+                        submitBtn.textContent = originalText; submitBtn.disabled = false;
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 </html>
