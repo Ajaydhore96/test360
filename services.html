@@ -49,10 +49,7 @@
       .preloader__image{width:120px;height:auto}
       .preloader__text{margin-top:12px;font-size:14px;color:#004aa1;font-weight:500}
       .page-wrapper{position:relative;margin:0 auto;overflow:hidden}
-      .main-header{position:relative;z-index:91}
-      .topbar{min-height:40px}
-      .marquee-banner{overflow:hidden;min-height:34px}
-      .main-menu{min-height:70px}
+      .main-header{position:relative;z-index:91}      .marquee-banner{overflow:hidden}
       .page-header{background-color:#0c2139;position:relative}
       .page-header__bg{position:absolute;top:0;left:0;right:0;bottom:0;background-repeat:no-repeat;background-size:cover;background-position:center}
       .page-header .container{position:relative;z-index:10;padding-top:90px;padding-bottom:95px}
@@ -177,7 +174,6 @@
                         <li class="dropdown">
                             <a href="about.html">About Us</a>
                             <ul>
-                               <li><a href="team-details.html">Team Details</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="services.html">Services</a>
@@ -336,22 +332,29 @@
                         <a href="service-details.html" class="thm-btn">View Tax Service Details</a>
                     </div>
                     <div class="col-lg-5">
-                        <img src="assets/images/services/service-d-1-1.jpg" class="img-fluid" width="770" height="460" alt="Tax planning and compliance support" loading="lazy">
+                        <img src="assets/images/services/services-1-1.webp" class="img-fluid" width="770" height="460" alt="Tax planning and compliance support" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="call-to-action" data-bg="assets/images/backgrounds/call-to-action-bg-1-1.jpg">
-            <div class="container">
-                <h2>Need Help Choosing the Right Service?</h2>
-                <p>Speak with our advisors to get the most suitable insurance, investment or tax solution for your needs.</p>
-                <a href="https://wa.me/919665565559?text=Hello%2C%20I%20need%20help%20with%20your%20services" target="_blank" class="thm-btn">
-                    <i class="fab fa-whatsapp" style="margin-right:8px;"></i>Chat on WhatsApp
-                </a>
-                <a href="contact.html" class="thm-btn" style="margin-left:15px; background:#fff; color:#008fd5;">Contact Us</a>
-            </div><!-- /.container -->
-        </section><!-- /.call-to-action -->
+        <section class="cta-banner"
+            style="background-color: rgb(19,147,211); background-image: linear-gradient(rgba(19,147,211,0.92), rgba(19,147,211,0.92)), url('assets/images/backgrounds/call-to-action-bg-1-1.jpg'); background-size: cover; background-position: center center; padding: 45px 0; position: relative; z-index: 5;">
+            <div class="container" style="position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+                <div class="left-content">
+                    <p style="font-size:13px; color:rgba(255,255,255,0.9); margin-bottom:8px; display:flex; align-items:center; flex-wrap:wrap; gap:0;">
+                        <span>Simple</span><span style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Transparent</span><span style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Secure</span>
+                    </p>
+                    <h3 style="font-size:28px; font-weight:700; color:#fff; margin:0; line-height:1.25;">Need Help Choosing the Right Service?</h3>
+                </div>
+                <div class="right-content" style="display:flex; align-items:center; flex-wrap:wrap; gap:12px;">
+                    <a href="https://wa.me/919665565559?text=Hello%2C%20I%20need%20help%20with%20your%20services" target="_blank" class="thm-btn thm-btn--cta">
+                        <i class="fab fa-whatsapp" style="margin-right:8px;"></i>Chat on WhatsApp
+                    </a>
+                    <a href="contact.html" class="thm-btn thm-btn--cta-outline">Contact Us</a>
+                </div>
+            </div>
+        </section><!-- /.cta-banner -->
 
 
         <footer class="site-footer" role="contentinfo" aria-label="Site footer">

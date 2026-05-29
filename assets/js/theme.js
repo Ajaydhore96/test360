@@ -1,6 +1,18 @@
 (function ($) {
     "use strict";
 
+    // Apply data-bg as CSS background-image (with blue overlay for CTA sections)
+    $("[data-bg]").each(function () {
+        var bg = $(this).data("bg");
+        if (bg) {
+            if ($(this).hasClass("call-to-action--compact")) {
+                $(this).css("background-image", "linear-gradient(rgba(13,71,161,0.85), rgba(13,71,161,0.85)), url(" + bg + ")");
+            } else {
+                $(this).css("background-image", "url(" + bg + ")");
+            }
+        }
+    });
+
     if ($(".testimonials-two__carousel__slider").length && $(".testimonials-two__carousel__thumbs").length) {
         // Initialize the main slider (swiper)
         var slider = new Swiper(".testimonials-two__carousel__slider", {

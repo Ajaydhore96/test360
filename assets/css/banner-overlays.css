@@ -1158,3 +1158,125 @@
         mask-image: none;
     }
 }
+
+
+/* =====================================================
+   Clean Blue Stats Bar (funfact-clean)
+   Matches the solid blue design with dividers
+   ===================================================== */
+.funfact-clean {
+    background-color: rgb(20, 152, 217);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.funfact-clean::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgb(15, 125, 185) 0%, rgb(20, 152, 217) 100%);
+    z-index: 0;
+}
+
+.funfact-clean .container {
+    position: relative;
+    z-index: 1;
+}
+
+.funfact-clean__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.funfact-clean__item {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.funfact-clean__item h3 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    line-height: 1;
+    font-family: var(--heading-font, 'Rajdhani', sans-serif);
+}
+
+.funfact-clean__item h3 .odometer {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.funfact-clean__item p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.funfact-clean__divider {
+    width: 1px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .funfact-clean__inner {
+        flex-wrap: wrap;
+        padding: 30px 0;
+        gap: 0;
+    }
+    .funfact-clean__item {
+        flex: 0 0 50%;
+        padding: 20px 15px;
+    }
+    .funfact-clean__item h3,
+    .funfact-clean__item h3 .odometer {
+        font-size: 38px;
+    }
+    .funfact-clean__divider {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .funfact-clean__item {
+        flex: 0 0 100%;
+    }
+}
+
+
+/* =====================================================
+   Call-to-Action button override — white button, blue text
+   ===================================================== */
+.call-to-action .thm-btn {
+    background-color: #ffffff;
+    color: rgb(20, 152, 217);
+    border: 2px solid #ffffff;
+    font-weight: 600;
+}
+
+.call-to-action .thm-btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.call-to-action .left-content p span {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.call-to-action .left-content h3 {
+    color: #ffffff;
+}

@@ -4803,13 +4803,11 @@ h6 {
 # Call To Action
 --------------------------------------------------------------*/
 .call-to-action {
-  background-color: var(--thm-primary);
+  background-color: rgb(20, 152, 217);
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   position: relative;
-  padding: 90px 0;
-  background-blend-mode: hard-light;
+  padding: 70px 0;
 }
 
 .call-to-action::before {
@@ -4819,8 +4817,8 @@ h6 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--thm-primary);
-  opacity: 0.9;
+  background-color: rgb(10, 80, 140);
+  opacity: 0.72;
 }
 
 .call-to-action .container {
@@ -4903,6 +4901,198 @@ h6 {
 @media (max-width: 991px) {
   .call-to-action .right-content {
     margin-top: 30px;
+  }
+}
+
+/* Call-to-action button — white with blue text */
+.call-to-action .thm-btn {
+  background-color: #ffffff;
+  color: rgb(20, 152, 217);
+  border: 2px solid #ffffff;
+  font-weight: 600;
+}
+
+.call-to-action .thm-btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.call-to-action .left-content p span {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.call-to-action .left-content h3 {
+  color: #ffffff;
+}
+
+/* ── Compact CTA banner (screenshot style) ── */
+.call-to-action--compact {
+  padding: 45px 0;
+  background-color: rgb(19, 147, 211);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Fully override the base ::before for compact — use rgba so image shows through with blue tint */
+.call-to-action.call-to-action--compact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(19, 147, 211, 0.92);
+  opacity: 1;
+  z-index: 0;
+}
+
+.call-to-action--compact .container {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.call-to-action--compact .left-content p {
+  font-size: 13px;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.call-to-action--compact .left-content p span {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+.call-to-action--compact .left-content h3 {
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 1199px) {
+  .call-to-action--compact .left-content h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  .call-to-action--compact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .call-to-action--compact .left-content p {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .call-to-action--compact .right-content {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .call-to-action--compact .left-content h3 {
+    font-size: 20px;
+  }
+}
+
+/* Teal/cyan CTA button */
+.thm-btn--cta {
+  background-color: #ffffff !important;
+  color: #004aa1 !important;
+  border: 2px solid #ffffff !important;
+  font-weight: 600;
+  padding: 14px 32px;
+  white-space: nowrap;
+}
+
+.thm-btn--cta:hover {
+  background-color: #004aa1 !important;
+  color: #ffffff !important;
+  border-color: #004aa1 !important;
+}
+
+/* Outline variant (white border, white text) */
+.thm-btn--cta-outline {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid rgba(255, 255, 255, 0.7) !important;
+  font-weight: 600;
+  padding: 14px 32px;
+  white-space: nowrap;
+}
+
+.thm-btn--cta-outline:hover {
+  background-color: #ffffff !important;
+  color: #0a4fa0 !important;
+  border-color: #ffffff !important;
+}
+
+/*--------------------------------------------------------------
+# CTA Banner (index page standalone)
+--------------------------------------------------------------*/
+.cta-banner .left-content p span:not(:first-of-type)::before {
+  content: "/";
+  margin-left: 8px;
+  margin-right: 8px;
+  color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 991px) {
+  .cta-banner .container {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  .cta-banner .left-content p {
+    justify-content: center;
+  }
+  .cta-banner .right-content {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-banner h3 {
+    font-size: 20px !important;
   }
 }
 

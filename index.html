@@ -55,10 +55,7 @@
       .preloader__image{width:120px;height:auto}
       .preloader__text{margin-top:12px;font-size:14px;color:#004aa1;font-weight:500}
       .page-wrapper{position:relative;margin:0 auto;overflow:hidden}
-      .main-header{position:relative;z-index:91}
-      .topbar{min-height:40px}
-      .marquee-banner{overflow:hidden;min-height:34px}
-      .main-menu{min-height:70px}
+      .main-header{position:relative;z-index:91}      .marquee-banner{overflow:hidden}
       .main-slider{position:relative;background:#0c2139;min-height:100vh;overflow:hidden}
       .main-slider .swiper-slide{position:relative;background:#0c2139;min-height:100vh;overflow:hidden}
       .main-slider .swiper-wrapper{min-height:100vh}
@@ -72,7 +69,11 @@
       [class*="pylon-icon-"],[class*="flaticon-"],[class*="fa-"]{display:inline-block}
       .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:1200px}
       .floating-contact-buttons{position:fixed;bottom:20px;right:20px;z-index:9998;display:flex;flex-direction:column;gap:10px}
-    </style>
+      /* CTA section critical CSS — prevents hero bleed-through */
+      .call-to-action{position:relative;background-size:cover;background-position:center center}
+      .call-to-action--compact{padding:45px 0 !important;background-color:rgb(19,147,211) !important;background-size:cover !important;background-position:center center !important;position:relative !important;z-index:5 !important}
+      .call-to-action--compact::before{display:none !important}
+      .call-to-action--compact .container{position:relative !important;z-index:1 !important}    </style>
 
     <!-- ALL CSS deferred — loads after paint -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
@@ -194,8 +195,6 @@
                         <li class="dropdown">
                             <a href="about.html">About Us</a>
                             <ul>
-                                
-                                <li><a href="team-details.html">Team Details</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="services.html">Services</a>
@@ -1057,37 +1056,30 @@
             </div><!-- /.container -->
         </section><!-- /.why-choose -->
 
-        <section class="funfact-one">
-            <div class="funfact-one__bg" style="background-image: url(assets/images/backgrounds/funfact-bg-1-1.webp);">
-            </div><!-- /.funfact-one__bg -->
+        <section class="funfact-one funfact-clean">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="funfact-one__box">
-                            <h3><span class="odometer" data-count="98">00</span>%</h3>
-                            <p>Client Satisfaction Rate</p>
-                        </div><!-- /.funfact-one__box -->
-                    </div><!-- /.col-md-6 col-lg-3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="funfact-one__box">
-                            <h3><span class="odometer" data-count="5000">00</span>+</h3>
-                            <p>Tax Returns Filed</p>
-                        </div><!-- /.funfact-one__box -->
-                    </div><!-- /.col-md-6 col-lg-3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="funfact-one__box">
-                            <h3><span class="odometer" data-count="3500">00</span>+</h3>
-                            <p>Insurance Policies Issued</p>
-                        </div><!-- /.funfact-one__box -->
-                    </div><!-- /.col-md-6 col-lg-3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="funfact-one__box">
-                            <h3><span class="odometer" data-count="15">00</span>+</h3>
-                            <p>Years of Experience</p>
-                        </div><!-- /.funfact-one__box -->
-                    </div><!-- /.col-md-6 col-lg-3 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
+                <div class="funfact-clean__inner">
+                    <div class="funfact-clean__item">
+                        <h3><span class="odometer" data-count="98">00</span>%</h3>
+                        <p>Client Satisfaction Rate</p>
+                    </div>
+                    <div class="funfact-clean__divider"></div>
+                    <div class="funfact-clean__item">
+                        <h3><span class="odometer" data-count="5000">00</span>+</h3>
+                        <p>Tax Returns Filed</p>
+                    </div>
+                    <div class="funfact-clean__divider"></div>
+                    <div class="funfact-clean__item">
+                        <h3><span class="odometer" data-count="3500">00</span>+</h3>
+                        <p>Insurance Policies Issued</p>
+                    </div>
+                    <div class="funfact-clean__divider"></div>
+                    <div class="funfact-clean__item">
+                        <h3><span class="odometer" data-count="15">00</span>+</h3>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
         </section><!-- /.funfact-one -->
 
         <section class="blog-home">
@@ -1251,18 +1243,19 @@
 
         </div><!-- /.client-carousel -->
 
-        <section class="call-to-action"
-            data-bg="assets/images/backgrounds/call-to-action-bg-1-1.png">
-            <div class="container">
+        <section class="cta-banner"
+            style="background-color: rgb(19,147,211); background-image: linear-gradient(rgba(19,147,211,0.92), rgba(19,147,211,0.92)), url('assets/images/backgrounds/call-to-action-bg-1-1.png'); background-size: cover; background-position: center center; padding: 45px 0; position: relative; z-index: 5;">
+            <div class="container" style="position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
                 <div class="left-content">
-                    <p><span>Simple</span><span>Transparent</span><span>Secure</span></p>
-                    <h3>Get expert tax, insurance and investment guidance quickly</h3>
-                </div><!-- /.left-content -->
+                    <p style="font-size:13px; color:rgba(255,255,255,0.9); margin-bottom:8px; display:flex; align-items:center; flex-wrap:wrap; gap:0;">
+                        <span>Simple</span><span style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Transparent</span><span style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Secure</span>
+                    </p>
+                    <h3 style="font-size:28px; font-weight:700; color:#fff; margin:0; line-height:1.25;">Get expert tax, insurance and investment guidance quickly</h3>
+                </div>
                 <div class="right-content">
-                    <a href="apply-now.html" class="thm-btn">Book a Consultation</a><!-- /.thm-btn -->
-                </div><!-- /.right-content -->
-            </div><!-- /.container -->
-        </section><!-- /.call-to-action -->
+                    <a href="apply-now.html" class="thm-btn thm-btn--cta">Book a Consultation</a>
+                </div>            </div>
+        </section><!-- /.cta-banner -->
 
 
         <footer class="site-footer" role="contentinfo" aria-label="Site footer">
