@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -238,6 +238,7 @@
                                 <li><a href="services.html">All Services</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="blog.html">Insights / Blog</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </li>
@@ -1088,79 +1089,13 @@
                     <p>Latest Updates</p>
                     <h2 class="blog-title__h2">Tax & Insurance Insights</h2>
                 </div><!-- /.block-title -->
-                <div class="row">
-                    <div class="col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="blog-card">
-                            <div class="blog-card__image">
-                                <span>20 Sep, 2023</span>
-                                <img src="assets/images/blog/blog-1-1.png" alt="Top 10 Tax Saving Tips for FY 2025-26 - Divyam360" width="370" height="247" loading="lazy">
-                            </div><!-- /.blog-card__image -->
-                            <div class="blog-card__content">
-                                <div class="blog-card__meta">
-                                    <a href="#"><i class="far fa-user"></i>Admin</a>
-                                    <a href="faq.html"><i class="fas fa-file-invoice-dollar"></i>Income Tax</a>
-                                </div><!-- /.blog-card__meta -->
-                                <h3><a href="faq.html">Top 10 Tax Saving Tips for FY 2025-26</a></h3>
-                                <div class="blog-card__bottom">
-                                    <div class="blog-card-bottom-readmore">
-                                        <a href="faq.html" class="readmore-card-link"><i
-                                                class="pylon-icon-right-arrow"></i>Read More</a>
-                                    </div><!-- /.blog-card-bottom-readmore-->
-                                    <span class="blog_comment">
-                                        <a href="#"><i class="far fa-comments"></i>0 Comments</a>
-                                    </span>
-                                </div><!-- /.blog-card__bottom -->
-                            </div><!-- /.blog-card__content -->
-                        </div><!-- /.blog-card -->
-                    </div><!-- /.col-lg-3 -->
-                    <div class="col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="blog-card">
-                            <div class="blog-card__image">
-                                <span>20 Sep, 2023</span>
-                                <img src="assets/images/blog/blog-1-2.png" alt="GST Filing Deadlines and Compliance Guide 2025 - Divyam360" width="370" height="247" loading="lazy">
-                            </div><!-- /.blog-card__image -->
-                            <div class="blog-card__content">
-                                <div class="blog-card__meta">
-                                    <a href="#"><i class="far fa-user"></i>Admin</a>
-                                    <a href="service-details.html"><i class="fas fa-receipt"></i>GST</a>
-                                </div><!-- /.blog-card__meta -->
-                                <h3><a href="service-details.html">GST Filing Deadlines and Compliance Guide 2025</a></h3>
-                                <div class="blog-card__bottom">
-                                    <div class="blog-card-bottom-readmore">
-                                        <a href="service-details.html" class="readmore-card-link"><i
-                                                class="pylon-icon-right-arrow"></i>Read More</a>
-                                    </div><!-- /.blog-card-bottom-readmore-->
-                                    <span class="blog_comment">
-                                        <a href="#"><i class="far fa-comments"></i>0 Comments</a>
-                                    </span>
-                                </div><!-- /.blog-card__bottom -->
-                            </div><!-- /.blog-card__content -->
-                        </div><!-- /.blog-card -->
-                    </div><!-- /.col-lg-3 -->
-                    <div class="col-lg-4 wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="blog-card">
-                            <div class="blog-card__image">
-                                <span>20 Sep, 2023</span>
-                                <img src="assets/images/blog/blog-1-3.png" alt="Choosing the Right Health Insurance Plan in Pune - Divyam360" width="370" height="247" loading="lazy">
-                            </div><!-- /.blog-card__image -->
-                            <div class="blog-card__content">
-                                <div class="blog-card__meta">
-                                    <a href="#"><i class="far fa-user"></i>Admin</a>
-                                    <a href="general-insurance.html"><i class="fas fa-shield-alt"></i>Insurance</a>
-                                </div><!-- /.blog-card__meta -->
-                                <h3><a href="general-insurance.html">Choosing the Right Health Insurance Plan in Pune</a></h3>
-                                <div class="blog-card__bottom">
-                                    <div class="blog-card-bottom-readmore">
-                                        <a href="general-insurance.html" class="readmore-card-link"><i
-                                                class="pylon-icon-right-arrow"></i>Read More</a>
-                                    </div><!-- /.blog-card-bottom-readmore-->
-                                    <span class="blog_comment">
-                                        <a href="#"><i class="far fa-comments"></i>0 Comments</a>
-                                    </span>
-                                </div><!-- /.blog-card__bottom -->
-                            </div><!-- /.blog-card__content -->
-                        </div><!-- /.blog-card -->
-                    </div><!-- /.col-lg-3 -->
+                <!-- Dynamic blog cards loaded from CSV -->
+                <div class="row" id="blogContainer">
+                    <!-- Blog cards will be injected here by JavaScript -->
+                    <div class="col-12 text-center py-5" id="blogLoading">
+                        <div style="display:inline-block;width:40px;height:40px;border:4px solid rgba(1,95,201,0.2);border-top-color:#015fc9;border-radius:50%;animation:blogSpin 0.8s linear infinite;"></div>
+                        <p style="margin-top:12px;color:#666;font-size:15px;">Loading insights…</p>
+                    </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.blog-home -->

@@ -1,0 +1,545 @@
+/* Interactive & Premium Testimonials Styling */
+
+/* Category color custom properties */
+:root {
+  --color-tax: #004aa1;         /* Deep Blue --thm-primary */
+  --color-insurance: #008fd5;   /* Sky Blue --thm-base */
+  --color-investments: #ed4b4b; /* Crimson Red --thm-secondary */
+  --color-default: #5366c2;     /* Purple --thm-special */
+  --gold-star: #ffb400;
+}
+
+/* Page adjustments */
+.testimonials-page {
+  background-color: #f6f9fc !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background map decorative shape styling adjustment */
+.testimonials-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: url(../images/shapes/testimonials-map-1-1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* 1. Filtering Buttons Section */
+.testimonials-filter-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(12, 33, 57, 0.05);
+  border: 1px solid rgba(12, 33, 57, 0.06);
+}
+
+.filter-btn {
+  font-family: var(--thm-font), sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--thm-color);
+  background: transparent;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.filter-btn:hover {
+  color: var(--thm-primary);
+  background-color: rgba(0, 74, 161, 0.05);
+}
+
+.filter-btn.active {
+  color: #ffffff;
+  background-color: var(--thm-primary);
+  box-shadow: 0 4px 15px rgba(0, 74, 161, 0.3);
+}
+
+/* 2. Premium Testimonial Card Styling */
+.testimonials-one__box-main {
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.testimonials-one__box {
+  background-color: #ffffff !important;
+  border-radius: 18px !important;
+  border: 1px solid rgba(12, 33, 57, 0.06) !important;
+  box-shadow: 0 10px 30px rgba(12, 33, 57, 0.03) !important;
+  padding: 35px 35px 30px 35px !important;
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Colored accent borders based on category */
+.testimonials-one__box.accent-tax {
+  border-top: 5px solid var(--color-tax) !important;
+}
+.testimonials-one__box.accent-insurance {
+  border-top: 5px solid var(--color-insurance) !important;
+}
+.testimonials-one__box.accent-investments {
+  border-top: 5px solid var(--color-investments) !important;
+}
+
+/* Card hover animation */
+.testimonials-one__box-main:hover {
+  transform: translateY(-8px);
+}
+
+.testimonials-one__box-main:hover .testimonials-one__box {
+  box-shadow: 0 15px 40px rgba(12, 33, 57, 0.1) !important;
+  border-color: rgba(0, 74, 161, 0.15) !important;
+}
+
+/* Category Pill Badges */
+.card-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  align-self: flex-start;
+}
+
+.badge-tax {
+  background-color: rgba(0, 74, 161, 0.08);
+  color: var(--color-tax);
+}
+.badge-insurance {
+  background-color: rgba(0, 143, 213, 0.08);
+  color: var(--color-insurance);
+}
+.badge-investments {
+  background-color: rgba(237, 75, 75, 0.08);
+  color: var(--color-investments);
+}
+
+/* Rating Stars display */
+.card-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 15px;
+  color: var(--gold-star);
+  font-size: 14px;
+}
+
+/* Testimonial Text styling */
+.testimonials-one__box p {
+  font-size: 15px;
+  line-height: 26px;
+  color: var(--thm-color);
+  font-style: italic;
+  margin-bottom: 25px !important;
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+}
+
+/* Sleek custom background Quote symbol */
+.testimonials-one__box::after {
+  position: absolute !important;
+  content: '“' !important;
+  font-family: Georgia, serif !important;
+  font-size: 120px !important;
+  line-height: 1 !important;
+  top: -15px !important;
+  right: 25px !important;
+  color: var(--thm-black) !important;
+  opacity: 0.04 !important;
+  font-weight: 900 !important;
+  z-index: 1 !important;
+  bottom: auto !important;
+  font-style: normal !important;
+}
+
+/* Avatar and Client Details Flexbox alignment */
+.testimonials-one__box-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid rgba(12, 33, 57, 0.06);
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.testimonials-one__box-info {
+  position: static !important; /* Remove legacy absolute positioning */
+  padding: 0 !important;
+}
+
+.testimonials-one__box-info img {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 2px solid #ffffff;
+}
+
+.client-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-one__box h3 {
+  margin: 0 !important;
+  font-size: 16px !important;
+  color: var(--thm-black) !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+.client-meta span {
+  font-size: 13px;
+  color: #798490;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* 3. "+ Share Your Experience" Card */
+.testimonials-one__add-card {
+  border: 2px dashed rgba(0, 143, 213, 0.4) !important;
+  background: linear-gradient(145deg, #ffffff, #f7fafd) !important;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 30px !important;
+  box-shadow: none !important;
+}
+
+.testimonials-one__add-card:hover {
+  border-color: var(--thm-primary) !important;
+  border-style: solid !important;
+  background: #ffffff !important;
+}
+
+.add-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.add-card-content .plus-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 143, 213, 0.08);
+  color: var(--thm-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.testimonials-one__add-card:hover .plus-icon {
+  background-color: var(--thm-primary);
+  color: #ffffff;
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 5px 15px rgba(0, 74, 161, 0.2);
+}
+
+.add-card-content h3 {
+  font-size: 18px !important;
+  color: var(--thm-black) !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
+
+.add-card-content p {
+  font-size: 13px !important;
+  line-height: 20px !important;
+  color: #697382 !important;
+  margin-bottom: 0 !important;
+  font-style: normal !important;
+}
+
+/* 4. Filter Grid Animations */
+.filter-item {
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.filter-item.hidden {
+  transform: scale(0.85);
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* 5. Custom Modal - Write a Review */
+.custom-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.custom-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.custom-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 33, 57, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.custom-modal-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  position: relative;
+  z-index: 10002;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0.9) translateY(20px);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.custom-modal.active .custom-modal-container {
+  transform: scale(1) translateY(0);
+}
+
+.close-custom-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #798490;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #f6f9fc;
+}
+
+.close-custom-modal:hover {
+  color: var(--thm-secondary);
+  background-color: rgba(237, 75, 75, 0.05);
+}
+
+.custom-modal-container h2 {
+  font-family: var(--heading-font), sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--thm-black);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.custom-modal-container p {
+  color: #697382;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.custom-form-group {
+  margin-bottom: 20px;
+}
+
+.custom-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--thm-black);
+  margin-bottom: 8px;
+}
+
+.custom-form-group input,
+.custom-form-group select,
+.custom-form-group textarea {
+  width: 100%;
+  background-color: #f6f9fc;
+  border: 1px solid rgba(12, 33, 57, 0.08);
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-family: var(--thm-font), sans-serif;
+  font-size: 14px;
+  color: var(--thm-black);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.custom-form-group input:focus,
+.custom-form-group select:focus,
+.custom-form-group textarea:focus {
+  border-color: var(--thm-primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 74, 161, 0.1);
+}
+
+.custom-form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Star selection rating */
+.star-selector {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.star-selector input {
+  display: none;
+}
+
+.star-selector label {
+  color: #ccd5df;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  margin-bottom: 0;
+}
+
+.star-selector label:hover,
+.star-selector label:hover ~ label,
+.star-selector input:checked ~ label {
+  color: var(--gold-star);
+  transform: scale(1.15);
+}
+
+.star-selector label:active {
+  transform: scale(0.9);
+}
+
+/* Custom Submit button */
+.custom-submit-btn {
+  background-color: var(--thm-primary);
+  color: #ffffff;
+  font-family: var(--thm-font), sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 74, 161, 0.2);
+}
+
+.custom-submit-btn:hover {
+  background-color: #003c82;
+  box-shadow: 0 6px 20px rgba(0, 74, 161, 0.3);
+  transform: translateY(-1px);
+}
+
+/* 6. Success Dynamic Alert Toast */
+.custom-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(40px);
+  background-color: #0c2139;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-family: var(--thm-font), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10005;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.custom-toast.active {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.custom-toast i {
+  color: #2ecc71;
+  font-size: 18px;
+}
+
+/* Dynamic Add Card Scale-in animation */
+@keyframes scaleInCard {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.scale-in-card {
+  animation: scaleInCard 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Responsive adjustment override */
+@media (max-width: 768px) {
+  .custom-modal-container {
+    padding: 30px;
+  }
+  .filter-btn {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}

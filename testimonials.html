@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,13 +21,13 @@
     <meta name="theme-color" content="#1a3c6e" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Divyam360 Tax &amp; Insurance Services" />
-    <meta property="og:title" content="Client Testimonials | Divyam360 Tax &amp; Insurance Reviews � Pune" />
+    <meta property="og:title" content="Client Testimonials | Divyam360 Tax &amp; Insurance Reviews – Pune" />
     <meta property="og:description" content="Read what our clients say about Divyam360. Trusted reviews from individuals and business owners in Pune for income tax filing, GST, life insurance and health insurance services." />
     <meta property="og:url" content="https://divyam360.com/testimonials.html" />
     <meta property="og:image" content="https://divyam360.com/newlogo.webp" />
     <meta property="og:locale" content="en_IN" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Client Testimonials | Divyam360 Tax &amp; Insurance Reviews � Pune" />
+    <meta name="twitter:title" content="Client Testimonials | Divyam360 Tax &amp; Insurance Reviews – Pune" />
     <meta name="twitter:description" content="Read what our clients say about Divyam360. Trusted reviews from individuals and business owners in Pune for income tax filing, GST, life insurance and health insurance services." />
     <meta name="twitter:image" content="https://divyam360.com/newlogo.webp" />
 
@@ -83,6 +83,7 @@
     <noscript><link rel="stylesheet" href="assets/css/nouislider.min.css"></noscript>
     <link rel="stylesheet" href="assets/css/nouislider.pips.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/nouislider.pips.css"></noscript>
+    <link rel="stylesheet" href="assets/css/testimonials-interactive.css">
 </head>
 
 <body>
@@ -217,6 +218,7 @@
                                 <li><a href="services.html">All Services</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="testimonials.html">Testimonials</a></li>
+                                <li><a href="blog.html">Insights / Blog</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </li>
@@ -257,85 +259,197 @@
                     <li><span>Testimonials</span></li>
                 </ul><!-- /.thm-breadcrumb list-unstyled -->
                 <h2>Testimonials</h2>
-                <h1 class="sr-only-seo">Client Testimonials � Divyam360 Tax &amp; Insurance Reviews Pune</h1>
+                <h1 class="sr-only-seo">Client Testimonials – Divyam360 Tax &amp; Insurance Reviews Pune</h1>
             </div><!-- /.container -->
         </section><!-- /.page-header -->
 
         <section class="testimonials-page pt-100 pb-50">
             <div class="container">
+                <!-- Interactive Filter Tabs -->
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-40">
+                    <div class="col-md-12 text-center mb-50">
+                        <div class="testimonials-filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All Reviews</button>
+                            <button class="filter-btn" data-filter="tax">Tax &amp; GST</button>
+                            <button class="filter-btn" data-filter="insurance">Insurance</button>
+                            <button class="filter-btn" data-filter="investments">Investments &amp; SIP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials Grid Row -->
+                <div class="row" id="testimonialsGrid">
+                    <!-- Card 1: Rajesh Kumar (Tax) -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all tax">
                         <div class="testimonials-one__box-main">
-                            <div class="testimonials-one__box">
+                            <div class="testimonials-one__box accent-tax">
+                                <div class="card-badge badge-tax">Tax &amp; GST</div>
+                                <div class="card-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p><span>Divyam360 made my income tax filing so easy! Their team is professional, responsive, and helped me maximize my deductions. Highly recommend their services!</span></p>
-                                <h3>Rajesh Kumar</h3>
-                                <span>Salaried Professional, Pune</span>
-                            </div><!-- /.testimonials-one__box-info -->
-                            <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-1.svg" alt="Rajesh Kumar - Divyam360 Client Review" loading="lazy">
-                            </div><!-- /.testimonials-one__box -->
+                                <div class="testimonials-one__box-footer">
+                                    <div class="testimonials-one__box-info" style="width: 50px; height: 50px;">
+                                        <img src="assets/images/resources/testimonials-1-1.svg" alt="Rajesh Kumar - Divyam360 Client Review" loading="lazy">
+                                    </div>
+                                    <div class="client-meta">
+                                        <h3>Rajesh Kumar</h3>
+                                        <span>Salaried Professional, Pune</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- /.col-lg-4 col-md-6  -->
-                    <div class="col-lg-4 col-md-6 mb-40">
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                    <!-- Card 2: Priya Sharma (Tax) -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all tax">
                         <div class="testimonials-one__box-main">
-                            <div class="testimonials-one__box">
+                            <div class="testimonials-one__box accent-tax">
+                                <div class="card-badge badge-tax">Tax &amp; GST</div>
+                                <div class="card-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p><span>Excellent GST registration and filing service! They handled everything smoothly and kept me informed throughout. Very satisfied with their expertise and support.</span></p>
-                                <h3>Priya Sharma</h3>
-                                <span>Business Owner, Pune</span>
-                            </div><!-- /.testimonials-one__box-info -->
-                            <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-2.svg" alt="Priya Sharma - Divyam360 Client Review" loading="lazy">
-                            </div><!-- /.testimonials-one__box -->
+                                <div class="testimonials-one__box-footer">
+                                    <div class="testimonials-one__box-info" style="width: 50px; height: 50px;">
+                                        <img src="assets/images/resources/testimonials-1-2.svg" alt="Priya Sharma - Divyam360 Client Review" loading="lazy">
+                                    </div>
+                                    <div class="client-meta">
+                                        <h3>Priya Sharma</h3>
+                                        <span>Business Owner, Pune</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- /.col-lg-4 col-md-6  -->
-                    <div class="col-lg-4 col-md-6 mb-40">
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                    <!-- Card 3: Amit Patel (Insurance) -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all insurance">
                         <div class="testimonials-one__box-main">
-                            <div class="testimonials-one__box">
+                            <div class="testimonials-one__box accent-insurance">
+                                <div class="card-badge badge-insurance">Insurance</div>
+                                <div class="card-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage at competitive rates with hassle-free claim support. Truly reliable service!</span></p>
-                                <h3>Amit Patel</h3>
-                                <span>Self-Employed, Pune</span>
-                            </div><!-- /.testimonials-one__box-info -->
-                            <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-3.svg" alt="Amit Patel - Divyam360 Client Review" loading="lazy">
-                            </div><!-- /.testimonials-one__box -->
+                                <div class="testimonials-one__box-footer">
+                                    <div class="testimonials-one__box-info" style="width: 50px; height: 50px;">
+                                        <img src="assets/images/resources/testimonials-1-3.svg" alt="Amit Patel - Divyam360 Client Review" loading="lazy">
+                                    </div>
+                                    <div class="client-meta">
+                                        <h3>Amit Patel</h3>
+                                        <span>Self-Employed, Pune</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- /.col-lg-4 col-md-6  -->
-                    <div class="col-lg-4 col-md-6 mb-40">
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                    <!-- Card 4: Sneha Joshi (Investments) -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all investments">
                         <div class="testimonials-one__box-main">
-                            <div class="testimonials-one__box">
+                            <div class="testimonials-one__box accent-investments">
+                                <div class="card-badge badge-investments">Investments &amp; SIP</div>
+                                <div class="card-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p><span>I started my SIP investments with Divyam360's guidance. Their advisors explained everything clearly and helped me choose the right funds for my goals. Very happy with the results!</span></p>
-                                <h3>Sneha Joshi</h3>
-                                <span>IT Professional, Pune</span>
-                            </div><!-- /.testimonials-one__box-info -->
-                            <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-4.svg" alt="Sneha Joshi - Divyam360 Client Review" loading="lazy">
-                            </div><!-- /.testimonials-one__box -->
+                                <div class="testimonials-one__box-footer">
+                                    <div class="testimonials-one__box-info" style="width: 50px; height: 50px;">
+                                        <img src="assets/images/resources/testimonials-1-4.svg" alt="Sneha Joshi - Divyam360 Client Review" loading="lazy">
+                                    </div>
+                                    <div class="client-meta">
+                                        <h3>Sneha Joshi</h3>
+                                        <span>IT Professional, Pune</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- /.col-lg-4 col-md-6  -->
-                    <div class="col-lg-4 col-md-6 mb-40">
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                    <!-- Card 5: Vikram Desai (Insurance) -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all insurance">
                         <div class="testimonials-one__box-main">
-                            <div class="testimonials-one__box">
+                            <div class="testimonials-one__box accent-insurance">
+                                <div class="card-badge badge-insurance">Insurance</div>
+                                <div class="card-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p><span>Divyam360 helped me get the right term insurance plan for my family. They compared multiple options and explained the benefits clearly. Excellent advisory service!</span></p>
-                                <h3>Vikram Desai</h3>
-                                <span>Engineer, Pune</span>
-                            </div><!-- /.testimonials-one__box-info -->
-                            <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-5.svg" alt="Vikram Desai - Divyam360 Client Review" loading="lazy">
-                            </div><!-- /.testimonials-one__box -->
+                                <div class="testimonials-one__box-footer">
+                                    <div class="testimonials-one__box-info" style="width: 50px; height: 50px;">
+                                        <img src="assets/images/resources/testimonials-1-5.svg" alt="Vikram Desai - Divyam360 Client Review" loading="lazy">
+                                    </div>
+                                    <div class="client-meta">
+                                        <h3>Vikram Desai</h3>
+                                        <span>Engineer, Pune</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- /.col-lg-4 col-md-6  -->
-                    <div class="col-lg-4 col-md-6 mb-40">
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                    <!-- Card 6: Meera Kulkarni (Tax & Insurance) -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all tax insurance">
                         <div class="testimonials-one__box-main">
-                            <div class="testimonials-one__box">
+                            <div class="testimonials-one__box accent-tax">
+                                <div style="display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap;">
+                                    <div class="card-badge badge-tax" style="margin-bottom: 0;">Tax &amp; GST</div>
+                                    <div class="card-badge badge-insurance" style="margin-bottom: 0;">Insurance</div>
+                                </div>
+                                <div class="card-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                                 <p><span>Outstanding service for our company's GST compliance and employee group mediclaim. The team is knowledgeable, prompt and always available. We trust Divyam360 completely.</span></p>
-                                <h3>Meera Kulkarni</h3>
-                                <span>Company Director, Pune</span>
-                            </div><!-- /.testimonials-one__box-info -->
-                            <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-6.svg" alt="Meera Kulkarni - Divyam360 Client Review" loading="lazy">
-                            </div><!-- /.testimonials-one__box -->
+                                <div class="testimonials-one__box-footer">
+                                    <div class="testimonials-one__box-info" style="width: 50px; height: 50px;">
+                                        <img src="assets/images/resources/testimonials-1-6.svg" alt="Meera Kulkarni - Divyam360 Client Review" loading="lazy">
+                                    </div>
+                                    <div class="client-meta">
+                                        <h3>Meera Kulkarni</h3>
+                                        <span>Company Director, Pune</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- /.col-lg-4 col-md-6  -->
+                    </div><!-- /.col-lg-4 col-md-6 -->
+
+                    <!-- Card 7: Add Review Dynamic CTA Box -->
+                    <div class="col-lg-4 col-md-6 mb-40 filter-item all">
+                        <div class="testimonials-one__box-main" id="openReviewModalBtn">
+                            <div class="testimonials-one__box testimonials-one__add-card">
+                                <div class="add-card-content">
+                                    <div class="plus-icon"><i class="fas fa-plus"></i></div>
+                                    <h3>Share Your Experience!</h3>
+                                    <p>Helped by Divyam360's services? Click here to write your review and rate us.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.col-lg-4 col-md-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.testimonials-page -->
@@ -383,7 +497,7 @@
                                     <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a>
                                 </li>
                                 <li>
-                                                                       <a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune � 411030, Maharashtra, India</a>
+                                                                       <a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune – 411030, Maharashtra, India</a>
 
                                 </li>
                             </ul>
@@ -394,7 +508,7 @@
         </footer><!-- /.site-footer -->
         <div class="bottom-footer">
             <div class="container">
-               <p>� Copyright by Divyam360.com | Designed and Developed by <a href="https://ajayportfolio-nu.vercel.app/" target="_blank" style="color: #ffa500; text-decoration: none;">Techajay</a></p>
+               <p>© Copyright by Divyam360.com | Designed and Developed by <a href="https://ajayportfolio-nu.vercel.app/" target="_blank" style="color: #ffa500; text-decoration: none;">Techajay</a></p>
                 <div class="bottom-footer__social">
                     <a href="#" class="fab fa-facebook-square"></a>
                     <a href="#" class="fab fa-twitter"></a>
@@ -533,7 +647,7 @@
         });
         
         // Handle form submission
-                quoteForm.addEventListener('submit', function(e) {
+        quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
             const name  = document.getElementById('userName').value;
             const email = document.getElementById('userEmail').value;
@@ -555,6 +669,329 @@
                 quoteModal.classList.remove('active'); quoteForm.reset();
                 submitBtn.textContent = originalText; submitBtn.disabled = false;
             });
+        });
+    </script>
+
+    <!-- Write a Review Custom Modal -->
+    <div class="custom-modal" id="reviewModal">
+        <div class="custom-modal-overlay" id="reviewModalOverlay"></div>
+        <div class="custom-modal-container">
+            <span class="close-custom-modal" id="closeReviewModalBtn">&times;</span>
+            <h2>Write a Review</h2>
+            <p>Share your valuable experience with Divyam360</p>
+            <form id="reviewForm" autocomplete="off">
+                <div class="custom-form-group">
+                    <label for="reviewName">Your Name *</label>
+                    <input type="text" id="reviewName" placeholder="Enter your full name" required>
+                </div>
+                <div class="custom-form-group">
+                    <label for="reviewRole">Profession / Role *</label>
+                    <input type="text" id="reviewRole" placeholder="e.g. IT Professional, Business Owner" required>
+                </div>
+                <div class="custom-form-group">
+                    <label for="reviewCategory">Service Category *</label>
+                    <select id="reviewCategory" required>
+                        <option value="" disabled selected>Select service category</option>
+                        <option value="tax">Tax &amp; GST</option>
+                        <option value="insurance">Insurance</option>
+                        <option value="investments">Investments &amp; SIP</option>
+                    </select>
+                </div>
+                <div class="custom-form-group">
+                    <label>Your Rating *</label>
+                    <div class="star-selector">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+                <div class="custom-form-group" style="margin-bottom: 25px;">
+                    <label for="reviewText">Review Details *</label>
+                    <textarea id="reviewText" placeholder="Write your feedback here..." required></textarea>
+                </div>
+                <button type="submit" class="custom-submit-btn">Publish Review</button>
+            </form>
+        </div>
+    </div><!-- /.custom-modal -->
+
+    <!-- Custom success toast notification -->
+    <div class="custom-toast" id="customToast">
+        <i class="fas fa-check-circle"></i>
+        <span id="customToastText">Thank you! Your review has been published.</span>
+    </div>
+
+    <!-- Interactive Testimonials JavaScript Section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Local Storage Key
+            const LOCAL_STORAGE_KEY = 'divyam360_user_reviews';
+            const testimonialsGrid = document.getElementById('testimonialsGrid');
+            
+            // 1. Filtering Logic
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    const items = document.querySelectorAll('.filter-item');
+                    
+                    items.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // 2. Modal Open/Close Logic
+            const reviewModal = document.getElementById('reviewModal');
+            const openReviewBtn = document.getElementById('openReviewModalBtn');
+            const closeReviewBtn = document.getElementById('closeReviewModalBtn');
+            const reviewModalOverlay = document.getElementById('reviewModalOverlay');
+            const reviewForm = document.getElementById('reviewForm');
+            
+            function openModal() {
+                reviewModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            function closeModal() {
+                reviewModal.classList.remove('active');
+                document.body.style.overflow = '';
+                reviewForm.reset();
+            }
+            
+            openReviewBtn.addEventListener('click', openModal);
+            closeReviewBtn.addEventListener('click', closeModal);
+            reviewModalOverlay.addEventListener('click', closeModal);
+
+            // Esc key to close modal
+            window.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && reviewModal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // 3. Dynamic Letter-Avatar Generator
+            function generateInitialsAvatar(name) {
+                const initials = name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
+                const colors = ['#004aa1', '#008fd5', '#ed4b4b', '#5366c2', '#2ecc71', '#9b59b6', '#f39c12'];
+                // Choose a seed based on name to keep avatar color consistent for the same name
+                let hash = 0;
+                for (let i = 0; i < name.length; i++) {
+                    hash = name.charCodeAt(i) + ((hash << 5) - hash);
+                }
+                const randomColor = colors[Math.abs(hash) % colors.length];
+                
+                return `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 80 80" style="display:block;">
+                        <circle cx="40" cy="40" r="40" fill="${randomColor}"/>
+                        <text x="40" y="47" font-family="'Rubik', Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">${initials}</text>
+                    </svg>
+                `;
+            }
+
+            // 4. Load Saved Reviews from Local Storage
+            function loadSavedReviews() {
+                const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+                if (saved) {
+                    try {
+                        const reviews = JSON.parse(saved);
+                        reviews.forEach(review => {
+                            renderReviewCard(review, false); // load initially, no animation needed
+                        });
+                    } catch (e) {
+                        console.error('Error parsing saved reviews', e);
+                    }
+                }
+            }
+
+            // 5. Render Testimonial Card in HTML Grid
+            function renderReviewCard(review, isNewSubmit = false) {
+                const col = document.createElement('div');
+                col.className = `col-lg-4 col-md-6 mb-40 filter-item all ${review.category}`;
+                if (isNewSubmit) {
+                    col.classList.add('scale-in-card');
+                }
+                
+                // Get active category elements
+                let badgeClass = 'badge-tax';
+                let badgeText = 'Tax & GST';
+                let accentClass = 'accent-tax';
+                
+                if (review.category === 'insurance') {
+                    badgeClass = 'badge-insurance';
+                    badgeText = 'Insurance';
+                    accentClass = 'accent-insurance';
+                } else if (review.category === 'investments') {
+                    badgeClass = 'badge-investments';
+                    badgeText = 'Investments & SIP';
+                    accentClass = 'accent-investments';
+                }
+                
+                // Construct rating stars HTML
+                let starsHtml = '';
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= review.rating) {
+                        starsHtml += '<i class="fas fa-star"></i>';
+                    } else {
+                        starsHtml += '<i class="far fa-star"></i>';
+                    }
+                }
+                
+                const avatarSvg = generateInitialsAvatar(review.name);
+                
+                col.innerHTML = `
+                    <div class="testimonials-one__box-main">
+                        <div class="testimonials-one__box ${accentClass}">
+                            <div class="card-badge ${badgeClass}">${badgeText}</div>
+                            <div class="card-stars">
+                                ${starsHtml}
+                            </div>
+                            <p><span>${escapeHTML(review.text)}</span></p>
+                            <div class="testimonials-one__box-footer">
+                                <div class="testimonials-one__box-info" style="width:50px; height:50px;">
+                                    ${avatarSvg}
+                                </div>
+                                <div class="client-meta">
+                                    <h3>${escapeHTML(review.name)}</h3>
+                                    <span>${escapeHTML(review.role)}, Pune</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                // Prepend before first item in grid, keeping the grid order neat
+                testimonialsGrid.insertBefore(col, testimonialsGrid.firstChild);
+            }
+
+            // Helper to escape HTML tags to prevent XSS
+            function escapeHTML(str) {
+                return str.replace(/[&<>'"]/g, 
+                    tag => ({
+                        '&': '&amp;',
+                        '<': '&lt;',
+                        '>': '&gt;',
+                        "'": '&#39;',
+                        '"': '&quot;'
+                    }[tag] || tag)
+                );
+            }
+
+            // 6. Confetti Burst Particle Micro-interaction
+            function triggerConfettiBurst() {
+                const container = document.body;
+                const colors = ['#004aa1', '#008fd5', '#ed4b4b', '#f5a623', '#2ecc71', '#9b59b6'];
+                const particleCount = 60;
+                
+                for (let i = 0; i < particleCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.style.position = 'fixed';
+                    particle.style.width = Math.random() * 8 + 4 + 'px';
+                    particle.style.height = Math.random() * 8 + 4 + 'px';
+                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    particle.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                    particle.style.zIndex = '10006';
+                    particle.style.left = '50vw';
+                    particle.style.top = '50vh';
+                    particle.style.pointerEvents = 'none';
+                    
+                    const angle = Math.random() * Math.PI * 2;
+                    const velocity = Math.random() * 15 + 5;
+                    let xVel = Math.cos(angle) * velocity;
+                    let yVel = Math.sin(angle) * velocity - 5; // start upwards slightly
+                    let x = window.innerWidth / 2;
+                    let y = window.innerHeight / 2;
+                    let gravity = 0.5;
+                    let opacity = 1;
+                    
+                    container.appendChild(particle);
+                    
+                    const anim = setInterval(() => {
+                        x += xVel;
+                        y += yVel;
+                        yVel += gravity;
+                        opacity -= 0.02;
+                        
+                        particle.style.left = x + 'px';
+                        particle.style.top = y + 'px';
+                        particle.style.opacity = opacity;
+                        
+                        if (opacity <= 0) {
+                            clearInterval(anim);
+                            particle.remove();
+                        }
+                    }, 16);
+                }
+            }
+
+            // 7. Toast Alerts
+            function showToast(message) {
+                const toast = document.getElementById('customToast');
+                const toastText = document.getElementById('customToastText');
+                toastText.textContent = message;
+                toast.classList.add('active');
+                
+                setTimeout(() => {
+                    toast.classList.remove('active');
+                }, 4000);
+            }
+
+            // 8. Handle Form Submission
+            reviewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('reviewName').value.trim();
+                const role = document.getElementById('reviewRole').value.trim();
+                const category = document.getElementById('reviewCategory').value;
+                const rating = parseInt(reviewForm.querySelector('input[name="rating"]:checked').value);
+                const text = document.getElementById('reviewText').value.trim();
+                
+                if (!name || !role || !category || !rating || !text) {
+                    showToast('Please fill in all required fields.');
+                    return;
+                }
+                
+                const newReview = { name, role, category, rating, text, date: new Date().toISOString() };
+                
+                // Add to local storage
+                const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+                let reviews = [];
+                if (saved) {
+                    try {
+                        reviews = JSON.parse(saved);
+                    } catch(e) {}
+                }
+                reviews.push(newReview);
+                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(reviews));
+                
+                // Render card instantly
+                renderReviewCard(newReview, true);
+                
+                // Close modal
+                closeModal();
+                
+                // Success animations
+                triggerConfettiBurst();
+                setTimeout(() => {
+                    showToast('Thank you! Your review has been dynamically added to the list.');
+                }, 200);
+            });
+
+            // Load reviews on initial execution
+            loadSavedReviews();
         });
     </script>
 
@@ -623,5 +1060,3 @@
 </body>
 
 </html>
-
-
