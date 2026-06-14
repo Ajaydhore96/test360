@@ -3818,6 +3818,7 @@ h6 {
   font-size: 16px;
   line-height: 24px;
   padding-left: 25px;
+  word-break: break-word;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -3954,6 +3955,7 @@ h6 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -6641,6 +6643,23 @@ h6 {
 @media (max-width: 425px) {
   .service-details {
     padding: 60px 0 40px;
+  }
+}
+
+/* Service details responsive two-column grid */
+.service-details__grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 30px;
+  align-items: start;
+}
+
+@media (max-width: 991px) {
+  .service-details__grid {
+    grid-template-columns: 1fr;
+  }
+  .service-details__grid > .service-details__sidebar {
+    order: -1; /* sidebar goes above content on mobile */
   }
 }
 
@@ -16725,4 +16744,89 @@ Cta Two
    ============================================================ */
 html {
   overflow-x: clip;
+}
+
+/* ============================================================
+   SERVICE PAGES — MOBILE RESPONSIVE
+   ============================================================ */
+
+/* Sidebar: un-stick and reset on mobile */
+@media (max-width: 991px) {
+  .service-details__sidebar {
+    position: static !important;
+    top: auto !important;
+  }
+
+  /* Service detail headings scale down */
+  .service-details__content h3 {
+    font-size: 24px !important;
+  }
+  .service-details__content h4 {
+    font-size: 20px !important;
+  }
+
+  /* Image fills full width */
+  .service-details__image img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Page header text */
+  .page-header h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Service grid becomes single column */
+  .service-details__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Section padding */
+  .service-details {
+    padding: 40px 0 !important;
+  }
+
+  /* Callback sidebar form full width */
+  .service-details__sidebar > div {
+    padding: 18px 16px !important;
+  }
+
+  /* Page header */
+  .page-header {
+    padding: 0 !important;
+  }
+  .page-header .container {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .page-header h2 {
+    font-size: 26px !important;
+  }
+
+  /* FAQ section */
+  .faq-one .para-title {
+    font-size: 15px !important;
+    padding: 14px 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-details__content h3 {
+    font-size: 20px !important;
+  }
+  .service-details__content h4 {
+    font-size: 18px !important;
+  }
+  .page-header h2 {
+    font-size: 22px !important;
+  }
+
+  /* Sidebar form inputs */
+  .service-details__sidebar input,
+  .service-details__sidebar select,
+  .service-details__sidebar button {
+    font-size: 14px !important;
+  }
 }

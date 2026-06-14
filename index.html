@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tax Consultancy &amp; Insurance Services in Pune | Divyam360</title>
-    
+
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-    <meta name="description" content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010. Call +91 9665565559." />
+    <meta name="description"
+        content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010. Call +91 9665565559." />
     <!-- SEO Global Meta -->
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Divyam360 Tax &amp; Insurance Services" />
@@ -27,10 +28,12 @@
     <!-- Page-Specific SEO -->
     <link rel="canonical" href="https://divyam360.com/" />
     <meta property="og:title" content="Tax Consultancy &amp; Insurance Services in Pune | Divyam360" />
-    <meta property="og:description" content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010." />
+    <meta property="og:description"
+        content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010." />
     <meta property="og:url" content="https://divyam360.com/" />
     <meta name="twitter:title" content="Tax Consultancy &amp; Insurance Services in Pune | Divyam360" />
-    <meta name="twitter:description" content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010." />
+    <meta name="twitter:description"
+        content="Divyam360 offers expert income tax filing, GST registration, life insurance, health insurance and investment planning in Pune. Trusted by families and businesses since 2010." />
 
     <!-- Preload LCP image (hero slider background) -->
     <link rel="preload" as="image" href="assets/images/main-slider/main-slider-1-1.webp" fetchpriority="high">
@@ -40,79 +43,263 @@
     <!-- fonts: preconnect + async load to avoid render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap"></noscript>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@400;500;600;700&display=swap">
+    </noscript>
 
     <!-- Inline critical CSS: preloader + above-fold layout -->
     <style>
-      *,*::before,*::after{box-sizing:border-box}
-      /* Font-face with font-display:optional prevents CLS from font swapping */
-      @font-face{font-family:'Rubik';font-style:normal;font-weight:400;font-display:optional;src:local('Rubik'),local('Rubik-Regular')}
-      @font-face{font-family:'Rajdhani';font-style:normal;font-weight:400;font-display:optional;src:local('Rajdhani'),local('Rajdhani-Regular')}
-      body{margin:0;font-family:'Rubik',Arial,sans-serif;background:#fff;color:#555c63;overflow-x:hidden;max-width:100vw;}
-      img{max-width:100%}
-      .preloader{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}
-      .preloader__image{width:120px;height:auto}
-      .preloader__text{margin-top:12px;font-size:14px;color:#004aa1;font-weight:500}
-      .page-wrapper{position:relative;margin:0 auto;overflow:hidden}
-      .main-header{position:relative;z-index:91}      .marquee-banner{overflow:hidden}
-      .main-slider{position:relative;background:#0c2139;min-height:100vh;overflow:hidden}
-      .main-slider .swiper-slide{position:relative;background:#0c2139;min-height:100vh;overflow:hidden}
-      .main-slider .swiper-wrapper{min-height:100vh}
-      .image-layer{position:absolute;top:0;left:0;right:0;bottom:0;background-size:cover;background-position:center;will-change:transform}
-      .logo-box{display:flex;align-items:center;justify-content:space-between}
-      .logo-box img{display:block;width:220px;height:54px}
-      /* Shape images: positioned absolutely, prevent layout shift */
-      .feature-one__shape-1,.feature-one__shape-2,.feature-one__shape-3,
-      .why-choose__shape-1,.why-choose__shape-2{position:absolute;pointer-events:none}
-      /* Prevent font-icon CLS: reserve space before icon fonts load */
-      [class*="pylon-icon-"],[class*="flaticon-"],[class*="fa-"]{display:inline-block}
-      .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;max-width:1200px}
-      .floating-contact-buttons{position:fixed;bottom:20px;right:20px;z-index:9998;display:flex;flex-direction:column;gap:10px}
-      /* CTA section critical CSS — prevents hero bleed-through */
-      .call-to-action{position:relative;background-size:cover;background-position:center center}
-      .call-to-action--compact{padding:45px 0 !important;background-color:rgb(19,147,211) !important;background-size:cover !important;background-position:center center !important;position:relative !important;z-index:5 !important}
-      .call-to-action--compact::before{display:none !important}
-      .call-to-action--compact .container{position:relative !important;z-index:1 !important}    </style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box
+        }
+
+        /* Font-face with font-display:optional prevents CLS from font swapping */
+        @font-face {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-display: optional;
+            src: local('Rubik'), local('Rubik-Regular')
+        }
+
+        @font-face {
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 400;
+            font-display: optional;
+            src: local('Rajdhani'), local('Rajdhani-Regular')
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Rubik', Arial, sans-serif;
+            background: #fff;
+            color: #555c63;
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        .preloader__image {
+            width: 120px;
+            height: auto
+        }
+
+        .preloader__text {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #004aa1;
+            font-weight: 500
+        }
+
+        .page-wrapper {
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden
+        }
+
+        .main-header {
+            position: relative;
+            z-index: 91
+        }
+
+        .marquee-banner {
+            overflow: hidden
+        }
+
+        .main-slider {
+            position: relative;
+            background: #0c2139;
+            min-height: 100vh;
+            overflow: hidden
+        }
+
+        .main-slider .swiper-slide {
+            position: relative;
+            background: #0c2139;
+            min-height: 100vh;
+            overflow: hidden
+        }
+
+        .main-slider .swiper-wrapper {
+            min-height: 100vh
+        }
+
+        .image-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            will-change: transform
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .logo-box img {
+            display: block;
+            width: 220px;
+            height: 54px
+        }
+
+        /* Shape images: positioned absolutely, prevent layout shift */
+        .feature-one__shape-1,
+        .feature-one__shape-2,
+        .feature-one__shape-3,
+        .why-choose__shape-1,
+        .why-choose__shape-2 {
+            position: absolute;
+            pointer-events: none
+        }
+
+        /* Prevent font-icon CLS: reserve space before icon fonts load */
+        [class*="pylon-icon-"],
+        [class*="flaticon-"],
+        [class*="fa-"] {
+            display: inline-block
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1200px
+        }
+
+        .floating-contact-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9998;
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        /* CTA section critical CSS — prevents hero bleed-through */
+        .call-to-action {
+            position: relative;
+            background-size: cover;
+            background-position: center center
+        }
+
+        .call-to-action--compact {
+            padding: 45px 0 !important;
+            background-color: rgb(19, 147, 211) !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            position: relative !important;
+            z-index: 5 !important
+        }
+
+        .call-to-action--compact::before {
+            display: none !important
+        }
+
+        .call-to-action--compact .container {
+            position: relative !important;
+            z-index: 1 !important
+        }
+    </style>
 
     <!-- ALL CSS deferred — loads after paint -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/fontawesome-all.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/swiper.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/swiper.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/pylon-icons.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/pylon-icons.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/pylon-icons.css">
+    </noscript>
     <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/flaticon.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/banner-overlays.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/banner-overlays.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/banner-overlays.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/animate.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/animate.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/odometer.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/odometer.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/odometer.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/magnific-popup.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/magnific-popup.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/bootstrap-select.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/nouislider.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/nouislider.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/nouislider.min.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/nouislider.pips.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/nouislider.pips.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/nouislider.pips.css">
+    </noscript>
 </head>
 
 <body>
     <!-- Floating Contact Buttons -->
     <div class="floating-contact-buttons">
-        <a href="https://wa.me/919665565559?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20services" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
+        <a href="https://wa.me/919665565559?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20services"
+            target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp Us">
             <i class="fab fa-whatsapp"></i>
         </a>
         <a href="tel:+919665565559" class="floating-btn call-btn" title="Call Us">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" style="display:block;flex-shrink:0;">
-                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"
+                style="display:block;flex-shrink:0;">
+                <path
+                    d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" />
             </svg>
             <span class="phone-number">+91 9665565559</span>
         </a>
@@ -120,7 +307,7 @@
             <i class="fas fa-file-alt"></i>
         </button>
     </div><!-- /.floating-contact-buttons -->
-    
+
     <!-- Quote Modal -->
     <div class="quote-modal" id="quoteModal">
         <div class="quote-modal-content">
@@ -138,13 +325,14 @@
                 </div>
                 <div class="form-group">
                     <label for="userPhone">Contact Number *</label>
-                    <input type="tel" id="userPhone" name="phone" placeholder="Enter your 10-digit mobile number" required pattern="[0-9]{10}">
+                    <input type="tel" id="userPhone" name="phone" placeholder="Enter your 10-digit mobile number"
+                        required pattern="[0-9]{10}">
                 </div>
                 <button type="submit" class="submit-btn">Submit Enquiry</button>
             </form>
         </div>
     </div><!-- /.quote-modal -->
-    
+
     <div class="preloader">
         <img class="preloader__image" src="assets/images/loader.png" alt="Loading Divyam360">
         <div class="preloader__text">Divyam360 Tax And Insurance Services</div>
@@ -155,20 +343,23 @@
                 <div class="container">
                     <div class="topbar__left">
                         <div class="topbar__social">
-                           <a href="https://www.facebook.com/profile.php?id=61589966625710" class="fab fa-facebook-square" aria-label="Divyam360 on Facebook"></a>
-                           
-                            <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram" aria-label="Divyam360 on Instagram"></a>
+                            <a href="https://www.facebook.com/profile.php?id=61589966625710"
+                                class="fab fa-facebook-square" aria-label="Divyam360 on Facebook"></a>
+
+                            <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram"
+                                aria-label="Divyam360 on Instagram"></a>
                         </div><!-- /.topbar__social -->
                         <a href="#">Login</a>
                         <a href="faq.html">FAQs</a>
                     </div><!-- /.topbar__left -->
                     <div class="topbar__right">
-                        <a href="mailto:divyam360official@gmail.com"><i class="pylon-icon-email1"></i>divyam360official@gmail.com</a>
+                        <a href="mailto:divyam360official@gmail.com"><i
+                                class="pylon-icon-email1"></i>divyam360official@gmail.com</a>
                         <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a>
                     </div><!-- /.topbar__right -->
                 </div><!-- /.container -->
             </div><!-- /.topbar -->
-            
+
             <!-- Marquee Banner -->
             <div class="marquee-banner">
                 <div class="marquee-content">
@@ -180,17 +371,18 @@
                     <span><i class="fas fa-map-marker-alt"></i> Serving Pune, Maharashtra</span>
                 </div>
             </div><!-- /.marquee-banner -->
-            
+
             <nav class="main-menu" aria-label="Main navigation">
                 <div class="container">
                     <div class="logo-box">
-                        <a href="index.html" aria-label="logo image"><img src="newlogo.webp" alt="Divyam360 Tax and Insurance Services Pune" width="220" height="54"></a>
+                        <a href="index.html" aria-label="logo image"><img src="newlogo.webp"
+                                alt="Divyam360 Tax and Insurance Services Pune" width="220" height="54"></a>
                         <span class="fa fa-bars mobile-nav__toggler"></span>
                     </div><!-- /.logo-box -->
                     <ul class="main-menu__list">
                         <li class="dropdown">
                             <a href="index.html">Home</a>
-                            
+
                         </li>
                         <li class="dropdown">
                             <a href="about.html">About Us</a>
@@ -203,17 +395,18 @@
                                 <li class="dropdown"><a href="life-insurance.html">Life Insurance</a>
                                     <ul>
                                         <li><a href="life-insurance.html">Term Insurance</a></li>
-                                        <li><a href="life-insurance.html">Retirement Planning / Pension Creation</a></li>
+                                        <li><a href="life-insurance.html">Retirement Planning / Pension Creation</a>
+                                        </li>
                                         <li><a href="life-insurance.html">Child Education and Marriage</a></li>
                                         <li><a href="life-insurance.html">Critical Illness Coverage</a></li>
-                                         <li><a href="life-insurance.html">UlIP Plans </a></li>
-                                          <li><a href="life-insurance.html">Endowment Plans</a></li>
-                                           <li><a href="life-insurance.html">Whole Life Insurance</a></li>
+                                        <li><a href="life-insurance.html">UlIP Plans </a></li>
+                                        <li><a href="life-insurance.html">Endowment Plans</a></li>
+                                        <li><a href="life-insurance.html">Whole Life Insurance</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="general-insurance.html">General Insurance</a>
                                     <ul>
-                                       <li><a href="general-insurance.html">Health Insurance</a></li>
+                                        <li><a href="general-insurance.html">Health Insurance</a></li>
                                         <li><a href="general-insurance.html">Motor Insurance</a></li>
                                         <li><a href="general-insurance.html">Travel Insurance</a></li>
                                         <li><a href="general-insurance.html">HomeInsurance</a></li>
@@ -221,7 +414,8 @@
                                 </li>
                                 <li><a href="mutual-funds-sip.html">Mutual Funds &amp; SIP</a></li>
                                 <li><a href="equity-share-market.html">Equity &amp; Share Market</a></li>
-                                <li class="dropdown"><a href="speciality-business-insurance.html">Speciality &amp; Business Insurance</a>
+                                <li class="dropdown"><a href="speciality-business-insurance.html">Speciality &amp;
+                                        Business Insurance</a>
                                     <ul>
                                         <li><a href="speciality-business-insurance.html">Marine Insurance</a></li>
                                         <li><a href="speciality-business-insurance.html">Fire Insurance</a></li>
@@ -245,7 +439,8 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li class="search-btn search-toggler">
-                            <a href="#"><span class="sr-only">Search</span><i class="pylon-icon-magnifying-glass"></i></a>
+                            <a href="#"><span class="sr-only">Search</span><i
+                                    class="pylon-icon-magnifying-glass"></i></a>
                         </li>
                     </ul>
                     <!-- /.main-menu__list -->
@@ -267,7 +462,7 @@
         <div class="stricky-header stricked-menu main-menu" aria-hidden="true">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
-        
+
 
         <section class="main-slider">
             <!-- Visually hidden H1 for SEO — now visible as part of hero -->
@@ -355,7 +550,12 @@
                                 <p>About Divyam360</p>
                                 <h2>Your Trusted Partner for Tax & Insurance Solutions</h2>
                             </div><!-- /.block-title -->
-                            <p>At Divyam360, we provide comprehensive tax consultancy and insurance services tailored to meet your personal and business needs. With years of expertise in income tax filing, GST registration, company registration, and complete insurance coverage, we ensure your financial security and compliance. Our dedicated team of professionals works closely with you to maximize your returns, minimize your tax burden, and protect your assets with the right insurance policies.</p>
+                            <p>At Divyam360, we provide comprehensive tax consultancy and insurance services tailored to
+                                meet your personal and business needs. With years of expertise in income tax filing, GST
+                                registration, company registration, and complete insurance coverage, we ensure your
+                                financial security and compliance. Our dedicated team of professionals works closely
+                                with you to maximize your returns, minimize your tax burden, and protect your assets
+                                with the right insurance policies.</p>
 
                         </div><!-- /.about-one__content -->
                         <div class="row">
@@ -370,7 +570,8 @@
                                             <h3>
                                                 Expert Tax Consultants
                                             </h3>
-                                            <p>Certified professionals with extensive experience in tax planning and compliance</p>
+                                            <p>Certified professionals with extensive experience in tax planning and
+                                                compliance</p>
                                         </div>
                                     </div>
                                 </div><!-- /.feature-four__box -->
@@ -385,7 +586,8 @@
                                             <h3>
                                                 Comprehensive Insurance
                                             </h3>
-                                            <p>Complete insurance solutions for individuals, families, and businesses</p>
+                                            <p>Complete insurance solutions for individuals, families, and businesses
+                                            </p>
                                         </div>
                                     </div>
                                 </div><!-- /.feature-four__box -->
@@ -394,11 +596,11 @@
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-12 col-xl-5">
                         <div class="about-one__form-wrapper">
-                            
+
                             <!-- Services We Provide Section -->
                             <div class="about-one__form wow fadeInUp" data-wow-duration="1500ms">
                                 <h3>Our Services</h3>
-                                
+
                                 <div class="services-we-provide">
                                     <div class="services-columns">
                                         <!-- Tax Services Column -->
@@ -431,7 +633,7 @@
                                                 <span>PF / ESIC Registration</span>
                                             </div>
                                         </div>
-                                        
+
                                         <!-- Insurance Services Column -->
                                         <div class="service-column">
                                             <h5 class="service-column-title">
@@ -463,30 +665,31 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    <a href="apply-now.html" class="thm-btn" style="width: 100%; text-align: center; margin-top: 20px;">Get Started Today</a>
+
+                                    <a href="apply-now.html" class="thm-btn"
+                                        style="width: 100%; text-align: center; margin-top: 20px;">Get Started Today</a>
                                 </div>
                             </div>
-                            
+
                         </div><!-- /.about-one__form-wrapper -->
-                        
+
                         <style>
                             .about-one__form-wrapper {
                                 position: relative;
                             }
-                            
+
                             .services-we-provide {
                                 padding: 20px 35px 25px 35px;
                                 margin-top: 0;
                             }
-                            
+
                             .services-columns {
                                 display: grid;
                                 grid-template-columns: repeat(2, 1fr);
                                 gap: 18px;
                                 margin-bottom: 20px;
                             }
-                            
+
                             .service-column {
                                 display: flex;
                                 flex-direction: column;
@@ -496,7 +699,7 @@
                                 border-radius: 8px;
                                 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
                             }
-                            
+
                             .service-column-title {
                                 font-size: 14px;
                                 font-weight: 700;
@@ -510,12 +713,12 @@
                                 text-transform: uppercase;
                                 letter-spacing: 0.5px;
                             }
-                            
+
                             .service-column-title i {
                                 color: var(--thm-base);
                                 font-size: 15px;
                             }
-                            
+
                             .service-item {
                                 display: flex;
                                 align-items: center;
@@ -528,19 +731,19 @@
                                 cursor: pointer;
                                 min-height: 46px;
                             }
-                            
+
                             .service-item:hover {
                                 background: linear-gradient(135deg, var(--thm-base) 0%, var(--thm-primary) 100%);
                                 border-left-color: #fff;
                                 transform: translateX(5px);
                                 box-shadow: 0 4px 12px rgba(244, 163, 64, 0.35);
                             }
-                            
+
                             .service-item:hover i,
                             .service-item:hover span {
                                 color: #ffffff;
                             }
-                            
+
                             .service-item i {
                                 font-size: 17px;
                                 color: var(--thm-base);
@@ -549,7 +752,7 @@
                                 width: 22px;
                                 text-align: center;
                             }
-                            
+
                             .service-item span {
                                 font-size: 13px;
                                 font-weight: 600;
@@ -558,41 +761,41 @@
                                 line-height: 1.35;
                                 flex: 1;
                             }
-                            
+
                             @media (max-width: 425px) {
                                 .services-we-provide {
                                     padding: 15px 15px 15px 15px;
                                 }
-                                
+
                                 .services-columns {
                                     grid-template-columns: 1fr;
                                     gap: 12px;
                                 }
-                                
+
                                 .service-column {
                                     padding: 10px;
                                 }
-                                
+
                                 .service-item {
                                     padding: 9px 10px;
                                     min-height: 40px;
                                 }
-                                
+
                                 .service-item span {
                                     font-size: 11px;
                                 }
-                                
+
                                 .service-item i {
                                     font-size: 14px;
                                     width: 18px;
                                 }
-                                
+
                                 .service-column-title {
                                     font-size: 12px;
                                 }
                             }
                         </style>
-                        
+
                     </div><!-- /.col-lg-12 col-xl-5 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -610,7 +813,8 @@
                             <div class="service-one__image">
                                 <a href="life-insurance.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-1.webp" alt="Life Insurance in Pune" width="276" height="185" loading="lazy">
+                                        <img src="assets/images/services/services-1-1.webp" alt="Life Insurance in Pune"
+                                            width="276" height="185" loading="lazy">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
@@ -621,8 +825,10 @@
                                     </div>
                                 </a>
                                 <h3><a href="life-insurance.html">Life Insurance</a></h3>
-                                <p>Protect your family with term plans, savings plans and retirement-focused coverage from trusted insurers.</p>
-                                <a href="life-insurance.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about Life Insurance"></a>
+                                <p>Protect your family with term plans, savings plans and retirement-focused coverage
+                                    from trusted insurers.</p>
+                                <a href="life-insurance.html" class="pylon-icon-right-arrow service-one__link"
+                                    aria-label="Learn more about Life Insurance"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -632,7 +838,8 @@
                             <div class="service-one__image">
                                 <a href="general-insurance.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-2.webp" alt="General Insurance in Pune" width="276" height="185" loading="lazy">
+                                        <img src="assets/images/services/services-1-2.webp"
+                                            alt="General Insurance in Pune" width="276" height="185" loading="lazy">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
@@ -643,8 +850,10 @@
                                     </div>
                                 </a>
                                 <h3><a href="general-insurance.html">General Insurance</a></h3>
-                                <p>Comprehensive motor, health, property and business insurance with end-to-end claim support.</p>
-                                <a href="general-insurance.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about General Insurance"></a>
+                                <p>Comprehensive motor, health, property and business insurance with end-to-end claim
+                                    support.</p>
+                                <a href="general-insurance.html" class="pylon-icon-right-arrow service-one__link"
+                                    aria-label="Learn more about General Insurance"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -654,7 +863,8 @@
                             <div class="service-one__image">
                                 <a href="mutual-funds-sip.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-3.webp" alt="Mutual Funds and SIP" width="276" height="185" loading="lazy">
+                                        <img src="assets/images/services/services-1-3.webp" alt="Mutual Funds and SIP"
+                                            width="276" height="185" loading="lazy">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
@@ -665,8 +875,10 @@
                                     </div>
                                 </a>
                                 <h3><a href="mutual-funds-sip.html">Mutual Funds &amp; SIP</a></h3>
-                                <p>Goal-based SIP and mutual fund advice to build wealth for education, retirement and major life goals.</p>
-                                <a href="mutual-funds-sip.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about Mutual Funds &amp; SIP"></a>
+                                <p>Goal-based SIP and mutual fund advice to build wealth for education, retirement and
+                                    major life goals.</p>
+                                <a href="mutual-funds-sip.html" class="pylon-icon-right-arrow service-one__link"
+                                    aria-label="Learn more about Mutual Funds &amp; SIP"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -676,7 +888,9 @@
                             <div class="service-one__image">
                                 <a href="equity-share-market.html">
                                     <div class="post-thumbnail">
-                                        <img src="assets/images/services/services-1-1.webp" alt="Equity and Share Market Advisory" width="276" height="185" loading="lazy">
+                                        <img src="assets/images/services/services-1-1.webp"
+                                            alt="Equity and Share Market Advisory" width="276" height="185"
+                                            loading="lazy">
                                     </div>
                                 </a>
                             </div><!-- /.service-one__image -->
@@ -687,8 +901,10 @@
                                     </div>
                                 </a>
                                 <h3><a href="equity-share-market.html">Equity &amp; Share Market</a></h3>
-                                <p>Structured equity investing support, portfolio review and risk-based planning for long-term growth.</p>
-                                <a href="equity-share-market.html" class="pylon-icon-right-arrow service-one__link" aria-label="Learn more about Equity &amp; Share Market"></a>
+                                <p>Structured equity investing support, portfolio review and risk-based planning for
+                                    long-term growth.</p>
+                                <a href="equity-share-market.html" class="pylon-icon-right-arrow service-one__link"
+                                    aria-label="Learn more about Equity &amp; Share Market"></a>
                                 <!-- /.service-one__link -->
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__card -->
@@ -701,9 +917,12 @@
         </section><!-- /.service-one -->
 
         <section class="feature-one">
-            <img src="assets/images/shapes/feature-shape-1-1.png" alt="" class="feature-one__shape-1" aria-hidden="true" loading="lazy">
-            <img src="assets/images/shapes/feature-shape-1-2.png" alt="" class="feature-one__shape-2" aria-hidden="true" loading="lazy">
-            <img src="assets/images/shapes/feature-shape-1-3.png" alt="" class="feature-one__shape-3" aria-hidden="true" loading="lazy">
+            <img src="assets/images/shapes/feature-shape-1-1.png" alt="" class="feature-one__shape-1" aria-hidden="true"
+                loading="lazy">
+            <img src="assets/images/shapes/feature-shape-1-2.png" alt="" class="feature-one__shape-2" aria-hidden="true"
+                loading="lazy">
+            <img src="assets/images/shapes/feature-shape-1-3.png" alt="" class="feature-one__shape-3" aria-hidden="true"
+                loading="lazy">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -713,7 +932,11 @@
                         </div><!-- /.block-title -->
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
-                        <p class="block-text">At Divyam360, we understand the importance of financial security and compliance. Our comprehensive tax consultancy and insurance services are designed to protect your assets, maximize your savings, and ensure complete peace of mind. With years of expertise and a dedicated team of professionals, we provide personalized solutions tailored to your unique needs.</p><!-- /.block-text -->
+                        <p class="block-text">At Divyam360, we understand the importance of financial security and
+                            compliance. Our comprehensive tax consultancy and insurance services are designed to protect
+                            your assets, maximize your savings, and ensure complete peace of mind. With years of
+                            expertise and a dedicated team of professionals, we provide personalized solutions tailored
+                            to your unique needs.</p><!-- /.block-text -->
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
                 <div class="row">
@@ -754,8 +977,12 @@
                                 <h2>Your Trusted Partner for Tax & Insurance Solutions</h2>
                             </div><!-- /.block-title -->
                             <div class="trusted-company__image">
-                                <img src="assets/images/resources/trust-1-1.webp" alt="Divyam360 Trusted Tax and Insurance Services" height="148" width="171" loading="lazy">
-                                <p>Divyam360 is a trusted name in tax consultancy and insurance services. Our certified professionals deliver personalized solutions with timely service, ensuring complete peace of mind for all your financial needs.</p>
+                                <img src="assets/images/resources/trust-1-1.webp"
+                                    alt="Divyam360 Trusted Tax and Insurance Services" height="148" width="171"
+                                    loading="lazy">
+                                <p>Divyam360 is a trusted name in tax consultancy and insurance services. Our certified
+                                    professionals deliver personalized solutions with timely service, ensuring complete
+                                    peace of mind for all your financial needs.</p>
                             </div><!-- /.trusted-company__image -->
                             <div class="row">
                                 <div class="col-sm-5 col-xs-12">
@@ -821,7 +1048,8 @@
                         <div class="trusted-company__box-wrap">
                             <div class="trusted-company__box">
                                 <span>1</span>
-                                <p>Comprehensive tax and insurance solutions for individuals, families, and businesses</p>
+                                <p>Comprehensive tax and insurance solutions for individuals, families, and businesses
+                                </p>
                             </div><!-- /.trusted-company__box -->
                             <div class="trusted-company__box">
                                 <span>2</span>
@@ -896,92 +1124,119 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Divyam360 made my income tax filing so easy! Their team is professional, responsive, and helped me maximize my deductions. Highly recommend their services!</span></p>
+                                <p><span>Divyam360 made my income tax filing so easy! Their team is professional,
+                                        responsive, and helped me maximize my deductions. Highly recommend their
+                                        services!</span></p>
                                 <h3>Rajesh Kumar</h3>
                                 <span class="testi_sname">Business Owner</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-1.svg" alt="Rajesh Kumar - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-1.svg"
+                                    alt="Rajesh Kumar - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Excellent GST registration and filing service! They handled everything smoothly and kept me informed throughout. Very satisfied with their expertise and support.</span></p>
+                                <p><span>Excellent GST registration and filing service! They handled everything smoothly
+                                        and kept me informed throughout. Very satisfied with their expertise and
+                                        support.</span></p>
                                 <h3>Priya Sharma</h3>
                                 <span class="testi_sname">Retail Store Owner</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-2.svg" alt="Priya Sharma - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-2.svg"
+                                    alt="Priya Sharma - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage at competitive rates with hassle-free claim support. Truly reliable service!</span></p>
+                                <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage
+                                        at competitive rates with hassle-free claim support. Truly reliable
+                                        service!</span></p>
                                 <h3>Amit Patel</h3>
                                 <span class="testi_sname">IT Professional</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-3.svg" alt="Amit Patel - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-3.svg"
+                                    alt="Amit Patel - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Divyam360 made my income tax filing so easy! Their team is professional, responsive, and helped me maximize my deductions. Highly recommend their services!</span></p>
+                                <p><span>Divyam360 made my income tax filing so easy! Their team is professional,
+                                        responsive, and helped me maximize my deductions. Highly recommend their
+                                        services!</span></p>
                                 <h3>Rajesh Kumar</h3>
                                 <span class="testi_sname">Business Owner</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-1.svg" alt="Rajesh Kumar - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-1.svg"
+                                    alt="Rajesh Kumar - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Excellent GST registration and filing service! They handled everything smoothly and kept me informed throughout. Very satisfied with their expertise and support.</span></p>
+                                <p><span>Excellent GST registration and filing service! They handled everything smoothly
+                                        and kept me informed throughout. Very satisfied with their expertise and
+                                        support.</span></p>
                                 <h3>Priya Sharma</h3>
                                 <span class="testi_sname">Retail Store Owner</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-2.svg" alt="Priya Sharma - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-2.svg"
+                                    alt="Priya Sharma - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage at competitive rates with hassle-free claim support. Truly reliable service!</span></p>
+                                <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage
+                                        at competitive rates with hassle-free claim support. Truly reliable
+                                        service!</span></p>
                                 <h3>Amit Patel</h3>
                                 <span class="testi_sname">IT Professional</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-3.svg" alt="Amit Patel - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-3.svg"
+                                    alt="Amit Patel - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Divyam360 made my income tax filing so easy! Their team is professional, responsive, and helped me maximize my deductions. Highly recommend their services!</span></p>
+                                <p><span>Divyam360 made my income tax filing so easy! Their team is professional,
+                                        responsive, and helped me maximize my deductions. Highly recommend their
+                                        services!</span></p>
                                 <h3>Rajesh Kumar</h3>
                                 <span class="testi_sname">Business Owner</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-1.svg" alt="Rajesh Kumar - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-1.svg"
+                                    alt="Rajesh Kumar - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Excellent GST registration and filing service! They handled everything smoothly and kept me informed throughout. Very satisfied with their expertise and support.</span></p>
+                                <p><span>Excellent GST registration and filing service! They handled everything smoothly
+                                        and kept me informed throughout. Very satisfied with their expertise and
+                                        support.</span></p>
                                 <h3>Priya Sharma</h3>
                                 <span class="testi_sname">Retail Store Owner</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-2.svg" alt="Priya Sharma - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-2.svg"
+                                    alt="Priya Sharma - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                         <div class="swiper-slide">
                             <div class="testimonials-one__box">
-                                <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage at competitive rates with hassle-free claim support. Truly reliable service!</span></p>
+                                <p><span>Got comprehensive health and motor insurance through Divyam360. Great coverage
+                                        at competitive rates with hassle-free claim support. Truly reliable
+                                        service!</span></p>
                                 <h3>Amit Patel</h3>
                                 <span class="testi_sname">IT Professional</span>
                             </div><!-- /.testimonials-one__box -->
                             <div class="testimonials-one__box-info">
-                                <img src="assets/images/resources/testimonials-1-3.svg" alt="Amit Patel - Divyam360 Client" loading="lazy">>
+                                <img src="assets/images/resources/testimonials-1-3.svg"
+                                    alt="Amit Patel - Divyam360 Client" loading="lazy">>
                             </div><!-- /.testimonials-one__box-info -->
                         </div><!-- /.swiper-slide -->
                     </div><!-- /.swiper-wrapper -->
@@ -993,14 +1248,17 @@
         </section><!-- /.testimonials-one -->
 
         <section class="why-choose">
-            <img src="assets/images/shapes/why-choose-shape-1-1.png" class="why-choose__shape-1" alt="" aria-hidden="true" loading="lazy">
-            <img src="assets/images/shapes/why-choose-shape-1-2.png" class="why-choose__shape-2" alt="" aria-hidden="true" loading="lazy">
+            <img src="assets/images/shapes/why-choose-shape-1-1.png" class="why-choose__shape-1" alt=""
+                aria-hidden="true" loading="lazy">
+            <img src="assets/images/shapes/why-choose-shape-1-2.png" class="why-choose__shape-2" alt=""
+                aria-hidden="true" loading="lazy">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="why-choose__image">
                             <p><i class="pylon-icon-investment"></i>Years of Tax & Insurance Expertise</p>
-                            <img src="assets/images/resources/why-choose-1-1.png" alt="Why Choose Divyam360" width="540" height="480" loading="lazy">
+                            <img src="assets/images/resources/why-choose-1-1.png" alt="Why Choose Divyam360" width="540"
+                                height="480" loading="lazy">
                         </div><!-- /.why-choose__image -->
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
@@ -1009,7 +1267,9 @@
                                 <p>Our Benefits</p>
                                 <h2>Why Choose Us?</h2>
                             </div><!-- /.block-title -->
-                            <p>We provide expert tax consultancy and comprehensive insurance solutions with personalized service. Our certified professionals ensure quick processing, maximum savings, and complete compliance for all your financial needs.</p>
+                            <p>We provide expert tax consultancy and comprehensive insurance solutions with personalized
+                                service. Our certified professionals ensure quick processing, maximum savings, and
+                                complete compliance for all your financial needs.</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="why-choose__box">
@@ -1094,7 +1354,9 @@
                 <div class="row" id="blogContainer">
                     <!-- Blog cards will be injected here by JavaScript -->
                     <div class="col-12 text-center py-5" id="blogLoading">
-                        <div style="display:inline-block;width:40px;height:40px;border:4px solid rgba(1,95,201,0.2);border-top-color:#015fc9;border-radius:50%;animation:blogSpin 0.8s linear infinite;"></div>
+                        <div
+                            style="display:inline-block;width:40px;height:40px;border:4px solid rgba(1,95,201,0.2);border-top-color:#015fc9;border-radius:50%;animation:blogSpin 0.8s linear infinite;">
+                        </div>
                         <p style="margin-top:12px;color:#666;font-size:15px;">Loading insights…</p>
                     </div>
                 </div><!-- /.row -->
@@ -1114,34 +1376,44 @@
                 <div class="partners-ticker">
                     <!-- Set 1 -->
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-10.webp" alt="LIC - Life Insurance Corporation of India" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-10.webp"
+                            alt="LIC - Life Insurance Corporation of India" width="140" height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-2.webp" alt="HDFC Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-2.webp" alt="HDFC Life Insurance" width="140"
+                            height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-3.webp" alt="ICICI Prudential Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-3.webp" alt="ICICI Prudential Life Insurance"
+                            width="140" height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-4.webp" alt="SBI Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-4.webp" alt="SBI Life Insurance" width="140"
+                            height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-5.webp" alt="Bajaj Allianz Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-5.webp" alt="Bajaj Allianz Insurance" width="140"
+                            height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-6.webp" alt="Max Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-6.webp" alt="Max Life Insurance" width="140"
+                            height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-7.webp" alt="Tata AIA Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-7.webp" alt="Tata AIA Life Insurance" width="140"
+                            height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-8.webp" alt="Kotak Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-8.webp" alt="Kotak Life Insurance" width="140"
+                            height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-9.webp" alt="Aditya Birla Sun Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-9.webp" alt="Aditya Birla Sun Life Insurance"
+                            width="140" height="70">
                     </div>
                     <div class="partners-ticker__item">
-                        <img src="assets/images/resources/brand-1-1.webp" alt="Reliance Nippon Life Insurance" width="140" height="70">
+                        <img src="assets/images/resources/brand-1-1.webp" alt="Reliance Nippon Life Insurance"
+                            width="140" height="70">
                     </div>
                     <!-- Set 2 — duplicate for seamless loop -->
                     <div class="partners-ticker__item" aria-hidden="true">
@@ -1181,16 +1453,22 @@
 
         <section class="cta-banner"
             style="background-color: rgb(19,147,211); background-image: linear-gradient(rgba(19,147,211,0.92), rgba(19,147,211,0.92)), url('assets/images/backgrounds/call-to-action-bg-1-1.png'); background-size: cover; background-position: center center; padding: 45px 0; position: relative; z-index: 5;">
-            <div class="container" style="position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+            <div class="container"
+                style="position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
                 <div class="left-content">
-                    <p style="font-size:13px; color:rgba(255,255,255,0.9); margin-bottom:8px; display:flex; align-items:center; flex-wrap:wrap; gap:0;">
-                        <span>Simple</span><span style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Transparent</span><span style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Secure</span>
+                    <p
+                        style="font-size:13px; color:rgba(255,255,255,0.9); margin-bottom:8px; display:flex; align-items:center; flex-wrap:wrap; gap:0;">
+                        <span>Simple</span><span
+                            style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Transparent</span><span
+                            style="margin:0 8px; color:rgba(255,255,255,0.7);">/</span><span>Secure</span>
                     </p>
-                    <h3 style="font-size:28px; font-weight:700; color:#fff; margin:0; line-height:1.25;">Get expert tax, insurance and investment guidance quickly</h3>
+                    <h3 style="font-size:28px; font-weight:700; color:#fff; margin:0; line-height:1.25;">Get expert tax,
+                        insurance and investment guidance quickly</h3>
                 </div>
                 <div class="right-content">
                     <a href="apply-now.html" class="thm-btn thm-btn--cta">Book a Consultation</a>
-                </div>            </div>
+                </div>
+            </div>
         </section><!-- /.cta-banner -->
 
 
@@ -1200,9 +1478,11 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget footer-widget__about">
                             <a href="index.html">
-                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38">
+                                <img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155"
+                                    height="38">
                             </a>
-                            <p>Divyam360 Tax &amp; Insurance Services is your trusted advisor in Pune for insurance protection, tax compliance, and investment planning with personalized guidance.</p>
+                            <p>Divyam360 Tax &amp; Insurance Services is your trusted advisor in Pune for insurance
+                                protection, tax compliance, and investment planning with personalized guidance.</p>
                             <div class="footer-widget__about-phone">
                                 <i class="pylon-icon-tech-support"></i>
                                 <div class="footer-widget__about-phone-content">
@@ -1236,7 +1516,8 @@
                                     <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune ? 411030, Maharashtra, India</a>
+                                    <a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune ?
+                                        411030, Maharashtra, India</a>
                                 </li>
                             </ul>
                         </div><!-- /.footer-widget footer-widget__contact -->
@@ -1246,11 +1527,15 @@
         </footer><!-- /.site-footer -->
         <div class="bottom-footer">
             <div class="container">
-                <p>? Copyright by Divyam360.com | Designed and Developed by <a href="https://ajayportfolio-nu.vercel.app/" target="_blank" style="color: #ffa500; text-decoration: none;">Techajay</a></p>
+                <p>? Copyright by Divyam360.com | Designed and Developed by <a
+                        href="https://ajayportfolio-nu.vercel.app/" target="_blank"
+                        style="color: #ffa500; text-decoration: none;">Techajay</a></p>
                 <div class="bottom-footer__social">
-                    <a href="https://www.facebook.com/profile.php?id=61589966625710" class="fab fa-facebook-f" aria-label="Divyam360 on Facebook"></a>
-                    
-                    <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram" aria-label="Divyam360 on Instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61589966625710" class="fab fa-facebook-f"
+                        aria-label="Divyam360 on Facebook"></a>
+
+                    <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram"
+                        aria-label="Divyam360 on Instagram"></a>
                 </div><!-- /.bottom-footer__social -->
             </div><!-- /.container -->
         </div><!-- /.bottom-footer -->
@@ -1264,7 +1549,8 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp" alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38" /></a>
+                <a href="index.html" aria-label="logo image"><img src="ftlogo.webp"
+                        alt="Divyam360 - Tax Consultancy and Insurance Pune" width="155" height="38" /></a>
 
             </div>
             <!-- /.logo-box -->
@@ -1331,29 +1617,29 @@
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-    <script>document.addEventListener('DOMContentLoaded',function(){emailjs.init('Zkp0GhT7LYGdGm5VK');});</script>
+    <script>document.addEventListener('DOMContentLoaded', function () { emailjs.init('Zkp0GhT7LYGdGm5VK'); });</script>
 
     <!-- template js -->
     <script src="assets/js/theme.js" defer></script>
 
     <!-- Lazy background image loader -->
     <script>
-    (function(){
-        function loadBg(el){
-            var bg = el.getAttribute('data-bg');
-            if(bg){ el.style.backgroundImage = 'url('+bg+')'; el.removeAttribute('data-bg'); }
-        }
-        if('IntersectionObserver' in window){
-            var io = new IntersectionObserver(function(entries){
-                entries.forEach(function(e){ if(e.isIntersecting){ loadBg(e.target); io.unobserve(e.target); } });
-            },{rootMargin:'200px'});
-            document.querySelectorAll('[data-bg]').forEach(function(el){ io.observe(el); });
-        } else {
-            document.querySelectorAll('[data-bg]').forEach(loadBg);
-        }
-    })();
+        (function () {
+            function loadBg(el) {
+                var bg = el.getAttribute('data-bg');
+                if (bg) { el.style.backgroundImage = 'url(' + bg + ')'; el.removeAttribute('data-bg'); }
+            }
+            if ('IntersectionObserver' in window) {
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) { if (e.isIntersecting) { loadBg(e.target); io.unobserve(e.target); } });
+                }, { rootMargin: '200px' });
+                document.querySelectorAll('[data-bg]').forEach(function (el) { io.observe(el); });
+            } else {
+                document.querySelectorAll('[data-bg]').forEach(loadBg);
+            }
+        })();
     </script>
-    
+
     <!-- Quote Modal Script -->
     <script>
         // Get modal elements
@@ -1361,41 +1647,41 @@
         const openBtn = document.getElementById('openQuoteModal');
         const closeBtn = document.getElementById('closeModal');
         const quoteForm = document.getElementById('quoteForm');
-        
+
         // Check if user is visiting for the first time
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const hasVisited = localStorage.getItem('hasVisitedBefore');
             if (!hasVisited) {
                 // Show modal after 2 seconds for first-time visitors
-                setTimeout(function() {
+                setTimeout(function () {
                     quoteModal.classList.add('active');
                 }, 2000);
                 // Mark as visited
                 localStorage.setItem('hasVisitedBefore', 'true');
             }
         });
-        
+
         // Open modal
-        openBtn.addEventListener('click', function() {
+        openBtn.addEventListener('click', function () {
             quoteModal.classList.add('active');
         });
-        
+
         // Close modal
-        closeBtn.addEventListener('click', function() {
+        closeBtn.addEventListener('click', function () {
             quoteModal.classList.remove('active');
         });
-        
+
         // Close modal when clicking outside
-        window.addEventListener('click', function(event) {
+        window.addEventListener('click', function (event) {
             if (event.target === quoteModal) {
                 quoteModal.classList.remove('active');
             }
         });
-        
+
         // Handle form submission
-        quoteForm.addEventListener('submit', function(e) {
+        quoteForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            const name  = document.getElementById('userName').value;
+            const name = document.getElementById('userName').value;
             const email = document.getElementById('userEmail').value;
             const phone = document.getElementById('userPhone').value;
             const submitBtn = quoteForm.querySelector('button[type="submit"]');
@@ -1404,12 +1690,12 @@
             submitBtn.disabled = true;
             emailjs.send('service_f1vq7cc', 'template_k33aogb', {
                 from_name: name, from_email: email, phone: phone, form_source: 'Get a Quote Modal'
-            }).then(function() {
+            }).then(function () {
                 const wa = `Hello, I would like to get a quote.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Contact:* ${phone}`;
                 window.open(`https://wa.me/919665565559?text=${wa}`, '_blank');
                 quoteModal.classList.remove('active'); quoteForm.reset();
                 submitBtn.textContent = originalText; submitBtn.disabled = false;
-            }, function() {
+            }, function () {
                 const wa = `Hello, I would like to get a quote.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Contact:* ${phone}`;
                 window.open(`https://wa.me/919665565559?text=${wa}`, '_blank');
                 quoteModal.classList.remove('active'); quoteForm.reset();
@@ -1417,7 +1703,7 @@
             });
         });
     </script>
-    
+
     <!-- LocalBusiness JSON-LD Schema -->
     <script type="application/ld+json">
     {
@@ -1463,122 +1749,122 @@
     </script>
 
     <script>
-    (function() {
-        'use strict';
-        function parseCSV(text) {
-            var rows = []; var row = []; var field = ''; var inQuote = false;
-            for (var i = 0; i < text.length; i++) {
-                var ch = text[i]; var nextCh = text[i+1];
-                if (ch === '"') {
-                    if (inQuote && nextCh === '"') { field += '"'; i++; } else { inQuote = !inQuote; }
-                } else if (ch === ',' && !inQuote) {
-                    row.push(field.trim()); field = '';
-                } else if ((ch === '\n' || (ch === '\r' && nextCh === '\n')) && !inQuote) {
-                    if (ch === '\r') i++; 
+        (function () {
+            'use strict';
+            function parseCSV(text) {
+                var rows = []; var row = []; var field = ''; var inQuote = false;
+                for (var i = 0; i < text.length; i++) {
+                    var ch = text[i]; var nextCh = text[i + 1];
+                    if (ch === '"') {
+                        if (inQuote && nextCh === '"') { field += '"'; i++; } else { inQuote = !inQuote; }
+                    } else if (ch === ',' && !inQuote) {
+                        row.push(field.trim()); field = '';
+                    } else if ((ch === '\n' || (ch === '\r' && nextCh === '\n')) && !inQuote) {
+                        if (ch === '\r') i++;
+                        row.push(field.trim());
+                        if (row.join('').trim() !== '') rows.push(row);
+                        row = []; field = '';
+                    } else {
+                        if (ch !== '\r' || inQuote) field += ch;
+                    }
+                }
+                if (field !== '' || row.length > 0) {
                     row.push(field.trim());
                     if (row.join('').trim() !== '') rows.push(row);
-                    row = []; field = '';
-                } else {
-                    if (ch !== '\r' || inQuote) field += ch;
+                }
+                if (rows.length < 2) return [];
+                var headers = rows[0]; var data = [];
+                for (var r = 1; r < rows.length; r++) {
+                    var cols = rows[r]; var obj = {};
+                    for (var c = 0; c < headers.length; c++) {
+                        obj[headers[c]] = cols[c] || '';
+                    }
+                    data.push(obj);
+                }
+                return data;
+            }
+
+            function categoryIcon(cat) {
+                var map = {
+                    'development': 'fa-code', 'design': 'fa-paint-brush', 'ai': 'fa-robot', 'product': 'fa-box-open',
+                    'mobile': 'fa-mobile-alt', 'tax': 'fa-file-invoice-dollar', 'insurance': 'fa-shield-alt',
+                    'gst': 'fa-receipt', 'finance': 'fa-chart-line', 'investment': 'fa-piggy-bank'
+                };
+                var key = (cat || '').toLowerCase();
+                for (var k in map) { if (key.indexOf(k) !== -1) return map[k]; }
+                return 'fa-newspaper';
+            }
+
+            function buildCard(item) {
+                var title = item['Title'] || 'Untitled';
+                var date = item['Date'] || '';
+                var category = item['Category'] || 'General';
+                var summary = item['Description / Summary'] || '';
+                var imgSrc = item['Image URL'] || 'assets/images/blog/blog-1-1.png';
+
+                // Create dynamic link to blog-details page
+                var link = 'blog-details.html?title=' + encodeURIComponent(title);
+
+                var icon = categoryIcon(category);
+
+                return [
+                    '<div class="col-lg-4 col-md-6 col-blog-item wow fadeInUp" data-wow-duration="1200ms" data-category="' + category.toLowerCase() + '">',
+                    '  <div class="blog-card">',
+                    '    <div class="blog-card__image">',
+                    '      <span>' + date + '</span>',
+                    '      <img src="' + imgSrc + '" alt="' + title + ' - Divyam360" loading="lazy" style="height:250px; object-fit:cover;">',
+                    '    </div>',
+                    '    <div class="blog-card__content">',
+                    '      <div class="blog-card__meta">',
+                    '        <a href="#"><i class="far fa-user"></i>Admin</a>',
+                    '        <a href="' + link + '"><i class="fas ' + icon + '"></i>' + category + '</a>',
+                    '      </div>',
+                    '      <h3><a href="' + link + '">' + title + '</a></h3>',
+                    '      <p class="blog-card__excerpt">' + summary.substring(0, 100) + '...</p>',
+                    '      <div class="blog-card__bottom">',
+                    '        <div class="blog-card-bottom-readmore">',
+                    '          <a href="' + link + '" class="readmore-card-link"><i class="pylon-icon-right-arrow"></i>Read More</a>',
+                    '        </div>',
+                    '        <span class="blog_comment"><a href="#"><i class="far fa-comments"></i>0 Comments</a></span>',
+                    '      </div>',
+                    '    </div>',
+                    '  </div>',
+                    '</div>'
+                ].join('');
+            }
+
+            async function loadHomeBlog() {
+                var container = document.getElementById('blogContainer');
+                var loading = document.getElementById('blogLoading');
+                if (!container) return;
+                try {
+                    var sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_J1f_o_88nx0mWF4ccY0YnLngSS7zJ4C472u5gwJsOrnnb4UmzBp4yBg6xjamxANa47IjYaE77zJb/pub?output=csv';
+                    var cacheBuster = '&v=' + new Date().getTime();
+                    var response = await fetch(sheetUrl + cacheBuster);
+                    if (!response.ok) throw new Error('HTTP ' + response.status);
+                    var text = await response.text();
+                    var data = parseCSV(text);
+
+                    if (!data.length) throw new Error('No data in CSV');
+
+                    if (loading) loading.remove();
+
+                    // Only show the latest 3 posts on the home page
+                    var latestPosts = data.slice(0, 3);
+                    var html = latestPosts.map(buildCard).join('');
+                    container.insertAdjacentHTML('beforeend', html);
+
+                } catch (err) {
+                    console.error('Blog load failed:', err);
+                    if (loading) loading.remove();
+                    container.insertAdjacentHTML('beforeend',
+                        '<div class="col-12 text-center" style="padding:40px;color:#c00;"><p>Could not load latest insights.</p></div>'
+                    );
                 }
             }
-            if (field !== '' || row.length > 0) {
-                row.push(field.trim());
-                if (row.join('').trim() !== '') rows.push(row);
-            }
-            if (rows.length < 2) return [];
-            var headers = rows[0]; var data = [];
-            for (var r = 1; r < rows.length; r++) {
-                var cols = rows[r]; var obj = {};
-                for (var c = 0; c < headers.length; c++) {
-                    obj[headers[c]] = cols[c] || '';
-                }
-                data.push(obj);
-            }
-            return data;
-        }
 
-        function categoryIcon(cat) {
-            var map = {
-                'development': 'fa-code', 'design': 'fa-paint-brush', 'ai': 'fa-robot', 'product': 'fa-box-open',
-                'mobile': 'fa-mobile-alt', 'tax': 'fa-file-invoice-dollar', 'insurance': 'fa-shield-alt', 
-                'gst': 'fa-receipt', 'finance': 'fa-chart-line', 'investment': 'fa-piggy-bank'
-            };
-            var key = (cat || '').toLowerCase();
-            for (var k in map) { if (key.indexOf(k) !== -1) return map[k]; }
-            return 'fa-newspaper';
-        }
-
-        function buildCard(item) {
-            var title    = item['Title'] || 'Untitled';
-            var date     = item['Date'] || '';
-            var category = item['Category'] || 'General';
-            var summary  = item['Description / Summary'] || '';
-            var imgSrc   = item['Image URL'] || 'assets/images/blog/blog-1-1.png';
-            
-            // Create dynamic link to blog-details page
-            var link = 'blog-details.html?title=' + encodeURIComponent(title);
-            
-            var icon     = categoryIcon(category);
-
-            return [
-                '<div class="col-lg-4 col-md-6 col-blog-item wow fadeInUp" data-wow-duration="1200ms" data-category="' + category.toLowerCase() + '">',
-                '  <div class="blog-card">',
-                '    <div class="blog-card__image">',
-                '      <span>' + date + '</span>',
-                '      <img src="' + imgSrc + '" alt="' + title + ' - Divyam360" loading="lazy" style="height:250px; object-fit:cover;">',
-                '    </div>',
-                '    <div class="blog-card__content">',
-                '      <div class="blog-card__meta">',
-                '        <a href="#"><i class="far fa-user"></i>Admin</a>',
-                '        <a href="' + link + '"><i class="fas ' + icon + '"></i>' + category + '</a>',
-                '      </div>',
-                '      <h3><a href="' + link + '">' + title + '</a></h3>',
-                '      <p class="blog-card__excerpt">' + summary.substring(0, 100) + '...</p>',
-                '      <div class="blog-card__bottom">',
-                '        <div class="blog-card-bottom-readmore">',
-                '          <a href="' + link + '" class="readmore-card-link"><i class="pylon-icon-right-arrow"></i>Read More</a>',
-                '        </div>',
-                '        <span class="blog_comment"><a href="#"><i class="far fa-comments"></i>0 Comments</a></span>',
-                '      </div>',
-                '    </div>',
-                '  </div>',
-                '</div>'
-            ].join('');
-        }
-
-        async function loadHomeBlog() {
-            var container = document.getElementById('blogContainer');
-            var loading   = document.getElementById('blogLoading');
-            if(!container) return;
-            try {
-                var sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR_J1f_o_88nx0mWF4ccY0YnLngSS7zJ4C472u5gwJsOrnnb4UmzBp4yBg6xjamxANa47IjYaE77zJb/pub?output=csv';
-                var cacheBuster = '&v=' + new Date().getTime();
-                var response = await fetch(sheetUrl + cacheBuster);
-                if (!response.ok) throw new Error('HTTP ' + response.status);
-                var text = await response.text();
-                var data = parseCSV(text);
-
-                if (!data.length) throw new Error('No data in CSV');
-
-                if (loading) loading.remove();
-
-                // Only show the latest 3 posts on the home page
-                var latestPosts = data.slice(0, 3);
-                var html = latestPosts.map(buildCard).join('');
-                container.insertAdjacentHTML('beforeend', html);
-
-            } catch (err) {
-                console.error('Blog load failed:', err);
-                if (loading) loading.remove();
-                container.insertAdjacentHTML('beforeend',
-                    '<div class="col-12 text-center" style="padding:40px;color:#c00;"><p>Could not load latest insights.</p></div>'
-                );
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', loadHomeBlog);
-    })();
+            document.addEventListener('DOMContentLoaded', loadHomeBlog);
+        })();
     </script>
 </body>
 
