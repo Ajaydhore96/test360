@@ -13183,14 +13183,89 @@ Main Header Five
 }
 
 @media (max-width: 1199px) {
+  .main-menu .logo-box {
+    padding: 10px 0;
+  }
   .main-menu .logo-box img {
-    max-height: 52px;
+    max-height: 48px;
   }
 }
 
+/* Mobile Header - Consistent styling for screens up to 500px */
 @media (max-width: 767px) {
+  .main-menu {
+    padding: 10px 0 !important;
+    min-height: auto !important;
+    background: #fff;
+  }
+  .main-menu .container {
+    padding: 0 15px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .main-menu .logo-box {
+    padding: 0 !important;
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .main-menu .logo-box a {
+    display: flex !important;
+    align-items: center !important;
+    line-height: 1 !important;
+  }
   .main-menu .logo-box img {
-    max-height: 44px;
+    max-height: 40px !important;
+    max-width: 160px !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .main-menu .mobile-nav__toggler {
+    font-size: 24px !important;
+    padding: 8px 12px !important;
+    margin-left: auto !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  /* Hide the phone info section on mobile */
+  .main-header__info,
+  .main-header__info-phone {
+    display: none !important;
+  }
+}
+
+/* Unified styling for screens 500px and below */
+@media (max-width: 500px) {
+  .main-menu {
+    padding: 10px 0 !important;
+  }
+  .main-menu .container {
+    padding: 0 12px !important;
+  }
+  .main-menu .logo-box img {
+    max-height: 36px !important;
+    max-width: 150px !important;
+  }
+  .main-menu .mobile-nav__toggler {
+    font-size: 22px !important;
+    padding: 8px 10px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-menu .container {
+    padding: 0 10px !important;
+  }
+  .main-menu .logo-box img {
+    max-height: 32px !important;
+    max-width: 130px !important;
+  }
+  .main-menu .mobile-nav__toggler {
+    font-size: 20px !important;
+    padding: 6px 8px !important;
   }
 }
 
@@ -16828,5 +16903,116 @@ html {
   .service-details__sidebar select,
   .service-details__sidebar button {
     font-size: 14px !important;
+  }
+}
+
+
+/* Marquee Banner Mobile Optimization */
+.marquee-banner {
+  background-color: var(--thm-primary);
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+  padding: 0 40px;
+  color: #fff;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.marquee-content span i {
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .marquee-banner {
+    padding: 6px 0;
+  }
+  .marquee-content span {
+    padding: 0 25px;
+    font-size: 12px;
+  }
+  .marquee-content span i {
+    margin-right: 6px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 425px) {
+  .marquee-banner {
+    padding: 5px 0;
+  }
+  .marquee-content span {
+    padding: 0 20px;
+    font-size: 11px;
+  }
+  .marquee-content span i {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+}
+
+
+/* Topbar Mobile Optimization - Hide on mobile to save space */
+@media (max-width: 991px) {
+  .topbar {
+    display: none !important;
+  }
+}
+
+/* Page Header Mobile Optimization - Consistent for screens up to 500px */
+@media (max-width: 767px) {
+  .page-header .container {
+    padding-top: 70px !important;
+    padding-bottom: 75px !important;
+  }
+  .page-header__title h2 {
+    font-size: 30px !important;
+    line-height: 1.3em !important;
+  }
+  .page-header__bread-crumb li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-header .container {
+    padding-top: 60px !important;
+    padding-bottom: 65px !important;
+  }
+  .page-header__title h2 {
+    font-size: 28px !important;
+    line-height: 1.3em !important;
+  }
+  .page-header__bread-crumb li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-header .container {
+    padding-top: 50px !important;
+    padding-bottom: 55px !important;
+  }
+  .page-header__title h2 {
+    font-size: 24px !important;
   }
 }

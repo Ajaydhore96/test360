@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -349,7 +349,7 @@
                             <a href="https://www.instagram.com/divyam360tax_insurance/" class="fab fa-instagram"
                                 aria-label="Divyam360 on Instagram"></a>
                         </div><!-- /.topbar__social -->
-                        <a href="#">Login</a>
+                        <a href="contact.html">ContactUs</a>
                         <a href="faq.html">FAQs</a>
                     </div><!-- /.topbar__left -->
                     <div class="topbar__right">
@@ -387,6 +387,7 @@
                         <li class="dropdown">
                             <a href="about.html">About Us</a>
                             <ul>
+                                <li><a href="team-details.html">Meet Our Founder</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="services.html">Services</a>
@@ -487,7 +488,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-7 col-lg-8">
-                                    <p>Expert Tax &amp; Insurance Solutions</p>
+                                    <p>Expert Tax, Wealth &amp; Insurance Solutions</p>
                                     <h2>Protecting Your Future
                                         with Smart Planning</h2>
                                     <a href="apply-now.html" class=" thm-btn">Get Started</a>
@@ -504,8 +505,8 @@
                             <div class="row">
                                 <div class="col-xl-7 col-lg-8">
                                     <p>Comprehensive Tax Services</p>
-                                    <h2>Maximize Your Returns
-                                        Minimize Your Taxes</h2>
+                                    <h2>Strategic Planning
+                                        Minimize Liabilities</h2>
                                     <a href="apply-now.html" class=" thm-btn">Consult Now</a>
                                     <!-- /.thm-btn dynamic-radius -->
                                 </div><!-- /.col-lg-7 text-right -->
@@ -1516,7 +1517,7 @@
                                     <a href="#"><i class="pylon-icon-clock2"></i>Mon - Sat 8:00 AM - 6:00 PM</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="pylon-icon-pin1"></i>Sawai Veg Apartment, Sinhgad Road, Pune ?
+                                    <a href="#"><i class="pylon-icon-pin1"></i>Office number 202, second floor, Ajinkya Tara Apartment, near Sai Veg Hotel, Sinhagad Road, Pune 411030?
                                         411030, Maharashtra, India</a>
                                 </li>
                             </ul>
@@ -1527,7 +1528,7 @@
         </footer><!-- /.site-footer -->
         <div class="bottom-footer">
             <div class="container">
-                <p>? Copyright by Divyam360.com | Designed and Developed by <a
+                <p>© Copyright by Divyam360.com | Designed and Developed by <a
                         href="https://ajayportfolio-nu.vercel.app/" target="_blank"
                         style="color: #ffa500; text-decoration: none;">Techajay</a></p>
                 <div class="bottom-footer__social">
@@ -1806,6 +1807,9 @@
                 var link = 'blog-details.html?title=' + encodeURIComponent(title);
 
                 var icon = categoryIcon(category);
+                
+                // SEO-friendly: Create descriptive link text
+                var readMoreText = 'Read more about ' + title;
 
                 return [
                     '<div class="col-lg-4 col-md-6 col-blog-item wow fadeInUp" data-wow-duration="1200ms" data-category="' + category.toLowerCase() + '">',
@@ -1823,7 +1827,7 @@
                     '      <p class="blog-card__excerpt">' + summary.substring(0, 100) + '...</p>',
                     '      <div class="blog-card__bottom">',
                     '        <div class="blog-card-bottom-readmore">',
-                    '          <a href="' + link + '" class="readmore-card-link"><i class="pylon-icon-right-arrow"></i>Read More</a>',
+                    '          <a href="' + link + '" class="readmore-card-link" aria-label="' + readMoreText + '"><i class="pylon-icon-right-arrow"></i>Read More</a>',
                     '        </div>',
                     '        <span class="blog_comment"><a href="#"><i class="far fa-comments"></i>0 Comments</a></span>',
                     '      </div>',

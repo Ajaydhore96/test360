@@ -746,59 +746,6 @@
         max-width: 230px;
     }
 
-    /* Mobile Header Optimization for Service Pages */
-    .main-menu {
-        padding: 10px 0 !important;
-        background: #fff !important;
-    }
-    
-    .main-menu .container {
-        padding: 0 15px !important;
-        display: flex !important;
-        align-items: center !important;
-    }
-    
-    .main-menu .logo-box {
-        max-width: 100% !important;
-        width: 100% !important;
-        height: auto !important;
-        padding: 0 !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-    }
-    
-    .main-menu .logo-box a {
-        display: flex !important;
-        align-items: center !important;
-        padding: 0 !important;
-        background: none !important;
-    }
-    
-    .main-menu .logo-box img {
-        width: auto !important;
-        height: auto !important;
-        max-height: 40px !important;
-        max-width: 160px !important;
-    }
-    
-    .main-menu .mobile-nav__toggler {
-        font-size: 24px !important;
-        padding: 8px 12px !important;
-        margin-left: auto !important;
-    }
-    
-    /* Hide phone info section on mobile */
-    .main-header__info,
-    .main-header__info-phone {
-        display: none !important;
-    }
-    
-    /* Reduce header padding on mobile */
-    .main-header__four-bottom {
-        padding: 10px 0 !important;
-    }
-
     /* Header Five */
     .main-header__five {
         background: var(--thm-primary);
@@ -1104,6 +1051,168 @@
         margin-bottom: 60px;
     }
 
+    /* Footer Mobile Responsive Fixes */
+    .site-footer {
+        padding: 50px 0 40px !important;
+    }
+
+    .site-footer .row > div {
+        text-align: center !important;
+    }
+
+    .site-footer .col-lg-3,
+    .site-footer .col-lg-2,
+    .site-footer .col-lg-4,
+    .site-footer .col-sm-6 {
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .footer-widget {
+        margin-bottom: 40px;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__about {
+        max-width: 100% !important;
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__about a {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .footer-widget__about img {
+        margin: 0 auto;
+    }
+
+    .footer-widget__about p {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__about-phone {
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        margin: 0 auto;
+    }
+
+    .footer-widget__about-phone > i {
+        margin-right: 15px;
+        margin-left: 0;
+    }
+
+    .footer-widget__about-phone-content {
+        text-align: center !important;
+        margin-left: 15px !important;
+    }
+
+    .footer-widget__about-phone-content span {
+        display: block;
+        text-align: center !important;
+    }
+
+    .footer-widget__about-phone-content h3 {
+        font-size: 20px;
+        text-align: center !important;
+        margin: 0;
+    }
+
+    .footer-widget__about-phone-content h3 a {
+        text-align: center !important;
+    }
+
+    .footer-widget__link {
+        max-width: 100%;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__title {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list li {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list li a {
+        display: inline-block;
+        text-align: center !important;
+    }
+
+    .footer-widget__contact {
+        padding: 25px 20px !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__contact h3 {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list li {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list li a {
+        font-size: 14px;
+        line-height: 1.6;
+        word-break: break-word;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .bottom-footer {
+        padding: 20px 0 !important;
+    }
+
+    .bottom-footer p {
+        font-size: 13px !important;
+        line-height: 1.6;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+    }
+
+    .bottom-footer .container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .bottom-footer__social {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+    .bottom-footer__social a {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+        margin: 5px;
+    }
+
     /*Slider Five*/
     .main-slider-five {
         margin-top: 0px;
@@ -1381,100 +1490,313 @@
 }
 
 
-/* Extra Small Mobile: 500px and below - Consistent compact header */
-@media only screen and (max-width: 500px) {
+/* Extra Small Mobile: 480px and below */
+@media only screen and (max-width: 480px) {
     
-    /* Compact Mobile Header - Consistent styling */
-    .main-menu {
-        padding: 10px 0 !important;
-        min-height: auto !important;
+    /* Footer Extra Small Mobile Fixes */
+    .site-footer {
+        padding: 40px 0 30px !important;
     }
-    
-    .main-menu .container {
-        padding: 0 12px !important;
+
+    .site-footer .row > div {
+        text-align: center !important;
     }
-    
-    .main-menu .logo-box {
-        width: 100% !important;
+
+    .site-footer .col-lg-3,
+    .site-footer .col-lg-2,
+    .site-footer .col-lg-4,
+    .site-footer .col-sm-6 {
+        text-align: center !important;
         display: flex !important;
+        justify-content: center !important;
+    }
+
+    .footer-widget {
+        margin-bottom: 35px;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__title {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .footer-widget__about {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center !important;
-        justify-content: space-between !important;
-        padding: 0 !important;
+        width: 100%;
     }
-    
-    .main-menu .logo-box img {
-        width: auto !important;
-        height: auto !important;
-        max-height: 36px !important;
-        max-width: 150px !important;
+
+    .footer-widget__about img {
+        margin: 0 auto;
     }
-    
-    .main-menu .mobile-nav__toggler {
-        font-size: 22px !important;
-        padding: 8px 10px !important;
-        margin-left: auto !important;
+
+    .footer-widget__about p {
+        font-size: 14px !important;
+        line-height: 1.8;
+        text-align: center !important;
     }
-    
-    /* Page Header optimization */
-    .page-header .container {
-        padding-top: 60px !important;
-        padding-bottom: 65px !important;
+
+    .footer-widget__about-phone {
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 100%;
+        display: flex !important;
+        margin: 0 auto;
     }
-    
-    .page-header__title h2 {
-        font-size: 28px !important;
-        line-height: 1.3em !important;
+
+    .footer-widget__about-phone > i {
+        font-size: 32px;
+        margin-bottom: 0;
+        margin-right: 15px;
+        margin-left: 0;
     }
-    
-    /* Reduce overall header spacing */
-    .main-header__four-bottom {
-        padding: 10px 0 !important;
+
+    .footer-widget__about-phone-content {
+        margin-left: 12px !important;
+        text-align: center !important;
     }
-    
-    .main-header__four-bottom-inner {
-        padding-right: 10px !important;
-        padding-left: 0 !important;
+
+    .footer-widget__about-phone-content span {
+        display: block;
+        text-align: center !important;
     }
-    
-    /* Marquee banner optimization */
-    .marquee-banner {
-        font-size: 11px !important;
-        padding: 6px 0 !important;
+
+    .footer-widget__about-phone-content h3 {
+        font-size: 18px !important;
+        text-align: center !important;
+        margin: 0;
     }
-    
-    .marquee-banner span {
-        padding: 0 15px !important;
+
+    .footer-widget__about-phone-content span {
+        font-size: 13px;
+        text-align: center !important;
     }
-    
-    .marquee-banner i {
-        font-size: 10px !important;
-        margin-right: 4px !important;
+
+    .footer-widget__link {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__link-list {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list li {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list li a {
+        font-size: 14px;
+        line-height: 32px !important;
+        display: inline-block;
+        text-align: center !important;
+    }
+
+    .footer-widget__contact {
+        padding: 20px 15px !important;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__contact h3 {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list li {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list li a {
+        font-size: 13px !important;
+        padding-left: 35px !important;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .footer-widget__contact-list li a > i {
+        font-size: 16px !important;
+    }
+
+    .footer-widget__contact-list li + li {
+        padding-top: 15px !important;
+        margin-top: 15px !important;
+    }
+
+    .bottom-footer {
+        padding: 18px 0 !important;
+    }
+
+    .bottom-footer p {
+        font-size: 12px !important;
+        line-height: 1.7 !important;
+        padding: 0 10px;
+        text-align: center !important;
+    }
+
+    .bottom-footer__social {
+        justify-content: center !important;
+    }
+
+    .bottom-footer__social a {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 16px !important;
+        line-height: 40px !important;
+    }
+
+    .bottom-footer__social a + a {
+        margin-left: 8px;
     }
 }
 
-/* Ultra Small Mobile: 375px and below */
+/* Very Small Mobile: 375px and below */
 @media only screen and (max-width: 375px) {
     
-    .main-menu .container {
-        padding: 0 10px !important;
+    .site-footer {
+        padding: 35px 0 25px !important;
     }
-    
-    .main-menu .logo-box img {
-        max-height: 32px !important;
-        max-width: 130px !important;
+
+    .site-footer .row > div {
+        text-align: center !important;
     }
-    
-    .main-menu .mobile-nav__toggler {
-        font-size: 20px !important;
-        padding: 6px 8px !important;
+
+    .site-footer .col-lg-3,
+    .site-footer .col-lg-2,
+    .site-footer .col-lg-4,
+    .site-footer .col-sm-6 {
+        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
     }
-    
-    .page-header .container {
-        padding-top: 50px !important;
-        padding-bottom: 55px !important;
+
+    .footer-widget {
+        margin-bottom: 30px;
+        text-align: center !important;
+        width: 100%;
     }
-    
-    .page-header__title h2 {
-        font-size: 24px !important;
+
+    .footer-widget__title {
+        font-size: 17px !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+    }
+
+    .footer-widget__about {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__about img {
+        margin: 0 auto;
+    }
+
+    .footer-widget__about p {
+        font-size: 13px !important;
+        text-align: center !important;
+    }
+
+    .footer-widget__about-phone {
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-widget__about-phone > i {
+        margin-right: 12px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .footer-widget__about-phone-content {
+        text-align: center !important;
+        margin-left: 10px !important;
+    }
+
+    .footer-widget__about-phone-content span {
+        display: block;
+        text-align: center !important;
+    }
+
+    .footer-widget__about-phone-content h3 {
+        font-size: 16px !important;
+        text-align: center !important;
+        margin: 0;
+    }
+
+    .footer-widget__link {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__link-list {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list li {
+        text-align: center !important;
+    }
+
+    .footer-widget__link-list li a {
+        font-size: 13px !important;
+        line-height: 30px !important;
+        text-align: center !important;
+    }
+
+    .footer-widget__contact {
+        padding: 18px 12px !important;
+        text-align: center !important;
+        width: 100%;
+    }
+
+    .footer-widget__contact h3 {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list li {
+        text-align: center !important;
+    }
+
+    .footer-widget__contact-list li a {
+        font-size: 12px !important;
+        line-height: 1.7 !important;
+        padding-left: 30px !important;
+    }
+
+    .bottom-footer p {
+        font-size: 11px !important;
+        padding: 0 5px;
+        text-align: center !important;
+    }
+
+    .bottom-footer__social {
+        justify-content: center !important;
+    }
+
+    .bottom-footer__social a {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 15px !important;
+        line-height: 38px !important;
     }
 }

@@ -1,0 +1,186 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                    DIVYAM360 SEO QUICK REFERENCE                          ║
+║                          Updated: June 14, 2026                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ BUSINESS INFORMATION (Use Exactly As-Is Everywhere)                      │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Name:       Divyam360 Tax & Insurance Services
+Address:    Sawai Veg Apartment, Sinhgad Road
+            Pune, Maharashtra - 411030, India
+Phone:      +91 9665565559
+Email:      divyam360official@gmail.com
+Website:    https://divyam360.com
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ GEO-COORDINATES                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Latitude:   18.4611
+Longitude:  73.8477
+Region:     IN-MH (India - Maharashtra)
+City:       Pune
+Postal:     411030
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ FILES CREATED/UPDATED                                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+✓ robots.txt                        (Updated - upload to root)
+✓ sitemap.xml                       (Updated - upload to root)
+✓ local-business-data.json          (New - upload to root)
+✓ geo-location-meta.html            (New - reference file)
+✓ COMPLETE-HEAD-META-TAGS.html      (New - reference file)
+✓ SEO-CONFIG.md                     (New - documentation)
+✓ SEO-UPDATE-SUMMARY.md             (New - summary)
+✓ SEO-DEPLOYMENT-CHECKLIST.md       (New - checklist)
+✓ QUICK-REFERENCE.txt               (This file)
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ IMPORTANT URLS                                                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Sitemap:    https://divyam360.com/sitemap.xml
+Robots:     https://divyam360.com/robots.txt
+JSON-LD:    https://divyam360.com/local-business-data.json
+
+Google Maps:
+https://www.google.com/maps?q=Sawai+Veg+Apartment+Sinhgad+Road+Pune+411030
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ META TAGS FOR HTML <HEAD> (Mandatory)                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+<meta name="geo.region" content="IN-MH" />
+<meta name="geo.placename" content="Pune" />
+<meta name="geo.position" content="18.4611;73.8477" />
+<meta name="ICBM" content="18.4611, 73.8477" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Divyam360 Tax & Insurance Services" />
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ SOCIAL MEDIA LINKS                                                        │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Facebook:   https://www.facebook.com/profile.php?id=61589966625710
+Instagram:  https://www.instagram.com/divyam360tax_insurance/
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ OPERATING HOURS                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Monday - Saturday:  08:00 AM - 06:00 PM
+Sunday:             Closed
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ KEY LOCAL SEO KEYWORDS                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Primary:
+• Tax consultant Pune
+• Insurance advisor Pune
+• Income tax filing Pune
+• GST registration Pune
+• Life insurance Pune
+• Health insurance Pune
+
+Location-Specific:
+• Sinhgad Road tax consultant
+• Pune insurance services
+• Maharashtra tax advisory
+• Pune financial planning
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ IMMEDIATE ACTIONS AFTER UPLOAD                                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+1. Submit sitemap to Google Search Console
+2. Submit sitemap to Bing Webmaster Tools
+3. Verify Google My Business listing
+4. Test with Google Rich Results Test
+5. Validate schema markup
+6. Test mobile-friendliness
+7. Check all contact links work
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ TESTING TOOLS                                                             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Google Search Console:     https://search.google.com/search-console
+Google Rich Results Test:  https://search.google.com/test/rich-results
+Schema Validator:          https://validator.schema.org/
+Mobile-Friendly Test:      https://search.google.com/test/mobile-friendly
+PageSpeed Insights:        https://pagespeed.web.dev/
+Facebook Debugger:         https://developers.facebook.com/tools/debug/
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ SERVICE AREA                                                              │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Primary:    Pune City
+Radius:     50 km from office
+Coverage:   Pune Metropolitan Region, Maharashtra
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ SITEMAP PAGES (14 Total)                                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+• index.html (Homepage) - Priority: 1.0
+• about.html - Priority: 0.9
+• contact.html - Priority: 0.9
+• services.html - Priority: 0.9
+• life-insurance.html - Priority: 0.9
+• general-insurance.html - Priority: 0.9
+• mutual-funds-sip.html - Priority: 0.8
+• equity-share-market.html - Priority: 0.8
+• speciality-business-insurance.html - Priority: 0.8
+• apply-now.html - Priority: 0.8
+• faq.html - Priority: 0.7
+• testimonials.html - Priority: 0.7
+• team-details.html - Priority: 0.6
+• blog.html - Priority: 0.7
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ CONTACT METHODS                                                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Phone Call:     tel:+919665565559
+Email:          mailto:divyam360official@gmail.com
+WhatsApp:       https://wa.me/919665565559?text=Hello
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ MAINTENANCE REMINDERS                                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+Weekly:     • Check Search Console for errors
+            • Monitor GMB insights
+            • Review rankings
+
+Monthly:    • Update blog content
+            • Check broken links
+            • Review meta descriptions
+
+Quarterly:  • Full SEO audit
+            • Update service pages
+            • Refresh testimonials
+
+Annual:     • Update copyright year
+            • Review structured data
+            • Complete site audit
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ SUPPORT                                                                   │
+└─────────────────────────────────────────────────────────────────────────┘
+
+For questions about SEO implementation:
+Phone: +91 9665565559
+Email: divyam360official@gmail.com
+
+═══════════════════════════════════════════════════════════════════════════
+
+                    Keep this file for quick reference!
+                Save a copy in a safe location.
+
+═══════════════════════════════════════════════════════════════════════════
