@@ -96,9 +96,22 @@
         padding-bottom: 130px !important;
     }
     
-    /* For pages without slider */
-    .page-wrapper > section:first-of-type:not(.main-slider),
+    /* For pages without slider - page-header at top with NO MARGIN */
     .page-header {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        position: relative !important;
+    }
+    
+    /* Add padding INSIDE page-header container to clear sticky header */
+    .page-header .container {
+        padding-top: 200px !important; /* Header height + content space */
+        padding-bottom: 95px !important;
+    }
+    
+    /* For other first sections without page-header */
+    .page-wrapper > section:first-of-type:not(.main-slider):not(.page-header) {
         margin-top: 120px !important;
         padding-top: 0 !important;
     }
@@ -151,8 +164,17 @@
         padding-bottom: 90px !important;
     }
     
-    .page-wrapper > section:first-of-type:not(.main-slider),
+    /* Page header - no margin, padding inside */
     .page-header {
+        margin-top: 0 !important;
+    }
+    
+    .page-header .container {
+        padding-top: 180px !important;
+        padding-bottom: 85px !important;
+    }
+    
+    .page-wrapper > section:first-of-type:not(.main-slider):not(.page-header) {
         margin-top: 95px !important;
     }
 }
@@ -185,8 +207,17 @@
         padding-bottom: 110px !important;
     }
     
-    .page-wrapper > section:first-of-type:not(.main-slider),
+    /* Page header - no margin, padding inside */
     .page-header {
+        margin-top: 0 !important;
+    }
+    
+    .page-header .container {
+        padding-top: 190px !important;
+        padding-bottom: 90px !important;
+    }
+    
+    .page-wrapper > section:first-of-type:not(.main-slider):not(.page-header) {
         margin-top: 115px !important;
     }
 }
