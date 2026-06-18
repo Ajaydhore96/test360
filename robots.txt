@@ -1,0 +1,16 @@
+# Divyam360 Tax & Insurance Services - Pune, Maharashtra
+# Office: Sawai Veg Apartment, Sinhgad Road, Pune - 411030
+# Contact: +91 9665565559 | divyam360official@gmail.com
+
+User-agent: *
+Allow: /
+Disallow: /assets/
+Disallow: /vendor/
+Disallow: /*.php$
+Disallow: /*.cjs$
+
+# Sitemap Location
+Sitemap: https://divyam360.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

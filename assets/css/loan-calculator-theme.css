@@ -1,0 +1,387 @@
+/* Loan Calculator Theme Styling - Matches Divyam360 Design */
+
+/* Calculator Container */
+.loan-calculator-wrapper {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 45px 40px;
+    box-shadow: 0 10px 40px rgba(12, 33, 57, 0.12);
+    border: 1px solid rgba(12, 33, 57, 0.08);
+    transition: all 0.3s ease;
+}
+
+.loan-calculator-wrapper:hover {
+    box-shadow: 0 15px 50px rgba(12, 33, 57, 0.15);
+}
+
+/* Loan Type Tabs */
+.loan-tabs-wrapper {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loan-tab {
+    background: #f8f9fa;
+    color: #0c2139;
+    border: 2px solid #dce4ec;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.loan-tab:hover {
+    border-color: #1393d3;
+    color: #1393d3;
+    background: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(19,147,211,0.18);
+}
+
+.loan-tab.active {
+    background: linear-gradient(135deg, #1393d3 0%, #0f76a9 100%);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 8px 25px rgba(19,147,211,0.3);
+}
+
+.loan-tab.active:hover {
+    transform: translateY(-2px);
+}
+
+/* Form Labels */
+.loan-form-label {
+    display: block;
+    font-weight: 700;
+    color: #0c2139;
+    margin-bottom: 14px;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Input Fields */
+.loan-input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #dce4ec;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    color: #0c2139;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.loan-input:focus {
+    outline: none;
+    border-color: #1393d3;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(19,147,211,0.12);
+}
+
+/* Range Sliders */
+.loan-range {
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 18px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #1393d3 0%, #1393d3 60%, #dce4ec 60%, #dce4ec 100%);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.loan-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1393d3, #0f76a9);
+    cursor: pointer;
+    border: 4px solid #ffffff;
+    box-shadow: 0 3px 10px rgba(19,147,211,0.5);
+    transition: all 0.2s ease;
+}
+
+.loan-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(19,147,211,0.6);
+}
+
+.loan-range::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1393d3, #0f76a9);
+    cursor: pointer;
+    border: 4px solid #ffffff;
+    box-shadow: 0 3px 10px rgba(19,147,211,0.5);
+    transition: all 0.2s ease;
+}
+
+.loan-range::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(19,147,211,0.6);
+}
+
+/* Range Min/Max Labels */
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #6c757d;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Form Group Spacing */
+.loan-form-group {
+    margin-bottom: 32px;
+}
+
+/* Results Box */
+.loan-results-box {
+    background: linear-gradient(135deg, #1393d3 0%, #0f76a9 100%);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 45px 40px;
+    box-shadow: 0 20px 50px rgba(19,147,211,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.loan-results-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.loan-results-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+}
+
+.loan-results-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    opacity: 0.92;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.loan-emi-amount {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0 0 35px 0;
+    line-height: 1;
+    text-shadow: 0 3px 15px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;
+}
+
+/* Results Grid */
+.loan-results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.loan-result-item {
+    text-align: left;
+}
+
+.loan-result-label {
+    font-size: 13px;
+    opacity: 0.88;
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.loan-result-value {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.2;
+}
+
+/* Apply Button */
+.loan-apply-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #1393d3;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    margin-top: 35px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255,255,255,0.25);
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+
+.loan-apply-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255,255,255,0.35);
+    color: #1393d3;
+}
+
+/* Loan Info Cards */
+.loan-info-card {
+    background: #ffffff;
+    padding: 40px 32px;
+    border-radius: 12px;
+    height: 100%;
+    box-shadow: 0 8px 30px rgba(12, 33, 57, 0.08);
+    border: 1px solid rgba(12, 33, 57, 0.06);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.loan-info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #1393d3, #0f76a9);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.loan-info-card:hover::before {
+    transform: scaleX(1);
+}
+
+.loan-info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(12, 33, 57, 0.15);
+    border-color: rgba(19, 147, 211, 0.2);
+}
+
+.loan-icon-wrapper {
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #1393d3, #0f76a9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(19,147,211,0.25);
+    transition: all 0.3s ease;
+}
+
+.loan-info-card:hover .loan-icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 12px 30px rgba(19,147,211,0.35);
+}
+
+.loan-icon-wrapper i {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.loan-info-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #0c2139;
+    margin-bottom: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.3;
+}
+
+.loan-info-desc {
+    font-size: 15px;
+    color: #555c63;
+    margin: 0;
+    line-height: 1.7;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+    .loan-calculator-wrapper {
+        padding: 30px 25px;
+    }
+    
+    .loan-tabs-wrapper {
+        gap: 8px;
+    }
+    
+    .loan-tab {
+        padding: 12px 20px;
+        font-size: 14px;
+        flex: 1 1 45%;
+        text-align: center;
+    }
+    
+    .loan-emi-amount {
+        font-size: 42px;
+    }
+    
+    .loan-results-grid {
+        gap: 20px;
+    }
+    
+    .loan-result-value {
+        font-size: 20px;
+    }
+    
+    .loan-info-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .loan-tab {
+        flex: 1 1 100%;
+    }
+    
+    .loan-results-grid {
+        grid-template-columns: 1fr;
+    }
+}

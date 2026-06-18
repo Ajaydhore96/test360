@@ -1,0 +1,252 @@
+/* ===================================================================
+   SERVICE CARDS - SINGLE COLUMN MOBILE WITH ICON OVERLAY
+   Matches the design: large image with icon, title, description, arrow
+   =================================================================== */
+
+/* Mobile - Single Column Layout for Service Cards */
+@media only screen and (max-width: 991px) {
+    
+    /* Remove container padding for service section on mobile */
+    .service-one .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Single column layout on mobile */
+    .service-one .row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        margin: 0 !important;
+    }
+    
+    /* Override Bootstrap column classes */
+    .service-one .col-lg-3,
+    .service-one .col-md-6 {
+        max-width: 100% !important;
+        flex: 1 1 100% !important;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    
+    /* Card styling - full width edge to edge */
+    .service-one__card {
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        overflow: visible !important;
+        box-shadow: none !important;
+        background: #ffffff !important;
+        width: 100vw !important;
+        position: relative !important;
+        left: 50% !important;
+        right: 50% !important;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
+    }
+    
+    /* Image container - FULL SCREEN WIDTH */
+    .service-one__image {
+        height: 200px !important;
+        position: relative !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+    }
+    
+    .service-one__image a,
+    .service-one__image .post-thumbnail {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .service-one__image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+    
+    /* Remove any before/after pseudo elements */
+    .service-one__image::before,
+    .service-one__image::after,
+    .service-one__image .post-thumbnail::before,
+    .service-one__image .post-thumbnail::after {
+        display: none !important;
+    }
+    
+    /* Blue shield icon overlay on image (bottom right) */
+    .service-one__content .service-icon {
+        position: absolute !important;
+        bottom: -25px !important;
+        right: 20px !important;
+        width: 70px !important;
+        height: 70px !important;
+        background: var(--thm-base) !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+        z-index: 10 !important;
+        margin: 0 !important;
+    }
+    
+    .service-one__content .service-icon i {
+        color: #ffffff !important;
+        font-size: 32px !important;
+    }
+    
+    /* Content area - add padding back for text */
+    .service-one__content {
+        padding: 35px 20px 20px 20px !important;
+        position: relative !important;
+        background: #ffffff !important;
+        margin: 0 !important;
+    }
+    
+    /* Title */
+    .service-one__content h3 {
+        font-size: 22px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 12px !important;
+        font-weight: 700 !important;
+        color: var(--thm-black) !important;
+    }
+    
+    /* Description */
+    .service-one__content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        margin-bottom: 15px !important;
+        color: #666 !important;
+    }
+    
+    /* Blue arrow button (bottom left) */
+    .service-one__link {
+        position: static !important;
+        width: 45px !important;
+        height: 45px !important;
+        background: var(--thm-primary) !important;
+        color: #ffffff !important;
+        border-radius: 50% !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 16px !important;
+        box-shadow: 0 4px 12px rgba(26, 60, 110, 0.3) !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .service-one__link:hover {
+        background: var(--thm-base) !important;
+        transform: scale(1.1) !important;
+    }
+    
+    /* Section heading - keep padding for text */
+    .service-one .block-title {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .service-one .block-title p {
+        font-size: 14px !important;
+        color: #999 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .service-one .block-title h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 30px !important;
+        font-weight: 700 !important;
+    }
+    
+    /* Bottom button - keep padding */
+    .service-one .text-center {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* Extra small mobile adjustments */
+@media only screen and (max-width: 767px) {
+    
+    .service-one__image {
+        height: 180px !important;
+    }
+    
+    .service-one__content .service-icon {
+        width: 60px !important;
+        height: 60px !important;
+        bottom: -20px !important;
+        right: 15px !important;
+    }
+    
+    .service-one__content .service-icon i {
+        font-size: 28px !important;
+    }
+    
+    .service-one__content h3 {
+        font-size: 20px !important;
+    }
+    
+    .service-one__content p {
+        font-size: 13px !important;
+    }
+    
+    .service-one .block-title h2 {
+        font-size: 22px !important;
+    }
+}
+
+/* Very small mobile */
+@media only screen and (max-width: 400px) {
+    
+    .service-one__image {
+        height: 160px !important;
+    }
+    
+    .service-one__content {
+        padding: 30px 15px 15px 15px !important;
+    }
+    
+    .service-one__content .service-icon {
+        width: 55px !important;
+        height: 55px !important;
+        bottom: -18px !important;
+    }
+    
+    .service-one__content .service-icon i {
+        font-size: 24px !important;
+    }
+    
+    .service-one__content h3 {
+        font-size: 18px !important;
+    }
+    
+    .service-one__content p {
+        font-size: 12px !important;
+    }
+    
+    .service-one__link {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* Desktop - Keep original layout */
+@media only screen and (min-width: 992px) {
+    /* No changes - desktop keeps original 4-column design */
+}

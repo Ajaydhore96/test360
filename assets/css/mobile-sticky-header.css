@@ -1,0 +1,266 @@
+/* ===================================================================
+   MOBILE STICKY HEADER - ZERO GAP VERSION
+   Only affects mobile screens (max-width: 991px)
+   Desktop remains unchanged
+   =================================================================== */
+
+/* Mobile & Tablet Screens Only */
+@media only screen and (max-width: 991px) {
+    
+    /* Make header sticky on mobile */
+    .main-header {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+        background: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Topbar at top */
+    .main-header .topbar {
+        position: relative;
+        background: #ffffff;
+        z-index: 1003;
+        order: 1;
+        padding: 5px 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Marquee banner in middle */
+    .marquee-banner {
+        position: relative;
+        z-index: 1002 !important;
+        order: 2;
+        width: 100%;
+        padding: 5px 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Logo/menu at bottom - ZERO BOTTOM SPACING */
+    .main-menu {
+        position: relative;
+        background: #ffffff;
+        z-index: 1001;
+        order: 3;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .main-menu .container {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    
+    .logo-box {
+        padding: 8px 0 0 0 !important;
+        margin: 0 !important;
+    }
+    
+    .logo-box img {
+        max-height: 40px;
+        width: auto;
+    }
+    
+    /* ZERO SPACING - Slider starts at 0 and uses padding to clear header */
+    .page-wrapper {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    
+    /* Slider positioned at top with NO MARGIN */
+    .main-slider,
+    .main-slider__one {
+        margin: 0 !important;
+        padding: 0 !important;
+        position: relative !important;
+    }
+    
+    .main-slider .swiper-container {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .main-slider .swiper-slide {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Add padding INSIDE slider content to push text down below header */
+    .main-slider .swiper-slide .container {
+        padding-top: 170px !important; /* Header height + extra space */
+        padding-bottom: 130px !important;
+    }
+    
+    /* For pages without slider - page-header at top with NO MARGIN */
+    .page-header {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        position: relative !important;
+    }
+    
+    /* Add padding INSIDE page-header container to clear sticky header */
+    .page-header .container {
+        padding-top: 200px !important; /* Header height + content space */
+        padding-bottom: 95px !important;
+    }
+    
+    /* For other first sections without page-header */
+    .page-wrapper > section:first-of-type:not(.main-slider):not(.page-header) {
+        margin-top: 120px !important;
+        padding-top: 0 !important;
+    }
+    
+    /* Hide duplicate sticky header */
+    .stricky-header.stricked-menu {
+        display: none !important;
+    }
+    
+    /* Mobile nav */
+    .mobile-nav__wrapper {
+        top: 0;
+        padding-top: 20px;
+        z-index: 9999;
+    }
+}
+
+/* Extra Mobile Only (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    
+    .main-header .topbar {
+        font-size: 12px;
+        padding: 3px 0 !important;
+        margin: 0 !important;
+    }
+    
+    .main-header .topbar__left,
+    .main-header .topbar__right {
+        font-size: 11px;
+    }
+    
+    .marquee-banner {
+        font-size: 12px;
+        padding: 3px 0 !important;
+        margin: 0 !important;
+    }
+    
+    .logo-box {
+        padding: 6px 0 0 0 !important;
+        margin: 0 !important;
+    }
+    
+    .logo-box img {
+        max-height: 35px;
+    }
+    
+    /* Adjust slider content padding for smaller header */
+    .main-slider .swiper-slide .container {
+        padding-top: 140px !important; /* Compact header + space */
+        padding-bottom: 90px !important;
+    }
+    
+    /* Page header - no margin, padding inside */
+    .page-header {
+        margin-top: 0 !important;
+    }
+    
+    .page-header .container {
+        padding-top: 180px !important;
+        padding-bottom: 85px !important;
+    }
+    
+    .page-wrapper > section:first-of-type:not(.main-slider):not(.page-header) {
+        margin-top: 95px !important;
+    }
+}
+
+/* Tablet Only (768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .main-header .topbar {
+        padding: 6px 0 !important;
+        margin: 0 !important;
+    }
+    
+    .marquee-banner {
+        padding: 6px 0 !important;
+        margin: 0 !important;
+    }
+    
+    .logo-box {
+        padding: 8px 0 0 0 !important;
+        margin: 0 !important;
+    }
+    
+    .logo-box img {
+        max-height: 45px;
+    }
+    
+    /* Tablet slider content padding */
+    .main-slider .swiper-slide .container {
+        padding-top: 160px !important;
+        padding-bottom: 110px !important;
+    }
+    
+    /* Page header - no margin, padding inside */
+    .page-header {
+        margin-top: 0 !important;
+    }
+    
+    .page-header .container {
+        padding-top: 190px !important;
+        padding-bottom: 90px !important;
+    }
+    
+    .page-wrapper > section:first-of-type:not(.main-slider):not(.page-header) {
+        margin-top: 115px !important;
+    }
+}
+
+/* ===================================================================
+   SMOOTH SCROLL BEHAVIOR
+   =================================================================== */
+@media only screen and (max-width: 991px) {
+    html {
+        scroll-padding-top: 120px;
+    }
+    
+    [id] {
+        scroll-margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html {
+        scroll-padding-top: 95px;
+    }
+    
+    [id] {
+        scroll-margin-top: 95px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+        scroll-padding-top: 115px;
+    }
+    
+    [id] {
+        scroll-margin-top: 115px;
+    }
+}
+
+/* ===================================================================
+   FLOATING BUTTONS
+   =================================================================== */
+@media only screen and (max-width: 991px) {
+    .floating-contact-buttons {
+        bottom: 20px;
+        right: 15px;
+    }
+}

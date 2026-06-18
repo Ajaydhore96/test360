@@ -1,0 +1,248 @@
+/*
+===========================================
+Testimonials Section - Mobile Only
+===========================================
+Complete redesign for mobile responsive screens
+Desktop (≥992px) completely unchanged
+===========================================
+*/
+
+@media (max-width: 991px) {
+
+    /* ===== SECTION BACKGROUND ===== */
+    .testimonials-one {
+        padding: 55px 0 40px !important;
+        background: linear-gradient(160deg, #0c2139 0%, #004aa1 50%, #008fd5 100%) !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    /* Decorative background circle */
+    .testimonials-one::before {
+        content: '' !important;
+        position: absolute !important;
+        top: -80px !important;
+        right: -80px !important;
+        width: 250px !important;
+        height: 250px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.04) !important;
+        pointer-events: none !important;
+    }
+    .testimonials-one::after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: -60px !important;
+        left: -60px !important;
+        width: 200px !important;
+        height: 200px !important;
+        border-radius: 50% !important;
+        background: rgba(255, 255, 255, 0.04) !important;
+        pointer-events: none !important;
+    }
+
+    /* ===== SECTION HEADING ===== */
+    .testimonials-one .block-title p {
+        color: rgba(255, 255, 255, 0.75) !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        letter-spacing: 2.5px !important;
+        text-transform: uppercase !important;
+        margin-bottom: 8px !important;
+    }
+
+    .testimonials-one .block-title h2 {
+        color: #ffffff !important;
+        font-size: 26px !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 32px !important;
+    }
+
+    /* Override the gradient underline for this dark section */
+    .testimonials-one .block-title.text-center h2::after {
+        display: none !important;
+    }
+
+    /* ===== SWIPER CONTAINER ===== */
+    .testimonials-one .swiper-container,
+    .testimonials-one .thm-swiper__slider {
+        overflow: visible !important;
+        padding: 10px 20px 50px !important;
+        box-sizing: border-box !important;
+        width: calc(100% + 0px) !important;
+    }
+
+    .testimonials-one .swiper-wrapper {
+        align-items: stretch !important;
+    }
+
+    .testimonials-one .swiper-slide {
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    /* ===== CARD WRAPPER (swiper-slide inner) ===== */
+    .testimonials-one .swiper-slide > div:first-child,
+    .testimonials-one__box {
+        background: #ffffff !important;
+        border-radius: 20px !important;
+        padding: 28px 22px 22px !important;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25) !important;
+        position: relative !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+    }
+
+    /* Large decorative quote mark inside card */
+    .testimonials-one__box::before {
+        content: '\201C' !important;
+        position: absolute !important;
+        top: -5px !important;
+        right: 16px !important;
+        font-size: 90px !important;
+        font-weight: 900 !important;
+        color: #008fd5 !important;
+        opacity: 0.1 !important;
+        line-height: 1 !important;
+        pointer-events: none !important;
+        font-family: Georgia, serif !important;
+    }
+
+    /* ===== STAR RATING inside card ===== */
+    .testimonials-one__box::after {
+        content: '★ ★ ★ ★ ★' !important;
+        display: block !important;
+        color: #ffa500 !important;
+        font-size: 14px !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 14px !important;
+    }
+
+    /* ===== REVIEW TEXT ===== */
+    .testimonials-one__box p {
+        margin: 0 0 18px !important;
+        padding: 0 !important;
+    }
+    .testimonials-one__box p span {
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+        color: #444 !important;
+        font-style: italic !important;
+        display: block !important;
+    }
+
+    /* ===== REVIEWER NAME ===== */
+    .testimonials-one__box h3 {
+        font-size: 16px !important;
+        font-weight: 800 !important;
+        color: #0c2139 !important;
+        margin: 0 0 3px !important;
+        line-height: 1.3 !important;
+    }
+
+    /* ===== DESIGNATION ===== */
+    .testimonials-one__box .testi_sname {
+        font-size: 12px !important;
+        color: #008fd5 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        display: block !important;
+    }
+
+    /* ===== AVATAR IMAGE ROW (box-info) ===== */
+    .testimonials-one__box-info {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0 !important;
+        margin-top: 8px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+    }
+
+    .testimonials-one__box-info img {
+        width: 48px !important;
+        height: 48px !important;
+        min-width: 48px !important;
+        border-radius: 50% !important;
+        border: 3px solid #008fd5 !important;
+        object-fit: cover !important;
+        background: #e8f4fc !important;
+        display: none !important; /* Hide SVG avatars - names already shown in box */
+    }
+
+    /* ===== DIVIDER LINE between quote and reviewer ===== */
+    .testimonials-one__box h3::before {
+        content: '' !important;
+        display: block !important;
+        width: 40px !important;
+        height: 2px !important;
+        background: linear-gradient(90deg, #008fd5, #ffa500) !important;
+        border-radius: 2px !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* ===== SWIPER PAGINATION DOTS ===== */
+    .testimonials-one__swiper-pagination {
+        position: relative !important;
+        bottom: auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 6px !important;
+        margin-top: 0 !important;
+        padding-top: 4px !important;
+    }
+
+    .testimonials-one__swiper-pagination .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        background: rgba(255, 255, 255, 0.4) !important;
+        opacity: 1 !important;
+        border-radius: 50% !important;
+        margin: 0 !important;
+        transition: all 0.3s ease !important;
+        display: inline-block !important;
+    }
+
+    .testimonials-one__swiper-pagination .swiper-pagination-bullet-active {
+        width: 28px !important;
+        height: 8px !important;
+        border-radius: 4px !important;
+        background: #ffffff !important;
+        opacity: 1 !important;
+    }
+}
+
+/* ===== SMALL MOBILE (≤575px) ===== */
+@media (max-width: 575px) {
+
+    .testimonials-one {
+        padding: 45px 0 35px !important;
+    }
+
+    .testimonials-one .block-title h2 {
+        font-size: 22px !important;
+    }
+
+    .testimonials-one .swiper-container,
+    .testimonials-one .thm-swiper__slider {
+        padding: 8px 15px 45px !important;
+    }
+
+    .testimonials-one__box {
+        padding: 24px 18px 18px !important;
+        border-radius: 16px !important;
+    }
+
+    .testimonials-one__box p span {
+        font-size: 13px !important;
+    }
+
+    .testimonials-one__box h3 {
+        font-size: 15px !important;
+    }
+}
